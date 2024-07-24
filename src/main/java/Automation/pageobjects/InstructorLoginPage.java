@@ -2,23 +2,38 @@ package Automation.pageobjects;
 
 import Automation.base.Base;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 
 public class InstructorLoginPage extends Base {
-
-    //Login objects for instructor 	page
-
     public static By InstructoremailInput = By.xpath("//div/input[@type='email']");
     public static By InstructorpasswordInput = By.xpath("//div/input[@type='password']");
-    public static By ForInstructorLink = By.xpath("//a[@href='/instructor-homepage' and text()='For Instructors']"); // action click
+     // action click
     public static By InstructorLoginButton = By.xpath("//button[@type='submit']");
-    public static By clickloginButton = By.xpath("//a[@href='/login']/span[text()='Log In']");
-    public static By BackToInfynihomeLink = By.xpath("//div[@class='flex flex-col items-center justify-center px-[0.75rem]']/a[@href='/']");
-    public static By DashboardText = By.xpath("//div/span[text()='Dashboard']");
-
+    public static By loginButton = By.xpath("//a[@href='/login']/span[text()='Log In']");
+    //public static By BackToInfynihomeLink = By.xpath("//div[@class='flex flex-col items-center justify-center px-[0.75rem]']/a[@href='/']");
+    //public static By instructorLoginText= By.xpath("//div[@class='instructorhomepage_title__JrzNA' and text()='Become an Instructor']");
+    public static By InfyniLogo = By.xpath("//img[@alt='logo']");
+    public static By dashboardText=By.xpath("//span[@class='font-primary-font-bold tab-panel_title__oPS_k' and text()='Dashboard']");
 
     //common methods---------Method -1
+    public static void clickInfyniLogo() {
+        try {
+            driver.findElement(InfyniLogo).click();
+            System.out.println("clicked on infyni logo");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
-// Method to enter Instructor email address
+    public static void clickLoginButton() {
+        try {
+            driver.findElement(loginButton).click();
+            System.out.println("Clicked on Login Button");
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
 
     public static void EnterInstructorEmailId(String email) {
         try {
@@ -30,7 +45,6 @@ public class InstructorLoginPage extends Base {
         }
     }
 
-    // Method to enter Instructor  password
     public static void EnterInstructorPwd(String password) {
         try {
 
@@ -42,7 +56,6 @@ public class InstructorLoginPage extends Base {
             e.printStackTrace();
         }
     }
-
     // Method to click 'Sign In' button
     public static void ClickInstructorLogInButton() {
         try {
@@ -53,46 +66,21 @@ public class InstructorLoginPage extends Base {
             e.printStackTrace();
         }
     }
-//method to click on instructor link
-public static void clickForInstructorLink() {
-    try {
-        driver.findElement(ForInstructorLink).click();
-        System.out.println("Instructor Link  is clicked");
-    } catch (Exception e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-    }
-}
-    public static void clickLogin() {
-        try {
-            driver.findElement(clickloginButton).click();
-            System.out.println("Clicked on Login Button");
-        } catch (Exception e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-    }
 
-    public static void setClickInstructorLink() {
-        try {
-            driver.findElement(BackToInfynihomeLink).click();
-            System.out.println("Infyni Link  is clicked");
-        } catch (Exception e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-    }
 
-    public static boolean  dashboardTextPresence() {
 
+    public static boolean dashboardTextPresence() {
         boolean result = false;
         try {
-            driver.findElement(DashboardText).isDisplayed();
-            System.out.println("Clicked on course link to enroll");
+            driver.findElement(dashboardText).isDisplayed();
+            System.out.println("Navigated to Instructor DashboardPage");
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
         return result;
     }
+
+
+
 }
