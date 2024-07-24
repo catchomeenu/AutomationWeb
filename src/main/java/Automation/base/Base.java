@@ -1,5 +1,6 @@
 package Automation.base;
 import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -9,8 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-public class Base {
 
+public class Base {
     // driver should be visible for all the classes in the project
     public static WebDriver driver;
     //reusable method to launch browser
@@ -38,7 +39,7 @@ public class Base {
     {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
     }
-//reusable method to close application
+    //reusable method to close application
 
     public static void closeChildWindow()
     {
@@ -57,8 +58,7 @@ public class Base {
         driver.switchTo().window(parentwindowid);
     }
 
-    public static void switchToChildWindow()
-    {
+    public static void switchToChildWindow() {
         Set<String> windowids = driver.getWindowHandles();// store 2 window id's
         List<String> windowidslist = new ArrayList<String>(windowids);
 
@@ -68,10 +68,11 @@ public class Base {
         driver.switchTo().window(childwindowid);
     }
 
+
+
     public static void closeApp()
     {
         driver.close();
 
     }
-
 }
