@@ -58,6 +58,9 @@ public class StudentDashBoardPage extends Base {
     public static By InfyniLogo = By.xpath("//img[@alt='logo']");
 public static String name;
 
+
+
+
     public static void clickHomeLink() {
         try {
             driver.findElement(homeLink).click();

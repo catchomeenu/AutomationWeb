@@ -6,10 +6,13 @@
             <class name="AutomationTest.FooterTestCases"/>
             <class name="AutomationTest.HomePageTestCases"/>
            <class name="AutomationTest.StudentLoginPageTestCases"/>
-           <class name="AutomationTest.StudentDashboardPageTestCases"/>
+
+          <!-- <class name="AutomationTest.StudentDashboardPageTestCases"/>-->
+            <class name="AutomationTest.CoursesTestCase"></class>
 <!--           <class name="AutomationTest.InstructorLoginTestCases"/>-->
 <!--            <class name="AutomationTest.InstructorDashBoardPageTestCases"/>-->
 <!--            <class name="AutomationTest.InstructorLogoutTestCases"/>-->
+
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
