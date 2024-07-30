@@ -5,7 +5,7 @@
     <parameter name="Browser" value="Chrome"/>
     <test name="Test Scenarios">
         <classes>
-            <class name="AutomationTest.MostRecent.MostRecentPageTestCase"/>
+            <class name="AutomationTest.MostRecentPageTestCase"/>
         </classes>
     </test>
 </suite>

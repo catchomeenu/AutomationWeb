@@ -1,12 +1,12 @@
 package Automation.pageobjects;
 
-import Automation.base.TestBase;
+import Automation.base.Base;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-public class MostRecentPage extends TestBase {
+public class MostRecentPage extends Base {
     public static By homePageLink = By.xpath("//span[text()='Home']//ancestor::div[contains(@class,'MuiListItemIcon')]//a");
     public static By mostRecentLink = By.xpath("//span[text()='Most Recent']//ancestor::div[contains(@class,'MuiListItemIcon')]//a");
     private static By pageHeaderMostRecent = By.xpath("//h1[text()='Most Recent']");
