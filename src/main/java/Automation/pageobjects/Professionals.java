@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 
 
-public class Courses extends Base {
+public class Professionals extends Base {
 
     public static By Professionals=By.xpath("//span[text()='Professionals']");
     public static By ProfessionalPage =By.xpath("//h1[text()='Professionals']");
