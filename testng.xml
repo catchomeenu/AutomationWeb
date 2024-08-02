@@ -3,20 +3,20 @@
 <suite name="Suite">
     <test thread-count="5" name="Test">
         <classes>
-           <!-- <class name="AutomationTest.FooterTestCases"/>-->
+            <!-- <class name="AutomationTest.FooterTestCases"/>-->
 
             <!--<class name="AutomationTest.HomePageTestCases"/>
            <class name="AutomationTest.StudentLoginPageTestCases"/>-->
 
-          <!-- <class name="AutomationTest.StudentDashboardPageTestCases"/>-->
+            <!-- <class name="AutomationTest.StudentDashboardPageTestCases"/>-->
 
-<!--           <class name="AutomationTest.InstructorLoginTestCases"/>-->
-<!--            <class name="AutomationTest.InstructorDashBoardPageTestCases"/>-->
-<!--            <class name="AutomationTest.InstructorLogoutTestCases"/>-->
+            <!--           <class name="AutomationTest.InstructorLoginTestCases"/>-->
+            <!--            <class name="AutomationTest.InstructorDashBoardPageTestCases"/>-->
+            <!--            <class name="AutomationTest.InstructorLogoutTestCases"/>-->
             <!--<class name="AutomationTest.MostRecentPageTestCase"/>-->
             <!-- <class name="AutomationTest.FilterModuleTestCase"/>-->
-            <class name="AutomationTest.ProfessionalsTestCase"></class>
-           <class name="AutomationTest.ProfessionalsStatusTestCases"></class>
+            <class name="AutomationTest.ProfessionalsTestCase"/>
+            <class name="AutomationTest.ProfessionalsStatusTestCases"/>
         </classes>
     </test>
 </suite>
