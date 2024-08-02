@@ -10,7 +10,10 @@
             <!-<class name="AutomationTest.InstructorLoginTestCases"/>-->
             <!--<class name="AutomationTest.InstructorDashBoardPageTestCases"/>-->
             <!--<class name="AutomationTest.InstructorLogoutTestCases"/>-->
-            <class name="AutomationTest.MostRecentPageTestCase"/>
+            <!--<class name="AutomationTest.MostRecentPageTestCase"/>-->
+
+            <!-- <class name="AutomationTest.FilterModuleTestCase"/>-->
+            <class name="AutomationTest.FilterModuleTestCase"/>
         </classes>
-    </test> <!-- Test -->
-</suite> <!-- Suite -->
+    </test>
+</suite>
