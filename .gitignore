@@ -1,3 +1,6 @@
 /.idea/
 /src/main/main.iml
 /src/test/test.iml
+/target/
+/out/
+/target/
