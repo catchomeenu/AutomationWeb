@@ -3,4 +3,5 @@
 /src/test/test.iml
 /target/
 /out/
-/target/
+/target/**
+!*.class
