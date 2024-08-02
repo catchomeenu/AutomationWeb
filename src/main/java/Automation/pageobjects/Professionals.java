@@ -7,6 +7,7 @@ import org.testng.Assert;
 
 public class Professionals extends Base {
 
+
     public static By Professionals=By.xpath("//span[text()='Professionals']");
     public static By ProfessionalPage =By.xpath("//h1[text()='Professionals']");
     public static By home=By.xpath("//span[text()='Home']");
