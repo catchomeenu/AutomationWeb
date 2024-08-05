@@ -1,25 +1,21 @@
 package AutomationTest;
 
 import Automation.pageobjects.StudentDashBoardPage;
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
-public class StudentDashboardPageTestCases extends StudentDashBoardPage
-{
+public class StudentDashboardPageTestCases extends StudentDashBoardPage {
 
     @Test(priority = 16)
-    public static void searchCourseToEnroll()  {
+    public static void searchCourseToEnroll() {
         clickHomeLink();
-       // selectCourseStatusByOpenEnrollment();
+        // selectCourseStatusByOpenEnrollment();
         enterCourseName("BA");
         viewDisplayedList("BA Design");
         selectCourse();
     }
 
     @Test(priority = 17)
-    public static void enrollCourse()
-    {
+    public static void enrollCourse() {
         clickEnrollNow();
       /*  enterfirstName("Abhiram");
         enterLastName("Penu");
@@ -41,13 +37,12 @@ public class StudentDashboardPageTestCases extends StudentDashBoardPage
         clickContinueButton();
     }
 
-    @Test(priority =18)
-    public static void studentLogout()
-            {
-                clickAccountName();
-                clickLogout();
+    @Test(priority = 18)
+    public static void studentLogout() {
+        clickAccountName();
+        clickLogout();
 
-            }
+    }
 
 
 }
