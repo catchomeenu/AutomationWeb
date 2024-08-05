@@ -6,9 +6,6 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class CoursesTestCase extends Courses {
-
-
-
     @Test(priority = 1)
     public static void Courses_EnrollmentOpen() {
         click_CourseStatus();

@@ -4,7 +4,9 @@
     <test thread-count="5" name="Test">
         <classes>
             <class name="AutomationTest.MostPopularTestCase"></class>
-            <class name="AutomationTest.CoursesTestCase"></class>
+<!--            <class name="AutomationTest.CoursesTestCase"></class>-->
+            <class name="AutomationTest.ClickImageTestCase"></class>
+
 
            <!-- <class name="AutomationTest.FooterTestCases"/>-->
 
@@ -18,9 +20,6 @@
 <!--            <class name="AutomationTest.InstructorLogoutTestCases"/>-->
           <!--  <class name="AutomationTest.ProfessionalsTestCase"></class>
            <class name="AutomationTest.ProfessionalsStatusTestCases"></class>-->
-
-
-
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

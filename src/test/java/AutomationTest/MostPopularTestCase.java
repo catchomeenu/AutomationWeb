@@ -8,8 +8,7 @@ import org.testng.asserts.SoftAssert;
 
 import static Automation.pageobjects.StudentDashBoardPage.clickHomeLink;
 
-public class MostPopularTestCase extends MostPopularLinkPage
-{
+public class MostPopularTestCase extends MostPopularLinkPage {
 
     @BeforeSuite
     public static void lauchApplication() {
@@ -32,12 +31,13 @@ public class MostPopularTestCase extends MostPopularLinkPage
         System.out.println("Most Popular Text presence as expected");
     }
 
-    @Test(priority=2,enabled = false)
-    public static void clickhome(){
-        click_home();
-        System.out.println("Navigated back to Home Page");
 
-    }
+   @Test(priority=2,enabled = false)
+   public static void clickhome(){
+      click_home();
+     System.out.println("Navigated back to Home Page");
+   }
+
 
 }
 

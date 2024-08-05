@@ -276,7 +276,7 @@ public static By instructorLoginText = By.xpath("//div[@class='instructorhomepag
     }
 
     //Validate News link verification
-    public static boolean validateNewsText() {
+    public static boolean                                                                                             validateNewsText() {
         boolean result = false;
         try {
 
