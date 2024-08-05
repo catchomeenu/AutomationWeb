@@ -15,9 +15,12 @@
 <!--            <class name="AutomationTest.InstructorLogoutTestCases"/>-->
             <class name="AutomationTest.ProfessionalsTestCase"></class>
            <class name="AutomationTest.ProfessionalsStatusTestCases"></class>
+            <class name="AutomationTest.ProfessionalsSlickSlideTestcases"></class>
 
 
-            ProfessionalsStatusTestCases
+
+
+
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
