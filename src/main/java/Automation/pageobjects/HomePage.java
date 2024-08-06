@@ -441,6 +441,7 @@ public static By instructorLoginText = By.xpath("//div[@class='instructorhomepag
             System.out.println("clicked on For Instructors link");
         } catch (Exception e) {
             // TODO Auto-generated catch block
+            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
