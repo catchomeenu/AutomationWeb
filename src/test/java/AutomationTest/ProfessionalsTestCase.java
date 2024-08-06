@@ -8,6 +8,7 @@ import org.testng.asserts.SoftAssert;
 
 public class ProfessionalsTestCase extends Professionals {
 
+
     @BeforeSuite
     public static void lauchApplication() {
         launchBrowser("Chrome");
