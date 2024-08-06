@@ -1,8 +1,6 @@
 package AutomationTest;
 
 import Automation.pageobjects.HomePage;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 

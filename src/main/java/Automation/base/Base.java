@@ -1,9 +1,14 @@
 package Automation.base;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.ITestContext;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -15,43 +20,53 @@ public class Base {
     // driver should be visible for all the classes in the project
     public static WebDriver driver;
 
+    @BeforeSuite
+    @Parameters({"Browser"})
+    public void beforeSuite(@Optional("Chrome") String browser) {
+        String path = System.getProperty("user.dir");
+        System.setProperty("webdriver.chrome.driver", path + "/src/main/resources/chromedriver");
+        launchBrowser(browser);
+        implicitWait(30);
+    }
+
+    @AfterSuite
+    public void tearDownPreRequisites(ITestContext context) {
+        System.out.println("Test Suite Execution Complete");
+        driver.quit();
+    }
+
     //reusable method to launch browser
-    public static void launchBrowser(String browser)
-    {
-        if(browser.equals("Chrome"))
-        {
+    public static void launchBrowser(String browser) {
+        if (browser.equals("Chrome")) {
             WebDriverManager.chromedriver().setup();
-            driver=new ChromeDriver();
-        }
-        else if(browser.equals("Edge"))
-        {
+            driver = new ChromeDriver();
+        } else if (browser.equals("Edge")) {
             WebDriverManager.edgedriver().setup();
-            driver=new EdgeDriver();
+            driver = new EdgeDriver();
         }
         driver.manage().window().maximize();
     }
+
     //reusable method to launch application
-    public static void launchApp(String url)
-    {
+    public static void launchApp(String url) {
         driver.get(url);
     }
+
     //reusable method for implicit wait
-    public static void implicitWait(long seconds)
-    {
+    public static void implicitWait(long seconds) {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
     }
     //reusable method to close application
 
-    public static void closeChildWindow()
-    {
-        Set<String>windowids=driver.getWindowHandles();// store 2 window id's
+    public static void closeChildWindow() {
+        Set<String> windowids = driver.getWindowHandles();// store 2 window id's
 
         //Approach1 - using List collection
 
         List<String> windowidslist = new ArrayList<String>(windowids);
 
-        String parentwindowid=windowidslist.get(0);
-        String childwindowid=windowidslist.get(1);
+        String parentwindowid = windowidslist.get(0);
+        String childwindowid = windowidslist.get(1);
 
         //switch to child window
         driver.switchTo().window(childwindowid);
@@ -70,10 +85,7 @@ public class Base {
     }
 
 
-
-    public static void closeApp()
-    {
+    public static void closeApp() {
         driver.close();
-
     }
 }

@@ -1,12 +1,9 @@
 package AutomationTest;
 
 import Automation.pageobjects.Professionals;
-
-import Automation.pageobjects.Professionals;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
 
 
 public class ProfessionalsTestCase extends Professionals {
@@ -17,9 +14,9 @@ public class ProfessionalsTestCase extends Professionals {
         launchApp("https://devnj.infyni.com/");
         implicitWait(30);
     }
+
     @Test(priority = 1)
-    public  void Courses()
-    {
+    public void Courses() {
         Home();
         System.out.println("Navigated to 'Home' link");
         ProfessionalCourse();
