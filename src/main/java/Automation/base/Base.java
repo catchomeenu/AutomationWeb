@@ -20,7 +20,7 @@ public class Base {
     // driver should be visible for all the classes in the project
     public static WebDriver driver;
 
-    @BeforeSuite
+    @BeforeSuite(alwaysRun = true)
     @Parameters({"Browser"})
     public void beforeSuite(@Optional("Chrome") String browser) {
         String path = System.getProperty("user.dir");
@@ -29,7 +29,7 @@ public class Base {
         implicitWait(30);
     }
 
-    @AfterSuite
+    @AfterSuite(alwaysRun = true)
     public void tearDownPreRequisites(ITestContext context) {
         System.out.println("Test Suite Execution Complete");
         driver.quit();
