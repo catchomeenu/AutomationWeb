@@ -3,7 +3,7 @@
 <suite name="Suite">
     <test thread-count="5" name="Test">
         <classes>
-            <class name="AutomationTest.MostPopularTestCase" />
+            <class name="AutomationTest.MostPopularTestCase"/>
             <!-- <class name="AutomationTest.CoursesTestCase" /> -->
             <!-- <class name="AutomationTest.ClickImageTestCase"/> -->
             <!-- <class name="AutomationTest.FooterTestCases"/> -->
@@ -14,15 +14,15 @@
             <!-- <class name="AutomationTest.InstructorDashBoardPageTestCases"/> -->
             <!-- <class name="AutomationTest.InstructorLogoutTestCases"/> -->
             <!-- <class name="AutomationTest.MostRecentPageTestCase"/> -->
-            <!-  <class name="AutomationTest.FilterModuleTestCase"/> -->
+            <!--  <class name="AutomationTest.FilterModuleTestCase"/> -->
             <!-- <class name="AutomationTest.ProfessionalsTestCase"/> -->
             <!-- <class name="AutomationTest.ProfessionalsStatusTestCases" /> -->
-            <class name="AutomationTest.ProfessionalCourses_TestCase" />
+            <class name="AutomationTest.ProfessionalCourses_TestCase"/>
             <!-- <class name="AutomationTest.InstructorLoginTestCases" /> -->
             <!-- <class name="AutomationTest.InstructorDashBoardPageTestCases" /> -->
             <!-- <class name="AutomationTest.InstructorLogoutTestCases" /> -->
             <!-- <class name="AutomationTest.ProfessionalsTestCase" /> -->
-           <class name="AutomationTest.ProfessionalsStatusTestCases" />-->
+            <class name="AutomationTest.ProfessionalsStatusTestCases"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
