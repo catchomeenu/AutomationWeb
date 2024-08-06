@@ -1,6 +1,7 @@
 package AutomationTest;
 
 import Automation.pageobjects.CourseHomePageObjects;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -45,8 +46,13 @@ public class CourseHomePageTestCases extends CourseHomePageObjects {
         System.out.println("'Test Monthly Course' text presence verified");
         // using soft assert
         sa.assertAll();
-
-
     }
+  @AfterSuite
+    public static void closeApplication () {
+
+        closeApp();
+  }
+
 }
+
 
