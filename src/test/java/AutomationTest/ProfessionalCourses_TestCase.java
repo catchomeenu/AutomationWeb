@@ -15,7 +15,7 @@ public class ProfessionalCourses_TestCase extends ProfessionalCourses {
         ClickOnWebElement(driver);
     }
 
-    @Test(testName = "Validate Test Cases")
+    @Test(testName = "Validate Test Cases For Professionals")
     public void MostRecentLinkDisplayed() throws InterruptedException {
         System.out.println("Validate Most Recent link Displayed");
         ValidatePageOpens(driver);
