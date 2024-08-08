@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class MostRecentPageTestCase extends MostRecentPage {
     @BeforeTest
-    public void setUpPreRequisites(ITestContext context) throws InterruptedException {
+    public void setUpPreRequisites(ITestContext context) {
         System.out.println("Before Test Set up");
         launchApp("https://devnj.infyni.com/");
         clickOnWebElement(driver, mostRecentLink);
@@ -29,10 +29,11 @@ public class MostRecentPageTestCase extends MostRecentPage {
 
 
     @AfterTest
-    public void tearDown(ITestContext context) throws InterruptedException {
+    public void tearDown(ITestContext context) {
         System.out.println("After Test Set up");
         // Navigate back to home page - so that next test can start from there
         clickOnWebElement(driver, homePageLink);
+
     }
 
 }

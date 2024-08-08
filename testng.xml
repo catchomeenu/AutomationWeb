@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+    <parameter name="Browser" value="Chrome"/>
     <test thread-count="5" name="Test">
         <classes>
-            <class name="AutomationTest.MostPopularTestCase"/>
+            <!-- <class name="AutomationTest.MostPopularTestCase"/>-->
             <!-- <class name="AutomationTest.CoursesTestCase" /> -->
             <!-- <class name="AutomationTest.ClickImageTestCase"/> -->
             <!-- <class name="AutomationTest.FooterTestCases"/> -->
@@ -14,15 +15,16 @@
             <!-- <class name="AutomationTest.InstructorDashBoardPageTestCases"/> -->
             <!-- <class name="AutomationTest.InstructorLogoutTestCases"/> -->
             <!-- <class name="AutomationTest.MostRecentPageTestCase"/> -->
-            <!--  <class name="AutomationTest.FilterModuleTestCase"/> -->
+            <!-- <class name="AutomationTest.FilterModuleTestCase"/> -->
             <!-- <class name="AutomationTest.ProfessionalsTestCase"/> -->
             <!-- <class name="AutomationTest.ProfessionalsStatusTestCases" /> -->
-            <class name="AutomationTest.ProfessionalCourses_TestCase"/>
+            <!-- class name="AutomationTest.ProfessionalCourses_TestCase"/> -->
             <!-- <class name="AutomationTest.InstructorLoginTestCases" /> -->
             <!-- <class name="AutomationTest.InstructorDashBoardPageTestCases" /> -->
             <!-- <class name="AutomationTest.InstructorLogoutTestCases" /> -->
             <!-- <class name="AutomationTest.ProfessionalsTestCase" /> -->
-            <class name="AutomationTest.ProfessionalsStatusTestCases"/>
+            <!-- <class name="AutomationTest.ProfessionalsStatusTestCases"/>-->
+            <class name="AutomationTest.FilterModuleTestCase"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
