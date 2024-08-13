@@ -20,20 +20,6 @@ public class Base {
     // driver should be visible for all the classes in the project
     public static WebDriver driver;
 
-    @BeforeSuite
-    @Parameters({"Browser"})
-    public void beforeSuite(@Optional("Chrome") String browser) {
-        String path = System.getProperty("user.dir");
-        System.setProperty("webdriver.chrome.driver", path + "/src/main/resources/chromedriver");
-        launchBrowser(browser);
-        implicitWait(30);
-    }
-
-    @AfterSuite
-    public void tearDownPreRequisites(ITestContext context) {
-        System.out.println("Test Suite Execution Complete");
-        driver.quit();
-    }
 
     //reusable method to launch browser
     public static void launchBrowser(String browser) {

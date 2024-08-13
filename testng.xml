@@ -3,9 +3,15 @@
 <suite name="Suite">
     <test thread-count="5" name="Test">
         <classes>
-            <class name="AutomationTest.MostPopularTestCase"></class>
+
+
+            <class name="AutomationTest.KidsTestCase"></class>
+          <!-- <class name="AutomationTest.KidsCoursesTestCase"></class>-->
+           <class name="AutomationTest.KidsclickImageTestcase"></class>
+
+          <!--  <class name="AutomationTest.MostPopularTestCase"></class>-->
 <!--            <class name="AutomationTest.CoursesTestCase"></class>-->
-            <class name="AutomationTest.ClickImageTestCase"></class>
+            <!--<class name="AutomationTest.ClickImageTestCase"></class>-->
 
 
            <!-- <class name="AutomationTest.FooterTestCases"/>-->
