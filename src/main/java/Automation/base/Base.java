@@ -4,11 +4,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.testng.ITestContext;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -19,21 +14,6 @@ import java.util.Set;
 public class Base {
     // driver should be visible for all the classes in the project
     public static WebDriver driver;
-
-    @BeforeSuite(alwaysRun = true)
-    @Parameters({"Browser"})
-    public void beforeSuite(@Optional("Chrome") String browser) {
-        String path = System.getProperty("user.dir");
-        System.setProperty("webdriver.chrome.driver", path + "/src/main/resources/chromedriver");
-        launchBrowser(browser);
-        implicitWait(30);
-    }
-
-    @AfterSuite(alwaysRun = true)
-    public void tearDownPreRequisites(ITestContext context) {
-        System.out.println("Test Suite Execution Complete");
-        driver.quit();
-    }
 
     //reusable method to launch browser
     public static void launchBrowser(String browser) {
@@ -87,5 +67,9 @@ public class Base {
 
     public static void closeApp() {
         driver.close();
+    }
+
+    public static void quitDriver() {
+        driver.quit();
     }
 }

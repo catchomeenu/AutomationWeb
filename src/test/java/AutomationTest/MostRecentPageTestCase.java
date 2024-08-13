@@ -2,11 +2,24 @@ package AutomationTest;
 
 import Automation.pageobjects.MostRecentPage;
 import org.testng.ITestContext;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class MostRecentPageTestCase extends MostRecentPage {
+    @BeforeSuite(alwaysRun = true)
+    @Parameters({"Browser"})
+    public void beforeSuite(@Optional("Chrome") String browser) {
+        String path = System.getProperty("user.dir");
+        System.setProperty("webdriver.chrome.driver", path + "/src/main/resources/chromedriver");
+        launchBrowser(browser);
+        implicitWait(30);
+    }
+
+    @AfterSuite(alwaysRun = true)
+    public void tearDownPreRequisites(ITestContext context) {
+        System.out.println("Test Suite Execution Complete");
+        quitDriver();
+    }
+
     @BeforeTest
     public void setUpPreRequisites(ITestContext context) {
         System.out.println("Before Test Set up");
