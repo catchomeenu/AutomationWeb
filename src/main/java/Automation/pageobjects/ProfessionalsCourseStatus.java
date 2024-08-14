@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 public class ProfessionalsCourseStatus extends Base {
 
 
+
     public static By Professionals=By.xpath("//span[text()='Professionals']");
     public static By CourseStatus=By.xpath("//p[text()='Course Status']");
     public static By Click_OpenEnrolment=By.xpath("//label[text()='Enrollment Open']");

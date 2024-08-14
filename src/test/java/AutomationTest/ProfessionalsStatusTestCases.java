@@ -6,6 +6,7 @@ import org.testng.asserts.SoftAssert;
 
 public class ProfessionalsStatusTestCases extends ProfessionalsCourseStatus {
 
+
     @Test(priority = 2)
     public  void Courses()
     {
