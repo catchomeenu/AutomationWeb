@@ -26,7 +26,7 @@ public class FilterModuleTestCase extends FilterModulePage {
     public void setUpPreRequisites() {
         System.out.println("Before Test Set up");
         launchApp("https://devnj.infyni.com/");
-        clickOnWebElement(driver, mostRecentLink);
+        //clickOnWebElement(driver, mostRecentLink);
     }
 
     @Test(testName = "Validate Test Cases For Filter Module Enrollment Open")
@@ -42,7 +42,6 @@ public class FilterModuleTestCase extends FilterModulePage {
         ValidateCourseTitle();
         ValidateCourseInformation();
         ValidateAboutTheCourse();
-
     }
 
     @AfterTest

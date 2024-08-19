@@ -1,37 +1,33 @@
 package AutomationTest;
 
 import Automation.pageobjects.MostRecentPage;
-import org.testng.ITestContext;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
 public class MostRecentPageTestCase extends MostRecentPage {
-    @BeforeSuite(alwaysRun = true)
-    @Parameters({"Browser"})
-    public void beforeSuite(@Optional("Chrome") String browser) {
-        String path = System.getProperty("user.dir");
-        System.setProperty("webdriver.chrome.driver", path + "/src/main/resources/chromedriver");
-        launchBrowser(browser);
+
+    @BeforeSuite
+    public static void lauchApplication() {
+        launchBrowser("Chrome");
+        launchApp("https://devnj.infyni.com/");
         implicitWait(30);
     }
 
-    @AfterSuite(alwaysRun = true)
-    public void tearDownPreRequisites(ITestContext context) {
-        System.out.println("Test Suite Execution Complete");
+    @AfterSuite
+    public static void AfterSuite() {
         quitDriver();
     }
 
-    @BeforeTest
-    public void setUpPreRequisites(ITestContext context) {
-        System.out.println("Before Test Set up");
-        launchApp("https://devnj.infyni.com/");
-        clickOnWebElement(driver, mostRecentLink);
+    @Test(testName = "Validate Home,Most Recent Link & Most Recent Header")
+    public static void MostRecentPage() {
+        Clickon_Homepage();
+        System.out.println("Navigated To Home Page");
+        Clickon_MostRecentTab();
+        System.out.println("Navigated To Most Recent Header page");
+        validatePageIsOpen();
     }
 
-    @Test(testName = "Validate Most Recent Page is accessible")
-    public void validatePageIsLaunching() throws InterruptedException {
-        System.out.println("Test Page");
-        validatePageIsOpen(driver);
-    }
 
     @Test(testName = "Validate Professional & Kids Tab Items")
     public void validateProfessionalTabItems() {
@@ -41,12 +37,6 @@ public class MostRecentPageTestCase extends MostRecentPage {
     }
 
 
-    @AfterTest
-    public void tearDown(ITestContext context) {
-        System.out.println("After Test Set up");
-        // Navigate back to home page - so that next test can start from there
-        clickOnWebElement(driver, homePageLink);
-
-    }
-
 }
+
+

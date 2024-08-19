@@ -55,7 +55,7 @@ public class Base {
     }
 
     public static void switchToChildWindow() {
-        Set<String> windowids = driver.getWindowHandles();// store 2 window id's
+        Set<String> windowids = driver.getWindowHandles();  // store 2 window id's
         List<String> windowidslist = new ArrayList<String>(windowids);
 
         String parentwindowid = windowidslist.get(0);
@@ -63,7 +63,6 @@ public class Base {
         // switch to child window
         driver.switchTo().window(childwindowid);
     }
-
 
     public static void closeApp() {
         driver.close();

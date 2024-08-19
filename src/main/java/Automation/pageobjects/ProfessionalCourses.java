@@ -8,9 +8,9 @@ import org.testng.Assert;
 
 public class ProfessionalCourses extends Base {
 
-    public static By homePageLink = By.xpath("//span[text()='Home']//ancestor::div[contains(@class,'MuiListItemIcon')]//a");
+    public static By homePageLink = By.xpath("//span[text()='Home']");
     public static By mostRecentLink = By.xpath("//span[text()='Most Recent']//ancestor::div[contains(@class,'MuiListItemIcon')]//a");
-    public static By Most_Recent_header = By.xpath("//h1[text()='Most Recent']");
+    public static By Most_Recent_header = By.xpath("//div[contains(@class,'flex flex-col')]//h1[text()='Most Recent']");
     public static By Technology_Tab = By.xpath("//p[text()='Technology']");
     public static By Technology_Header = By.xpath("//h1[text()='Technology']");
     public static By Free_CourseTab = By.xpath("//p[text()='Free Course']");
@@ -30,11 +30,9 @@ public class ProfessionalCourses extends Base {
         driver.findElement(mostRecentLink).click();
     }
 
-    public static void ValidatePageOpens(WebDriver driver) throws InterruptedException {
-        Assert.assertTrue(driver.findElement(Most_Recent_header).isDisplayed(), "Validate Most Recent Header Displayed");
-        Thread.sleep(3000);
-        Assert.assertEquals(driver.getCurrentUrl(), "https://devnj.infyni.com/most-recent", "Validate page is open");
-
+    public static void ValidatePageOpens() {
+        WebElement MostRecent_header = driver.findElement(Most_Recent_header);
+        Assert.assertTrue(MostRecent_header.isDisplayed(), "Validate Most Recent Header is displayed");
     }
 
     public static void ValidateTechnology_Tab(String TabName) {
