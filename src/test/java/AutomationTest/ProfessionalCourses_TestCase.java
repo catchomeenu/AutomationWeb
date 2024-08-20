@@ -1,24 +1,29 @@
 package AutomationTest;
 
 import Automation.pageobjects.ProfessionalCourses;
-import org.testng.ITestContext;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class ProfessionalCourses_TestCase extends ProfessionalCourses {
 
-    @BeforeTest
-    public void setUpPreRequisites(ITestContext context) {
-        System.out.println("Before Test Set up");
+    @BeforeSuite
+    public static void launchApplication() {
+        launchBrowser("Chrome");
         launchApp("https://devnj.infyni.com/");
-        ClickOnWebElement(driver);
+        implicitWait(30);
+    }
+
+    @AfterSuite
+    public static void closeBrowser() {
+        quitDriver();
     }
 
     @Test(testName = "Validate Test Cases For Professionals")
-    public void MostRecentLinkDisplayed() throws InterruptedException {
+    public void MostRecentLinkDisplayed() {
         System.out.println("Validate Most Recent link Displayed");
-        ValidatePageOpens(driver);
+        ClickOnWebElement(driver);
+        ValidatePageOpens();
         ValidateTechnology_Tab("Technology");
         ValidateTechnology_Header("Technology");
         ValidateFree_Course_Tab("Free Course");
@@ -27,13 +32,6 @@ public class ProfessionalCourses_TestCase extends ProfessionalCourses {
         ValidateProgramming_Header("Programming");
         ValidateITCertification_Tab("IT Certification");
         ValidateITCertification_Header("IT Certification");
-    }
-
-    @AfterTest
-    public void tearDown(ITestContext context) throws InterruptedException {
-
-        System.out.println("After Test Set up");
-        ClickOnHome(driver);
     }
 }
 
