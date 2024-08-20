@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" parallel="false">
     <parameter name="Browser" value="Chrome"/>
-    <test thread-count="5" name="Test">
+    <test thread-count="1" name="Test">
         <classes>
-<<<<<<< Updated upstream
-            <!-- <class name="AutomationTest.MostPopularTestCase"/>-->
+            <!--  <class name="AutomationTest.MostRecentPageTestCase"/>-->
+            <!--  <class name="AutomationTest.ProfessionalCourses_TestCase"/>-->
+            <!--  <class name="AutomationTest.FilterModuleTestCase"/>-->
+            <class name="AutomationTest.HeaderCoursesTest"/>
+            <!-- <class name="AutomationTest.SatPreparation_TestCase"/> -->
+            <!-- <class name="AutomationTest.MostPopularTestCase"/> -->
             <!-- <class name="AutomationTest.CoursesTestCase" /> -->
             <!-- <class name="AutomationTest.ClickImageTestCase"/> -->
             <!-- <class name="AutomationTest.FooterTestCases"/> -->
@@ -25,32 +29,23 @@
             <!-- <class name="AutomationTest.InstructorLogoutTestCases" /> -->
             <!-- <class name="AutomationTest.ProfessionalsTestCase" /> -->
             <!-- <class name="AutomationTest.ProfessionalsStatusTestCases"/>-->
-            <class name="AutomationTest.FilterModuleTestCase"/>
-=======
-            <class name="AutomationTest.HeaderLinkTestCase"></class>
-
-           <!-- <class name="AutomationTest.KidsTestCase"></class>
-           <class name="AutomationTest.KidsCoursesTestCase"></class>-->
-           <!--<class name="AutomationTest.KidsclickImageTestcase"></class>-->
-
-          <!--  <class name="AutomationTest.MostPopularTestCase"></class>-->
-<!--            <class name="AutomationTest.CoursesTestCase"></class>-->
-            <!--<class name="AutomationTest.ClickImageTestCase"></class>-->
-
-
-           <!-- <class name="AutomationTest.FooterTestCases"/>-->
-
-            <!--<class name="AutomationTest.HomePageTestCases"/>
-           <class name="AutomationTest.StudentLoginPageTestCases"/>-->
-
-          <!-- <class name="AutomationTest.StudentDashboardPageTestCases"/>-->
-
-<!--           <class name="AutomationTest.InstructorLoginTestCases"/>-->
-<!--            <class name="AutomationTest.InstructorDashBoardPageTestCases"/>-->
-<!--            <class name="AutomationTest.InstructorLogoutTestCases"/>-->
-          <!--  <class name="AutomationTest.ProfessionalsTestCase"></class>
-           <class name="AutomationTest.ProfessionalsStatusTestCases"></class>-->
->>>>>>> Stashed changes
+            <!-- <class name="AutomationTest.FilterModuleTestCase"/>
+            <!-- <class name="AutomationTest.HeaderLinkTestCase"/>
+            <!-- <class name="AutomationTest.KidsTestCase"></class>
+            <!-- <class name="AutomationTest.KidsCoursesTestCase"></class>-->
+            <!-- <class name="AutomationTest.KidsclickImageTestcase"></class>-->
+            <!-- <class name="AutomationTest.MostPopularTestCase"></class>-->
+            <!-- <class name="AutomationTest.CoursesTestCase"></class>-->
+            <!-- <class name="AutomationTest.ClickImageTestCase"></class>-->
+            <!-- <class name="AutomationTest.FooterTestCases"/>-->
+            <!-- <class name="AutomationTest.HomePageTestCases"/>
+            <!-- <class name="AutomationTest.StudentLoginPageTestCases"/>-->
+            <!-- <class name="AutomationTest.StudentDashboardPageTestCases"/>-->
+            <!-- <class name="AutomationTest.InstructorLoginTestCases"/> -->
+            <!-- <class name="AutomationTest.InstructorDashBoardPageTestCases"/> -->
+            <!-- <class name="AutomationTest.InstructorLogoutTestCases"/> -->
+            <!-- <class name="AutomationTest.ProfessionalsTestCase"/> -->
+            <!-- <class name="AutomationTest.ProfessionalsStatusTestCases"/> -->
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
