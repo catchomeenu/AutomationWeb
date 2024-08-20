@@ -5,7 +5,6 @@ import org.testng.ITestContext;
 import org.testng.annotations.*;
 
 import static Automation.pageobjects.ProfessionalCourses.ClickOnHome;
-import static Automation.pageobjects.ProfessionalCourses.ClickOnWebElement;
 
 
 public class HeaderCourses_TestCase extends Programming_Module {
@@ -29,40 +28,63 @@ public class HeaderCourses_TestCase extends Programming_Module {
     public void setUpPreRequisites(ITestContext context) {
         System.out.println("Before Test Set up");
         launchApp("https://devnj.infyni.com/");
-        ClickOnWebElement(driver);
-    }
-
-    @Test(testName = "Validate Test Cases For Programming")
-    public void ProgrammingTestCases() {
-
-        System.out.println("Test cases for Programming");
-        ValidateClickOnHome(driver);
-        ValidateClickOnProgrammeCourse();
-        ValidateProgrammeResult_Header();
-        ValidateVirtualSessions_Course(driver);
-        ValidateVirtualSessionsCourse_Title();
-        ValidateCourse_Information();
-        ValidateAboutTheCourse();
-    }
-
-    @Test(testName = "Validate SatPreparation Test Cases")
-    public static void validateSatPreparation() {
-        ValidateClickOnHome(driver);
-        System.out.println("Navigated To Home Page");
-        ClickOn_SatPreparationCourselink(driver);
-        Validate_SatPreparationResultsHeader();
-        ClickOn_SatPreparationLink(driver);
-        Validate_SatPreparationTitle();
-        Validate_Course_Information();
-        Validate_AboutTheCourse();
+        ClickOnHome(driver);
     }
 
     @AfterTest
     public void tearDown(ITestContext context) {
-
         System.out.println("After Test Set up");
         // Navigate back to home page - so that next test can start from there
         ClickOnHome(driver);
     }
 
+
+    @Test(testName = "Validate Test Cases For Programming", priority = 1)
+    public void ProgrammingTestCases() {
+        ValidateClickOnHome(driver);
+        ClickOn_CourseLinkOnTop("Programming", driver);
+        Validate_CourseResults_Header("Programming");
+        ClickOnFirstCourseLinkAndValidate();
+        Validate_CourseTitleDisplayed();
+    }
+
+    @Test(testName = "Validate SatPreparation Test Cases", priority = 2)
+    public static void validateSatPreparation() {
+        ValidateClickOnHome(driver);
+        ClickOn_CourseLinkOnTop("SAT Preparation", driver);
+        Validate_CourseResults_Header("sat preparation");
+        ClickOnFirstCourseLinkAndValidate();
+        Validate_CourseTitleDisplayed();
+//        ClickOn_SatPreparationLink(driver);
+//        Validate_SatPreparationTitle();
+//        Validate_Course_Information();
+//        Validate_AboutTheCourse();
+    }
+
+    @Test(testName = "Personal Development Course Test Case", priority = 3)
+    public void PersonalDevelopmentCourseCheck() {
+        ValidateClickOnHome(driver);
+        ClickOn_CourseLinkOnTop("Personal Development", driver);
+        Validate_CourseResults_Header("Personal Development");
+        ClickOnFirstCourseLinkAndValidate();
+        Validate_CourseTitleDisplayed();
+    }
+
+    @Test(testName = "ComputerScience Course Test Cases", priority = 4)
+    public void ComputerScienceCourseCheck() {
+        ValidateClickOnHome(driver);
+        ClickOn_CourseLinkOnTop("ComputerScience", driver);
+        Validate_CourseResults_Header("computerscience");
+        ClickOnFirstCourseLinkAndValidate();
+        Validate_CourseTitleDisplayed();
+    }
+
+    @Test(testName = "Natural Language Processing Test Cases", priority = 5)
+    public void NaturalLanguageProcess() {
+        ValidateClickOnHome(driver);
+        ClickOn_CourseLinkOnTop("Natural Language Processing", driver);
+        Validate_CourseResults_Header("natural language processing");
+        ClickOnFirstCourseLinkAndValidate();
+        Validate_CourseTitleDisplayed();
+    }
 }

@@ -9,134 +9,124 @@ import org.testng.Assert;
 public class Programming_Module extends Base {
 
     public static By homePageLink = By.xpath("//span[text()='Home']");
-    public static By SatPreparation_ResultsHeader = By.xpath("//h1[text()='7 results for \"sat preparation\"']");
-    public static By SatPreparation_CourseLink = By.xpath("//a[@href='/courses/sat-preparation']");
-    public static By NextSwipe_button = By.xpath("//div[contains(@class,'swiper-button-next')]");
-    public static By SatPreparation_Title = By.xpath("//p[text()='Self Paced']//following-sibling::p[text()='SAT Preparation']");
-    public static By SatPreparation_Link = By.xpath("//p[text()='SAT Preparation']");
-
-    public static By SatPreparation_CourseLinkParent = By.xpath("//a[@href='/courses/sat-preparation']/parent::div");
-
     public static By nextSwipeButton = By.xpath("//div[contains(@class,'swiper-button-next')]");
-
-    public static By Programme_CourseLink = By.xpath("//a[@href='/courses/programmingprogramming']");
-
-    public static By Programme_CourseLink_Parent = By.xpath("//a[@href='/courses/programmingprogramming']/parent::div");
-
-    public static By Programme_Results_Header = By.xpath("//h1[text()='122 results for \"Programming\"']");
-
-    public static By VirtualSessions_CourseLink = By.xpath("//p[text()='Virtual Sessions Course']//parent::a");
-
-    public static By VirtualSessionsCourse_Title = By.xpath("//p[text()='Technology 1']//following-sibling::p[text()='Virtual Sessions Course']");
-
     public static By Course_Information = By.xpath("//div[contains(@class,'xl:flex')]//h2[text()='Course Information']");
-
     public static By AboutTheCourse = By.xpath("//div[contains(@class,'xl:flex')]//h2[text()='About the Course']");
+    public static By PreviousLinkButton = By.xpath("//div[contains(@class,'swiper-button-prev')]");
+    public static By courseTypeHeader = By.xpath("//div[contains(@class,'courseDetails_abCourse__aT_MD')]//p[not(contains(@class,'lg:text'))]");
+    public static By courseTitleHeader = By.xpath("//div[contains(@class,'courseDetails_abCourse__aT_MD')]//p[contains(@class,'lg:text')]");
 
+    public static By getResults_Headers(String courseName) {
+        return By.xpath("//h1[contains(text(),'results for \"" + courseName + "\"')]");
+    }
 
     public static void ValidateClickOnHome(WebDriver driver) {
         driver.findElement(homePageLink).click();
     }
 
-    public static void ValidateClickOnProgrammeCourse() {
-        WebElement Pgmcourselink = driver.findElement(Programme_CourseLink);
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        Assert.assertTrue(Pgmcourselink.isDisplayed(), "Programming CourseLink Navigated to Results Header.");
-
-        ClickOnTabLink(driver, Programme_CourseLink_Parent, nextSwipeButton);
-        Pgmcourselink.click();
-    }
-
-    public static void ValidateProgrammeResult_Header() {
-        WebElement Pgmresult1 = driver.findElement(Programme_Results_Header);
-        Assert.assertTrue(Pgmresult1.isDisplayed(), "117 results for Programming Header is Display.");
-    }
-
-    public static void ValidateVirtualSessions_Course(WebDriver driver) {
-        driver.findElement(VirtualSessions_CourseLink).click();
-    }
-
-    public static void ValidateVirtualSessionsCourse_Title() {
-        WebElement Virtualsession_title = driver.findElement(VirtualSessionsCourse_Title);
-        Assert.assertTrue((Virtualsession_title.isDisplayed()), "Virtual Sessions Course Title is Display.");
+    public static void ClickOn_CourseLinkOnTop(String courseName, WebDriver driver) {
+        // move to left most link in header
+        WebElement previousLinkButton = driver.findElement(PreviousLinkButton);
+        do {
+            if (previousLinkButton.getAttribute("class").toLowerCase().contains("swiper-button-disabled")) {
+                break;
+            } else {
+                previousLinkButton.click();
+            }
+        } while (!previousLinkButton.getAttribute("class").toLowerCase().contains("swiper-button-disabled"));
+        // Wait for 2 seconds
+        waitMethod(2000);
+        // Move to Right And Click on Expected Link
+        By parentLink = By.xpath("//p[text()='" + courseName + "']/ancestor::a[contains(@href,'/course')]//ancestor::div[contains(@class,'swiper-slide')]");
+        By CourseLink = By.xpath("//p[text()='" + courseName + "']/ancestor::a[contains(@href,'/course')]");
+        ClickOnTabLink(driver, parentLink, CourseLink);
 
     }
 
-    public static void ValidateCourse_Information() {
-        WebElement CourseInformation_Header = driver.findElement(Course_Information);
-        Assert.assertTrue(CourseInformation_Header.isDisplayed(), "Course Information Header is Display.");
-    }
-
-    public static void ValidateAboutTheCourse() {
-        WebElement AboutCourse_title = driver.findElement(AboutTheCourse);
-        Assert.assertTrue(AboutCourse_title.isDisplayed(), "About the Course is Display.");
-    }
-
-    public static void Validate_SatPreparationResultsHeader() {
-        WebElement SatPrepHeader = driver.findElement(SatPreparation_ResultsHeader);
-        Assert.assertTrue(SatPrepHeader.isDisplayed(), "7 Results For Sat preparation is Displayed.");
-    }
-
-    public static void ClickOn_SatPreparationLink(WebDriver driver) {
-        WebElement SatPrepLink = driver.findElement(SatPreparation_Link);
-        Assert.assertTrue(SatPrepLink.isDisplayed(), "Sat Preparation Link Navigated to Sat Preparation Title.");
-        SatPrepLink.click();
-    }
-
-    public static void Validate_SatPreparationTitle() {
-        WebElement SatPrep_Title = driver.findElement(SatPreparation_Title);
-        Assert.assertTrue(SatPrep_Title.isDisplayed(), "7 Results For Sat preparation is Displayed.");
-    }
-
-    public static void Validate_Course_Information() {
-        WebElement CourseInfoHeader = driver.findElement(Course_Information);
-        Assert.assertTrue(CourseInfoHeader.isDisplayed(), "Course Information is Displayed.");
-    }
-
-    public static void Validate_AboutTheCourse() {
-        WebElement AboutTheCourseHeader = driver.findElement(AboutTheCourse);
-        Assert.assertTrue(AboutTheCourseHeader.isDisplayed(), "About The Course Information is Displayed.");
-    }
-
-    public static void ClickOn_SatPreparationCourselink(WebDriver driver) {
-        WebElement SatCourseLink = driver.findElement(SatPreparation_CourseLink);
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        Assert.assertTrue(SatCourseLink.isDisplayed(), "Sat Preparation Navigated to Sat Preparation Results.");
-        ClickOnTabLink(driver, SatPreparation_CourseLinkParent, NextSwipe_button);
-        SatCourseLink.click();
-    }
-
-    public static void ClickOnTabLink(WebDriver driver, By satPreparationCourseLinkParent, By nextSwipeButton) {
+    public static void ClickOnTabLink(WebDriver driver, By parentLink, By CourseLink) {
         int counter = 100;
         while (counter > 0) {
-
-            WebElement parent = driver.findElement(satPreparationCourseLinkParent);
+            // Parent Check for Class to have Slide Next Property to get it visible
+            WebElement parent = driver.findElement(parentLink);
             String class_info = parent.getAttribute("class").toLowerCase();
             if (class_info.contains("swiper-slide-next")) {
+                // Click on the Link for Course
+                driver.findElement(CourseLink).click();
+                waitMethod(500);
                 break;
             }
+            // If Slide Next is not in property click on next button
             WebElement nextButton = driver.findElement(nextSwipeButton);
 
             if (nextButton.getAttribute("class").contains("swiper-button-disabled")) {
                 // Reached At end of list
+                // Click on the Link for Course
+                driver.findElement(CourseLink).click();
+                waitMethod(500);
                 break;
             } else {
                 nextButton.click();
             }
-            try {
-                Thread.sleep(500);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+            waitMethod(500);
             counter--;
+        }
+    }
+
+    // Validate Searched for Course
+    public static void Validate_CourseResults_Header(String courseName) {
+        By results_headers = getResults_Headers(courseName);
+        WebElement headerElement = driver.findElement(results_headers);
+        Assert.assertTrue(headerElement.isDisplayed(), "Course Results Header is Displayed.");
+        System.out.println(headerElement.getText());
+    }
+
+
+    public static void ClickOnFirstCourseLinkAndValidate() {
+        By firstLink = By.xpath("//div[contains(@class,'CourseData_four__qc_On') and contains(@class,'most-recent-card')]//a[contains(@href,'/course')]/p");
+        WebElement CourseLink = driver.findElement(firstLink);
+        Assert.assertTrue(CourseLink.isDisplayed(), "Course Link is Displayed.");
+        String text = CourseLink.getText();
+        CourseLink.click();
+        System.out.println(text);
+    }
+
+    public static void Validate_CourseTitleDisplayed() {
+        waitForElementToDisplayed(courseTitleHeader);
+        WebElement CourseTitle = driver.findElement(courseTitleHeader);
+        Assert.assertTrue(CourseTitle.isDisplayed(), "Course Title is Displayed.");
+        WebElement CourseHeaderName = driver.findElement(courseTypeHeader);
+        Assert.assertTrue(CourseHeaderName.isDisplayed(), "Course Header Name is Displayed.");
+        WebElement CourseInformation = driver.findElement(Course_Information);
+        Assert.assertTrue(CourseInformation.isDisplayed(), "Course Information is Displayed.");
+        WebElement About_The_Course = driver.findElement(AboutTheCourse);
+        Assert.assertTrue(About_The_Course.isDisplayed(), "About The Course Information is Displayed.");
+        // Print All Messages
+        System.out.println(CourseHeaderName.getText());
+        System.out.println(CourseTitle.getText());
+        System.out.println(CourseInformation.getText());
+        System.out.println(About_The_Course.getText());
+    }
+
+    private static void waitForElementToDisplayed(By by) {
+        WebElement element;
+        for (int i = 0; i < 10; i++) {
+            waitMethod(3000);
+            try {
+                element = driver.findElement(by);
+                if (element.isDisplayed()) {
+                    break;
+                }
+            } catch (Exception ex) {
+                System.out.println("Waiting For Course Title");
+            }
+        }
+    }
+
+    public static void waitMethod(int millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
     }
 
