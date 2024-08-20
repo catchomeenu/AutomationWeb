@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 import static Automation.pageobjects.ProfessionalCourses.ClickOnHome;
 
 
-public class HeaderCourses_TestCase extends Programming_Module {
+public class HeaderCoursesTest extends Programming_Module {
 
     @BeforeSuite(alwaysRun = true)
     @Parameters({"Browser"})
