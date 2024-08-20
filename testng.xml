@@ -4,7 +4,7 @@
     <parameter name="Browser" value="Chrome"/>
     <test thread-count="5" name="Test">
         <classes>
-<<<<<<< Updated upstream
+
             <!-- <class name="AutomationTest.MostPopularTestCase"/>-->
             <!-- <class name="AutomationTest.CoursesTestCase" /> -->
             <!-- <class name="AutomationTest.ClickImageTestCase"/> -->
@@ -25,8 +25,8 @@
             <!-- <class name="AutomationTest.InstructorLogoutTestCases" /> -->
             <!-- <class name="AutomationTest.ProfessionalsTestCase" /> -->
             <!-- <class name="AutomationTest.ProfessionalsStatusTestCases"/>-->
-            <class name="AutomationTest.FilterModuleTestCase"/>
-=======
+            <!--<class name="AutomationTest.FilterModuleTestCase"/>-->
+
             <class name="AutomationTest.HeaderLinkTestCase"></class>
 
            <!-- <class name="AutomationTest.KidsTestCase"></class>
@@ -50,7 +50,7 @@
 <!--            <class name="AutomationTest.InstructorLogoutTestCases"/>-->
           <!--  <class name="AutomationTest.ProfessionalsTestCase"></class>
            <class name="AutomationTest.ProfessionalsStatusTestCases"></class>-->
->>>>>>> Stashed changes
+
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
