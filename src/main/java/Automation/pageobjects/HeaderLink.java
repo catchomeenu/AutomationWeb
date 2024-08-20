@@ -1,6 +1,7 @@
 package Automation.pageobjects;
 import Automation.base.Base;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 public class HeaderLink extends Base {
@@ -24,8 +25,9 @@ public class HeaderLink extends Base {
     public static void click_LinkValues(String value) {
             try{
                 WebElement click_link = driver.findElement(By.xpath("//p[contains(text(),'" + value + "')]/ancestor::a"));
-                click_link.click();
-                System.out.println( value+"is clicked as expected");
+                JavascriptExecutor executor = (JavascriptExecutor)driver;
+                executor.executeScript("arguments[0].click();", click_link);
+                System.out.println( value+ "is clicked as expected");
             }catch(Exception e){
                 e.printStackTrace();
             }
@@ -45,11 +47,19 @@ public class HeaderLink extends Base {
 
     }
 
-    public static void click_Animationimage(){
-     driver.findElement(click_animationimg).click();
+    public static void click_linkImage(String value){
+        try{
+            WebElement verify_value = driver.findElement(By.xpath("//p[contains(text(),'" + value + "')]/ancestor::a"));
+             verify_value.click();
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
     }
 
-    public static boolean verify_Imageclick(String value) {
+    public static boolean verify_linkimage(String value) {
        boolean result=false;
         try{
             WebElement verify_value = driver.findElement(By.xpath("//p[contains(text(),'" + value + "')]/ancestor::a"));
@@ -84,11 +94,6 @@ public class HeaderLink extends Base {
         }
 
         return actualval;
-    }
-
-
-    public static void click_Modificationimage(){
-        driver.findElement(click_Modificationimg).click();
     }
 
 }
