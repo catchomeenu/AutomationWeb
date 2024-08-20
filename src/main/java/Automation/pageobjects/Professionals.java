@@ -6,12 +6,9 @@ import org.openqa.selenium.By;
 
 public class Professionals extends Base {
 
-
-
     public static By Professionals=By.xpath("//span[text()='Professionals']");
     public static By ProfessionalPage =By.xpath("//h1[text()='Professionals']");
     public static By home=By.xpath("//span[text()='Home']");
-
     public static void Home() {
         try {
             driver.findElement(home).click();

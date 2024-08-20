@@ -274,7 +274,7 @@ public class HomePage extends Base {
     }
 
     //Validate News link verification
-    public static boolean validateNewsText() {
+    public static boolean                                                                                             validateNewsText() {
         boolean result = false;
         try {
 

@@ -1,24 +1,33 @@
 package AutomationTest;
 
 import Automation.pageobjects.MostRecentPage;
-import org.testng.ITestContext;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class MostRecentPageTestCase extends MostRecentPage {
-    @BeforeTest
-    public void setUpPreRequisites(ITestContext context) throws InterruptedException {
-        System.out.println("Before Test Set up");
+
+    @BeforeSuite
+    public static void lauchApplication() {
+        launchBrowser("Chrome");
         launchApp("https://devnj.infyni.com/");
-        clickOnWebElement(driver, mostRecentLink);
+        implicitWait(30);
     }
 
-    @Test(testName = "Validate Most Recent Page is accessible")
-    public void validatePageIsLaunching() throws InterruptedException {
-        System.out.println("Test Page");
-        validatePageIsOpen(driver);
+    @AfterSuite
+    public static void AfterSuite() {
+        quitDriver();
     }
+
+    @Test(testName = "Validate Home,Most Recent Link & Most Recent Header")
+    public static void MostRecentPage() {
+        Clickon_Homepage();
+        System.out.println("Navigated To Home Page");
+        Clickon_MostRecentTab();
+        System.out.println("Navigated To Most Recent Header page");
+        validatePageIsOpen();
+    }
+
 
     @Test(testName = "Validate Professional & Kids Tab Items")
     public void validateProfessionalTabItems() {
@@ -28,11 +37,6 @@ public class MostRecentPageTestCase extends MostRecentPage {
     }
 
 
-    @AfterTest
-    public void tearDown(ITestContext context) throws InterruptedException {
-        System.out.println("After Test Set up");
-        // Navigate back to home page - so that next test can start from there
-        clickOnWebElement(driver, homePageLink);
-    }
-
 }
+
+
