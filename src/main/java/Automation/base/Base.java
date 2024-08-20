@@ -14,7 +14,6 @@ import java.util.Set;
 public class Base {
     // driver should be visible for all the classes in the project
     public static WebDriver driver;
-
     //reusable method to launch browser
     public static void launchBrowser(String browser)
     {
