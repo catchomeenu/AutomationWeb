@@ -4,11 +4,48 @@
     <parameter name="Browser" value="Chrome"/>
     <test thread-count="1" name="Test">
         <classes>
-            <!--            <class name="AutomationTest.MostRecentPageTestCase"/>-->
-            <!--            <class name="AutomationTest.ProfessionalCourses_TestCase"/>-->
-            <!--            <class name="AutomationTest.FilterModuleTestCase"/>-->
+            <!--  <class name="AutomationTest.MostRecentPageTestCase"/>-->
+            <!--  <class name="AutomationTest.ProfessionalCourses_TestCase"/>-->
+            <!--  <class name="AutomationTest.FilterModuleTestCase"/>-->
             <class name="AutomationTest.HeaderCoursesTest"/>
-            <!--            <class name="AutomationTest.SatPreparation_TestCase"/>-->
+            <!-- <class name="AutomationTest.SatPreparation_TestCase"/> -->
+            <!-- <class name="AutomationTest.MostPopularTestCase"/> -->
+            <!-- <class name="AutomationTest.CoursesTestCase" /> -->
+            <!-- <class name="AutomationTest.ClickImageTestCase"/> -->
+            <!-- <class name="AutomationTest.FooterTestCases"/> -->
+            <!-- <class name="AutomationTest.HomePageTestCases"/> -->
+            <!-- <class name="AutomationTest.StudentLoginPageTestCases"/> -->
+            <!-- <class name="AutomationTest.StudentDashboardPageTestCases"/> -->
+            <!-- <class name="AutomationTest.InstructorLoginTestCases"/> -->
+            <!-- <class name="AutomationTest.InstructorDashBoardPageTestCases"/> -->
+            <!-- <class name="AutomationTest.InstructorLogoutTestCases"/> -->
+            <!-- <class name="AutomationTest.MostRecentPageTestCase"/> -->
+            <!-- <class name="AutomationTest.FilterModuleTestCase"/> -->
+            <!-- <class name="AutomationTest.ProfessionalsTestCase"/> -->
+            <!-- <class name="AutomationTest.ProfessionalsStatusTestCases" /> -->
+            <!-- class name="AutomationTest.ProfessionalCourses_TestCase"/> -->
+            <!-- <class name="AutomationTest.InstructorLoginTestCases" /> -->
+            <!-- <class name="AutomationTest.InstructorDashBoardPageTestCases" /> -->
+            <!-- <class name="AutomationTest.InstructorLogoutTestCases" /> -->
+            <!-- <class name="AutomationTest.ProfessionalsTestCase" /> -->
+            <!-- <class name="AutomationTest.ProfessionalsStatusTestCases"/>-->
+            <!-- <class name="AutomationTest.FilterModuleTestCase"/>
+            <!-- <class name="AutomationTest.HeaderLinkTestCase"/>
+            <!-- <class name="AutomationTest.KidsTestCase"></class>
+            <!-- <class name="AutomationTest.KidsCoursesTestCase"></class>-->
+            <!-- <class name="AutomationTest.KidsclickImageTestcase"></class>-->
+            <!-- <class name="AutomationTest.MostPopularTestCase"></class>-->
+            <!-- <class name="AutomationTest.CoursesTestCase"></class>-->
+            <!-- <class name="AutomationTest.ClickImageTestCase"></class>-->
+            <!-- <class name="AutomationTest.FooterTestCases"/>-->
+            <!-- <class name="AutomationTest.HomePageTestCases"/>
+            <!-- <class name="AutomationTest.StudentLoginPageTestCases"/>-->
+            <!-- <class name="AutomationTest.StudentDashboardPageTestCases"/>-->
+            <!-- <class name="AutomationTest.InstructorLoginTestCases"/> -->
+            <!-- <class name="AutomationTest.InstructorDashBoardPageTestCases"/> -->
+            <!-- <class name="AutomationTest.InstructorLogoutTestCases"/> -->
+            <!-- <class name="AutomationTest.ProfessionalsTestCase"/> -->
+            <!-- <class name="AutomationTest.ProfessionalsStatusTestCases"/> -->
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
