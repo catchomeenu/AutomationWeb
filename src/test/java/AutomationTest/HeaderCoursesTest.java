@@ -55,10 +55,6 @@ public class HeaderCoursesTest extends Programming_Module {
         Validate_CourseResults_Header("sat preparation");
         ClickOnFirstCourseLinkAndValidate();
         Validate_CourseTitleDisplayed();
-//        ClickOn_SatPreparationLink(driver);
-//        Validate_SatPreparationTitle();
-//        Validate_Course_Information();
-//        Validate_AboutTheCourse();
     }
 
     @Test(testName = "Personal Development Course Test Case", priority = 3)
@@ -87,4 +83,59 @@ public class HeaderCoursesTest extends Programming_Module {
         ClickOnFirstCourseLinkAndValidate();
         Validate_CourseTitleDisplayed();
     }
+
+    @Test(testName = "TestPrepe Test Cases", priority = 6)
+
+    public void TestPrepeCourseCheck() {
+        ValidateClickOnHome(driver);
+        ClickOn_CourseLinkOnTop("TestPrepe", driver);
+        Validate_CourseResults_Header("testprepe");
+        ClickOnFirstCourseLinkAndValidate();
+        Validate_CourseTitleDisplayed();
+
+    }
+
+    @Test(testName = "Others Test Cases", priority = 7)
+
+    public void TestOthersCourseCheck() {
+        ValidateClickOnHome(driver);
+        ClickOn_CourseLinkOnTop("Others", driver);
+        Validate_CourseResults_Header("others");
+        ClickOnFirstCourseLinkAndValidate();
+        Validate_CourseTitleDisplayed();
+
+    }
+
+    @Test(testName = "Electrical Engineering Test Cases", priority = 8)
+
+    public void ElectricalengineeringCourseCheck() {
+        ValidateClickOnHome(driver);
+        ClickOn_CourseLinkOnTop("Electrical Engineering", driver);
+        Validate_CourseResults_Header("electrical engineering");
+        ClickOnFirstCourseLinkAndValidate();
+        Validate_CourseTitleDisplayed();
+
+    }
+
+    @Test(testName = "Java Course Test Cases", priority = 9)
+
+    public void JavaCourseCheck() {
+        ValidateClickOnHome(driver);
+        ClickOn_CourseLinkOnTop("java", driver);
+        Validate_CourseResults_Header("java");
+        ClickOnFirstCourseLinkAndValidate();
+        Validate_CourseTitleDisplayed();
+
+    }
+
+    @Test(testName = "Fact-Checking and Verification Test Cases", priority = 10)
+
+    public void FactCheckingVerificationCourseCheck() {
+        ValidateClickOnHome(driver);
+        ClickOn_CourseLinkOnTop("Fact-Checking and Verification", driver);
+        Validate_CourseResults_Header("fact-checking and verification");
+        ClickOnFirstCourseLinkAndValidate();
+        Validate_CourseTitleDisplayed();
+    }
+
 }
