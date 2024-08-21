@@ -6,7 +6,6 @@ import org.testng.asserts.SoftAssert;
 
 public class ProfessionalsStatusTestCases extends ProfessionalsCourseStatus {
 
-
     @Test(priority = 2)
     public  void Courses()
     {
@@ -44,6 +43,51 @@ public class ProfessionalsStatusTestCases extends ProfessionalsCourseStatus {
         sa.assertEquals(actualresult_about, expectedresult_about);// using soft assert
         sa.assertAll();
         System.out.println("About the course verified");
+
+        ProfessionalsCourse();
+        System.out.println("Navigated back to homepage from Selected course page");
+
+
+        ProfessionalSlickListTechnology();
+        System.out.println("Clicking Technology");
+        boolean actualresult_Technology =ProfessionalSlickListTechnology();
+
+        boolean expectedresult_Technology = true;
+        sa.assertEquals(actualresult_Technology, expectedresult_Technology);// using soft assert
+        sa.assertAll();
+        System.out.println("Technology Title presence verified");
+
+        ProfessionalSlickListFreeCourse();
+        System.out.println("Clicking FreeCourse");
+        boolean actualresult_Freecourse =ProfessionalSlickListFreeCourse();
+
+        boolean expectedresult_Freecourse = true;
+        sa.assertEquals(actualresult_Freecourse, expectedresult_Freecourse);// using soft assert
+        sa.assertAll();
+        System.out.println("FreeCourse Title presence verified");
+
+
+        ProfessionalSlickListProgramming();
+        System.out.println("Clicking Programming");
+        boolean actualresult_Programming =ProfessionalSlickListProgramming();
+
+        boolean expectedresult_Programming = true;
+        sa.assertEquals(actualresult_Programming, expectedresult_Programming);// using soft assert
+        sa.assertAll();
+        System.out.println("Programming Title presence verified");
+
+        ProfessionalSlickListITCertification();
+        System.out.println("Clicking ITcertification");
+        boolean actualresult_IT = ProfessionalSlickListITCertification();
+
+        boolean expectedresult_IT = true;
+        sa.assertEquals(actualresult_IT, actualresult_IT);// using soft assert
+        sa.assertAll();
+        System.out.println("ITCertification Title presence verified");
+
+
+
+
 
 
     }

@@ -85,29 +85,24 @@ public class HeaderCoursesTest extends Programming_Module {
     }
 
     @Test(testName = "TestPrepe Test Cases", priority = 6)
-
     public void TestPrepeCourseCheck() {
         ValidateClickOnHome(driver);
         ClickOn_CourseLinkOnTop("TestPrepe", driver);
         Validate_CourseResults_Header("testprepe");
         ClickOnFirstCourseLinkAndValidate();
         Validate_CourseTitleDisplayed();
-
     }
 
     @Test(testName = "Others Test Cases", priority = 7)
-
     public void TestOthersCourseCheck() {
         ValidateClickOnHome(driver);
         ClickOn_CourseLinkOnTop("Others", driver);
         Validate_CourseResults_Header("others");
         ClickOnFirstCourseLinkAndValidate();
         Validate_CourseTitleDisplayed();
-
     }
 
     @Test(testName = "Electrical Engineering Test Cases", priority = 8)
-
     public void ElectricalengineeringCourseCheck() {
         ValidateClickOnHome(driver);
         ClickOn_CourseLinkOnTop("Electrical Engineering", driver);
@@ -118,7 +113,6 @@ public class HeaderCoursesTest extends Programming_Module {
     }
 
     @Test(testName = "Java Course Test Cases", priority = 9)
-
     public void JavaCourseCheck() {
         ValidateClickOnHome(driver);
         ClickOn_CourseLinkOnTop("java", driver);
@@ -129,7 +123,6 @@ public class HeaderCoursesTest extends Programming_Module {
     }
 
     @Test(testName = "Fact-Checking and Verification Test Cases", priority = 10)
-
     public void FactCheckingVerificationCourseCheck() {
         ValidateClickOnHome(driver);
         ClickOn_CourseLinkOnTop("Fact-Checking and Verification", driver);
@@ -137,5 +130,4 @@ public class HeaderCoursesTest extends Programming_Module {
         ClickOnFirstCourseLinkAndValidate();
         Validate_CourseTitleDisplayed();
     }
-
 }
