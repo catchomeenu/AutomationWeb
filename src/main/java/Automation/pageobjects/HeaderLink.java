@@ -4,6 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HeaderLink extends Base {
 
     public static By click_homelink=By.linkText("Home");
@@ -24,10 +27,19 @@ public class HeaderLink extends Base {
 
     public static void click_LinkValues(String value) {
             try{
-                WebElement click_link = driver.findElement(By.xpath("//p[contains(text(),'" + value + "')]/ancestor::a"));
-                JavascriptExecutor executor = (JavascriptExecutor)driver;
-                executor.executeScript("arguments[0].click();", click_link);
-                System.out.println( value+ "is clicked as expected");
+                List<WebElement> val=driver.findElements(By.xpath("//div[@class='swiper-wrapper']/div[@class='swiper-slide']//p"));
+                List<String> actualval=new ArrayList<>();
+                for(WebElement e : val){
+                    actualval.add(e.getText());
+                }
+                if(actualval.contains(value)) {
+                    WebElement click_link = driver.findElement(By.xpath("//p[contains(text(),'" + value + "')]/ancestor::a"));
+                    JavascriptExecutor executor = (JavascriptExecutor) driver;
+                    executor.executeScript("arguments[0].click();", click_link);
+                    System.out.println(value + "is clicked as expected ");
+                }else{
+                    System.out.println("The given value is not present in the swiperslide");
+                }
             }catch(Exception e){
                 e.printStackTrace();
             }
