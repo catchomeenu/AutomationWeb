@@ -4,12 +4,11 @@
     <parameter name="Browser" value="Chrome"/>
     <test thread-count="1" name="Test">
         <classes>
+            <class name="AutomationTest.HeaderLinkTestCase"/>
             <!--  <class name="AutomationTest.MostRecentPageTestCase"/>-->
             <!--  <class name="AutomationTest.ProfessionalCourses_TestCase"/>-->
             <!--  <class name="AutomationTest.FilterModuleTestCase"/>-->
           <!--  <class name="AutomationTest.SliderTestCase"/>-->
-            <class name="AutomationTest.HeaderLinkTestCase"/>
-
             <!-- <class name="AutomationTest.SatPreparation_TestCase"/> -->
             <!-- <class name="AutomationTest.MostPopularTestCase"/> -->
             <!-- <class name="AutomationTest.CoursesTestCase" /> -->
@@ -48,6 +47,8 @@
             <!-- <class name="AutomationTest.InstructorLogoutTestCases"/> -->
             <!-- <class name="AutomationTest.ProfessionalsTestCase"/> -->
             <!-- <class name="AutomationTest.ProfessionalsStatusTestCases"/> -->
+            <!-- <class name="AutomationTest.TrendingTestCases"></class>-->
+            <!--<class name="AutomationTest.VideoCoursesTestCases"></class>-->
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
