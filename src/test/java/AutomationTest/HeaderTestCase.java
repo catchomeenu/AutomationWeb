@@ -51,13 +51,16 @@ public class HeaderTestCase extends Header {
             sa.assertEquals(actualresult_about, expectedresult_about);// using soft assert
             sa.assertAll();
             System.out.println("HB course About verified");
+            Home();
+            System.out.println("Back to homepage");
             System.out.println("==========================");
         }
         else {
-            System.out.println("Link is not available");
+            System.out.println("HealthBeauty is not available");
+            System.out.println("==========================");
+
         }
-        Home();
-        System.out.println("Back to homepage");
+
     }
     @Test(priority = 2)
     public static void MusicTheory() {
@@ -92,13 +95,16 @@ public class HeaderTestCase extends Header {
             sa.assertEquals(aboutRes, expectedabout_result);// using soft assert
             sa.assertAll();
             System.out.println("MusicTheory About the Course verified");
+            Home();
+            System.out.println("Back to homepage");
             System.out.println("==========================");
         }
         else {
-            System.out.println("Link is not available");
+            System.out.println("MusicTheory is not available");
+            System.out.println("==========================");
+
         }
-        Home();
-        System.out.println("Back to homepage");
+
     }
     @Test(priority = 3)
     public static void TestPrepe() {
@@ -131,13 +137,16 @@ public class HeaderTestCase extends Header {
             sa.assertEquals(TPaboutRes, TPexpectedabout_result);// using soft assert
             sa.assertAll();
             System.out.println("Test Prepe About the Course verified");
+            Home();
+            System.out.println("Back to homepage");
             System.out.println("==========================");
         }
         else {
-            System.out.println("Link is not available");
+            System.out.println("TestPrepe is not available");
+            System.out.println("==========================");
+
         }
-        Home();
-        System.out.println("Back to homepage");
+
     }
 
     @Test(priority = 4)
@@ -171,13 +180,15 @@ public class HeaderTestCase extends Header {
             sa.assertEquals(GamesaboutRes, Gamesexpectedabout_result);// using soft assert
             sa.assertAll();
             System.out.println("Games About the Course verified");
+            Home();
+            System.out.println("Back to homepage");
             System.out.println("==========================");
         }
         else{
-            System.out.println("Link is not available");
+            System.out.println("Games is not available");
+            System.out.println("==========================");
         }
-        Home();
-        System.out.println("Back to homepage");
+
 
     }
     @Test(priority = 5)
@@ -211,13 +222,16 @@ public class HeaderTestCase extends Header {
             sa.assertEquals(HobbyaboutRes, Hobbyexpectedabout_result);// using soft assert
             sa.assertAll();
             System.out.println("Sample Video Course About  verified");
+            Home();
+            System.out.println("Back to homepage");
             System.out.println("==========================");
         }
         else {
-            System.out.println("Link is not avilable");
+            System.out.println("Hobbies is not avilable");
+            System.out.println("==========================");
+
         }
-        Home();
-        System.out.println("Back to homepage");
+
 
     }
     @Test(priority = 6)
@@ -253,13 +267,16 @@ public class HeaderTestCase extends Header {
             sa.assertEquals(FactaboutRes, Factexpectedabout_result);// using soft assert
             sa.assertAll();
             System.out.println("New Thoughts About the Course verified");
+            Home();
+            System.out.println("Back to homepage");
             System.out.println("==========================");
         }
         else {
-            System.out.println("Link is not available");
+            System.out.println("FactChecking is not available");
+            System.out.println("==========================");
+
         }
-        Home();
-        System.out.println("Back to homepage");
+
     }
     @Test(priority = 7)
     public static void Coding() {
@@ -294,13 +311,16 @@ public class HeaderTestCase extends Header {
             sa.assertEquals(FactaboutRes, Factexpectedabout_result);// using soft assert
             sa.assertAll();
             System.out.println("Java for beginners About the Course verified");
+            Home();
+            System.out.println("Back to homepage");
             System.out.println("==========================");
         }
         else {
-            System.out.println("Link is not available");
+            System.out.println("Coding is not available");
+            System.out.println("==========================");
+
         }
-        Home();
-        System.out.println("Back to homepage");
+
     }
     @Test(priority =8)
     public static void DanceStyles() {
@@ -335,13 +355,16 @@ public class HeaderTestCase extends Header {
             sa.assertEquals(FactaboutRes, Factexpectedabout_result);// using soft assert
             sa.assertAll();
             System.out.println("Zumba 11 About the Course verified");
+            Home();
+            System.out.println("Back to homepage");
             System.out.println("==========================");
         }
         else {
-            System.out.println("Link is not available");
+            System.out.println("DanceStyles is not available");
+            System.out.println("==========================");
+
         }
-        Home();
-        System.out.println("Back to homepage");
+
     }
 
 
