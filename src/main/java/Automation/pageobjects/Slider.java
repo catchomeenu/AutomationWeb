@@ -20,8 +20,6 @@ public class Slider extends Base {
     public static By click_Businesspageobjlink = By.xpath("//a[@href='/course/automation-testing-1']");
     public static By click_TechCoursepageobjlink = By.xpath("//a[@href='/course/automation-testing-1']");
 
-
-
     public static By verify_CourseInformationText = By.xpath("//h2[contains(text(),'Course Information')]");
     public static By verify_AbouttheCourseText = By.xpath("//h2[contains(text(),'About the Course')]");
 

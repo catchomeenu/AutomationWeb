@@ -108,6 +108,7 @@ public class Header extends Base {
     }
     public static boolean MusictheoryCourses()
     {
+
         try {
             driver.findElement(musictheory_courses).click();
         } catch (Exception e) {
