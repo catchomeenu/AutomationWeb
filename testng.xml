@@ -52,6 +52,9 @@
             <!-- <class name="AutomationTest.ProfessionalsStatusTestCases"/> -->
             <!-- <class name="AutomationTest.TrendingTestCases"></class>-->
             <!--<class name="AutomationTest.VideoCoursesTestCases"></class>-->
+            <!--<class name="AutomationTest.KidsInfyniTestCases"></class>-->
+
+
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
