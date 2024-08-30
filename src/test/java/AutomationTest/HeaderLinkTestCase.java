@@ -272,5 +272,162 @@ public class HeaderLinkTestCase extends HeaderLink {
             sa.assertAll();
             System.out.println("About the course is displayed as expected");
         }
+
+    @Test(priority = 26)
+    public static void click_divyasc()  {
+
+        click_home();
+        click_LinkValues("Divya SC");
+        boolean actualtext= verify_LinkValues("Divya SC");
+        boolean expectedText=true;
+        SoftAssert sa=new SoftAssert();
+        sa.assertEquals(actualtext,expectedText);
+        sa.assertAll();
+        System.out.println("Divya SC is displayed as expected");
     }
+
+
+    @Test(priority = 27)
+    public static void click_divyascimage()  {
+
+        click_linkImage("Divya-Video Course");
+        System.out.println("Divya-Video Course is clicked as expected");
+    }
+
+    @Test(priority = 28)
+    public static void verify_divyascimagename()  {
+        boolean actualtext= verify_linkimage("Divya-Video Course");
+        boolean expectedText=true;
+        SoftAssert sa=new SoftAssert();
+        sa.assertEquals(actualtext,expectedText);
+        sa.assertAll();
+        System.out.println("Divya-Video Course test is displayed as expected");
+    }
+
+
+    @Test(priority = 29)
+    public static void verify_divyasccourseinformation() {
+        String actualtext= verify_Courseinfm();
+        String expectedText="Course Information";
+        SoftAssert sa=new SoftAssert();
+        sa.assertEquals(actualtext,expectedText);
+        sa.assertAll();
+        System.out.println("Course Information is displayed as expected");
+    }
+
+    @Test(priority = 30)
+    public static void verify_divyascabtthecourse()  {
+        String actualtext= verify_abttheCourse();
+        String expectedText="About the Course";
+        SoftAssert sa=new SoftAssert();
+        sa.assertEquals(actualtext,expectedText);
+        sa.assertAll();
+        System.out.println("About the course is displayed as expected");
+    }
+
+    @Test(priority = 31)
+    public static void click_guitarpaino()  {
+
+        click_home();
+        click_LinkValues("Guitar Paino");
+        boolean actualtext= verify_LinkValues("Guitar Paino");
+        boolean expectedText=true;
+        SoftAssert sa=new SoftAssert();
+        sa.assertEquals(actualtext,expectedText);
+        sa.assertAll();
+        System.out.println("Guitar Paino is displayed as expected");
+    }
+
+
+    @Test(priority = 32)
+    public static void click_guitarpainoimage()  {
+
+        click_linkImage("KB accounting Video course");
+        System.out.println("KB accounting Video course is clicked as expected");
+    }
+
+    @Test(priority = 33)
+    public static void verify_guitarpainoimagename()  {
+        boolean actualtext= verify_linkimage("KB accounting Video course");
+        boolean expectedText=true;
+        SoftAssert sa=new SoftAssert();
+        sa.assertEquals(actualtext,expectedText);
+        sa.assertAll();
+        System.out.println("KB accounting Video course is displayed as expected");
+    }
+
+
+    @Test(priority = 34)
+    public static void verify_guitarpainocourseinformation() {
+        String actualtext= verify_Courseinfm();
+        String expectedText="Course Information";
+        SoftAssert sa=new SoftAssert();
+        sa.assertEquals(actualtext,expectedText);
+        sa.assertAll();
+        System.out.println("Course Information is displayed as expected");
+    }
+
+    @Test(priority = 35)
+    public static void verify_guitarpainoabtthecourse()  {
+        String actualtext= verify_abttheCourse();
+        String expectedText="About the Course";
+        SoftAssert sa=new SoftAssert();
+        sa.assertEquals(actualtext,expectedText);
+        sa.assertAll();
+        System.out.println("About the course is displayed as expected");
+    }
+
+    @Test(priority = 36)
+    public static void click_itcertification()  {
+
+        click_home();
+        click_LinkValues("IT Certification");
+        boolean actualtext= verify_LinkValues("IT Certification");
+        boolean expectedText=true;
+        SoftAssert sa=new SoftAssert();
+        sa.assertEquals(actualtext,expectedText);
+        sa.assertAll();
+        System.out.println("IT Certification is displayed as expected");
+    }
+
+
+    @Test(priority = 37)
+    public static void click_itcertificationimage()  {
+
+        click_linkImage("Email Notification - For Testing on Dev");
+        System.out.println("Email Notification - For Testing on Dev is clicked as expected");
+    }
+
+    @Test(priority = 38)
+    public static void verify_itcertificationname()  {
+        boolean actualtext= verify_linkimage("Email Notification - For Testing on Dev");
+        boolean expectedText=true;
+        SoftAssert sa=new SoftAssert();
+        sa.assertEquals(actualtext,expectedText);
+        sa.assertAll();
+        System.out.println("Email Notification - For Testing on Dev is displayed as expected");
+    }
+
+
+    @Test(priority = 39)
+    public static void verify_itcertificationcourseinformation() {
+        String actualtext= verify_Courseinfm();
+        String expectedText="Course Information";
+        SoftAssert sa=new SoftAssert();
+        sa.assertEquals(actualtext,expectedText);
+        sa.assertAll();
+        System.out.println("Course Information is displayed as expected");
+    }
+
+    @Test(priority = 40)
+    public static void verify_itcertificationabtthecourse()  {
+        String actualtext= verify_abttheCourse();
+        String expectedText="About the Course";
+        SoftAssert sa=new SoftAssert();
+        sa.assertEquals(actualtext,expectedText);
+        sa.assertAll();
+        System.out.println("About the course is displayed as expected");
+    }
+
+}
 

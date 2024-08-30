@@ -23,7 +23,7 @@ public class SliderTestCase extends Slider {
         clickChessCourseLink();
         System.out.println("Navigated to 'Chesspage' link");
     }
-  /*  @Test(priority = 2)
+    @Test(priority = 2)
     public static void verifyMarketing() {
         click_home();
         System.out.println("Navigated to 'Home' link");
@@ -32,7 +32,7 @@ public class SliderTestCase extends Slider {
         System.out.println("Navigated to 'Marketing' link");
         clickmarketingpageobj();
         System.out.println("Navigated to 'marketingpage' link");
-    }*/
+    }
     @Test(priority = 3)
     public static void verifyChoreography() {
         click_home();
