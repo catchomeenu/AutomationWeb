@@ -7,7 +7,7 @@
             <!--  <class name="AutomationTest.MostRecentPageTestCase"/>-->
             <!--  <class name="AutomationTest.ProfessionalCourses_TestCase"/>-->
             <!--  <class name="AutomationTest.FilterModuleTestCase"/>-->
-            <class name="AutomationTest.ProfessionalInfyniTestCase"/>
+            <class name="AutomationTest.ProfessionalTestCase"/>
             <!-- <class name="AutomationTest.SatPreparation_TestCase"/> -->
             <!-- <class name="AutomationTest.MostPopularTestCase"/> -->
             <!-- <class name="AutomationTest.CoursesTestCase" /> -->
