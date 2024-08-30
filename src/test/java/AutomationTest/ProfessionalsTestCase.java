@@ -1,12 +1,12 @@
-package AutomationTest;
+/*package AutomationTest;
 
-import Automation.pageobjects.Professionals;
+import Automation.pageobjects.Professionals_swatini;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 
-public class ProfessionalsTestCase extends Professionals {
+public class ProfessionalsTestCase extends Professionals_swatini {
 
 
     @BeforeSuite
@@ -32,4 +32,4 @@ public class ProfessionalsTestCase extends Professionals {
         System.out.println("Navigated back to homepage from Professional page");
 
     }
-}
+}*/

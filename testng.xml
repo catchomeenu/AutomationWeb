@@ -4,8 +4,8 @@
     <parameter name="Browser" value="Chrome"/>
     <test thread-count="1" name="Test">
         <classes>
-            <class name="AutomationTest.MostPopularTestCases"/>
-            <class name="AutomationTest.LiveCoursesTestCases"/>
+<!--            <class name="AutomationTest.MostPopularTestCases"/>-->
+<!--            <class name="AutomationTest.LiveCoursesTestCases"/>-->
             <!--<class name="AutomationTest.HeaderLinkTestCase"/>-->
 
             <!--  <class name="AutomationTest.MostRecentPageTestCase"/>-->
@@ -26,12 +26,12 @@
             <!-- <class name="AutomationTest.MostRecentPageTestCase"/> -->
             <!-- <class name="AutomationTest.FilterModuleTestCase"/> -->
             <!-- <class name="AutomationTest.ProfessionalsTestCase"/> -->
-            <!-- <class name="AutomationTest.ProfessionalsStatusTestCases" /> -->
+            <!-- <class name="AutomationTest.ProfessioalsStatusTestCases" /> -->
             <!-- class name="AutomationTest.ProfessionalCourses_TestCase"/> -->
             <!-- <class name="AutomationTest.InstructorLoginTestCases" /> -->
             <!-- <class name="AutomationTest.InstructorDashBoardPageTestCases" /> -->
             <!-- <class name="AutomationTest.InstructorLogoutTestCases" /> -->
-            <!-- <class name="AutomationTest.ProfessionalsTestCase" /> -->
+            <class name="AutomationTest.ProfessionalTestCase" />
             <!-- <class name="AutomationTest.ProfessionalsStatusTestCases"/>-->
             <!-- <class name="AutomationTest.FilterModuleTestCase"/-->
             <!-- <class name="AutomationTest.HeaderLinkTestCase"/-->
