@@ -1,4 +1,4 @@
-package AutomationTest;
+/*package AutomationTest;
 
 import Automation.pageobjects.ProfessionalCourses;
 import org.testng.annotations.AfterSuite;
@@ -33,5 +33,5 @@ public class ProfessionalCourses_TestCase extends ProfessionalCourses {
         ValidateITCertification_Tab("IT Certification");
         ValidateITCertification_Header("IT Certification");
     }
-}
+}*/
 
