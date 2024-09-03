@@ -7,6 +7,7 @@
 <!--            <class name="AutomationTest.MostPopularTestCases"/>-->
 <!--            <class name="AutomationTest.LiveCoursesTestCases"/>-->
             <!--<class name="AutomationTest.HeaderLinkTestCase"/>-->
+            <class name="AutomationTest.HomepageHeaderLinksTestCases"/>
 
             <!--  <class name="AutomationTest.MostRecentPageTestCase"/>-->
             <!--  <class name="AutomationTest.ProfessionalCourses_TestCase"/>-->
@@ -31,7 +32,7 @@
             <!-- <class name="AutomationTest.InstructorLoginTestCases" /> -->
             <!-- <class name="AutomationTest.InstructorDashBoardPageTestCases" /> -->
             <!-- <class name="AutomationTest.InstructorLogoutTestCases" /> -->
-            <class name="AutomationTest.ProfessionalTestCase" />
+<!--            <class name="AutomationTest.ProfessionalTestCase" />-->
             <!-- <class name="AutomationTest.ProfessionalsStatusTestCases"/>-->
             <!-- <class name="AutomationTest.FilterModuleTestCase"/-->
             <!-- <class name="AutomationTest.HeaderLinkTestCase"/-->
