@@ -7,9 +7,9 @@ import org.testng.asserts.SoftAssert;
 
 public class InstructorLoginTestCases extends InstructorLoginPage {
 
-    @Test(priority = 19)
+    @Test(priority = 82)
     public static void loginAsInstructor() throws Exception {
-        clickInfyniLogo();
+
         clickLoginButton();
         // Enter Email address
         EnterInstructorEmailId("def123@gmail.com");
@@ -19,7 +19,9 @@ public class InstructorLoginTestCases extends InstructorLoginPage {
         ClickInstructorLogInButton();
         System.out.println("  login as Instructor test case ");
         dashboardTextPresence();
+        System.out.println("****login as Instructor Dashboard Live Course TestCases started**** ");
 
     }
 
 }
+

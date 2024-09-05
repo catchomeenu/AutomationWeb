@@ -1,0 +1,9 @@
+AutomationTest\InstructorLoginTestCases.class
+AutomationTest\StudentLogoutTestCases.class
+AutomationTest\InstructorLogoutTestCases.class
+org\example\AppTest.class
+AutomationTest\HomePageTestCases.class
+AutomationTest\StudentDashboardPageTestCases.class
+AutomationTest\FooterTestCases.class
+AutomationTest\StudentLoginPageTestCases.class
+AutomationTest\InstructorDashBoardPageTestCases.class

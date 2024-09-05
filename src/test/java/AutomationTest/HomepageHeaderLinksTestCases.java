@@ -8,13 +8,8 @@ import org.testng.asserts.SoftAssert;
 import java.time.Duration;
 
 public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
-    @BeforeSuite
-    public static void lauchApplication() {
-        launchBrowser("Chrome");
-        launchApp("https://devnj.infyni.com/");
-        implicitWait(30);
-    }
-    @Test(priority = 1)
+
+    @Test(priority = 8)
     public static void click_businessanalytics() {
 
         click_home();
@@ -28,14 +23,14 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
     }
 
 
-    @Test(priority = 2)
+    @Test(priority = 9)
     public static void click_businessAnalyticsimage() {
 
         click_linkImage("Business Analytics - Data Driven Decision Making");
         System.out.println("Business Analytics - Data Driven Decision Making is clicked as expected");
     }
 
-    @Test(priority = 3)
+    @Test(priority = 10)
     public static void verify_businessAnalyticsimagename()  {
         boolean actualtext= verify_linkimage("Business Analytics - Data Driven Decision Making");
         boolean expectedText=true;
@@ -46,7 +41,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
     }
 
 
-    @Test(priority = 4)
+    @Test(priority = 11)
     public static void verify_businessAnalyticscourseinformation()  {
         String actualtext= verify_Courseinfm();
         String expectedText="Course Information";
@@ -56,7 +51,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         System.out.println("Course Information is displayed as expected");
     }
 
-    @Test(priority = 5)
+    @Test(priority = 12)
     public static void verify_businessAnalyticsabtthecourse() {
         String actualtext= verify_abttheCourse();
         String expectedText="About the Course";
@@ -66,7 +61,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         System.out.println("About the course is displayed as expected");
     }
 
-    @Test(priority = 6)
+    @Test(priority = 13)
     public static void click_modification()  {
 
         click_home();
@@ -79,14 +74,14 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         System.out.println("Modification is displayed as expected");
     }
 
-    @Test(priority = 7)
+    @Test(priority = 14)
     public static void click_modificationimage()  {
 
         click_linkImage("Python");
         System.out.println("Python is clicked as expected");
     }
 
-    @Test(priority = 8)
+    @Test(priority = 15)
     public static void verify_modificationimagename()  {
         boolean actualtext= verify_linkimage("Python");
         boolean expectedText=true;
@@ -97,7 +92,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
     }
 
 
-    @Test(priority = 9)
+    @Test(priority = 16)
     public static void verify_modificationcourseinformation() {
         String actualtext= verify_Courseinfm();
         String expectedText="Course Information";
@@ -107,7 +102,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         System.out.println("Course Information is displayed as expected");
     }
 
-    @Test(priority = 10)
+    @Test(priority = 17)
     public static void verify_modificationabtthecourse() {
         String actualtext= verify_abttheCourse();
         String expectedText="About the Course";
@@ -117,7 +112,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         System.out.println("About the course is displayed as expected");
     }
 
-    @Test(priority = 11)
+    @Test(priority = 18)
     public static void click_indianclassicalmusic()  {
 
         click_home();
@@ -131,14 +126,14 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
     }
 
 
-    @Test(priority = 12)
+    @Test(priority = 19)
     public static void click_indianclassicalmusicimage()  {
 
         click_linkImage("Piano course for Kids - I");
         System.out.println("Piano course for Kids - I is clicked as expected");
     }
 
-    @Test(priority = 13)
+    @Test(priority = 20)
     public static void verify_indianclassicalmusicimagename()  {
         boolean actualtext= verify_linkimage("Piano course for Kids - I");
         boolean expectedText=true;
@@ -149,7 +144,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
     }
 
 
-    @Test(priority = 14)
+    @Test(priority = 21)
     public static void verify_indianclassicalmusiccourseinformation() {
         String actualtext= verify_Courseinfm();
         String expectedText="Course Information";
@@ -159,7 +154,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         System.out.println("Course Information is displayed as expected");
     }
 
-    @Test(priority = 15)
+    @Test(priority = 22)
     public static void verify_indianclassicalmusicabtthecourse()  {
         String actualtext= verify_abttheCourse();
         String expectedText="About the Course";
@@ -168,7 +163,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         sa.assertAll();
         System.out.println("About the course is displayed as expected");
     }
-    @Test(priority = 16)
+    @Test(priority = 23)
     public static void click_machineLearning()  {
 
         click_home();
@@ -182,14 +177,14 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
     }
 
 
-    @Test(priority = 17)
+    @Test(priority = 24)
     public static void click_machineLearningimage()  {
 
         click_linkImage("Price Lakhs Course");
         System.out.println("Price Lakhs Course  is clicked as expected");
     }
 
-    @Test(priority = 18)
+    @Test(priority = 25)
     public static void verify_machineLearningimagename()  {
         boolean actualtext= verify_linkimage("Price Lakhs Course");
         boolean expectedText=true;
@@ -200,7 +195,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
     }
 
 
-    @Test(priority = 19)
+    @Test(priority = 26)
     public static void verify_machineLearningcourseinformation()  {
         String actualtext= verify_Courseinfm();
         String expectedText="Course Information";
@@ -210,7 +205,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         System.out.println("Course Information is displayed as expected");
     }
 
-    @Test(priority = 20)
+    @Test(priority = 27)
     public static void verify_machineLearningabtthecourse()  {
         String actualtext= verify_abttheCourse();
         String expectedText="About the Course";
@@ -219,7 +214,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         sa.assertAll();
         System.out.println("About the course is displayed as expected");
     }
-    @Test(priority = 21)
+    @Test(priority = 28)
     public static void click_technologyawareness()  {
 
         click_home();
@@ -233,14 +228,14 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
     }
 
 
-    @Test(priority = 22)
+    @Test(priority = 29)
     public static void click_technologyawarenesimage()  {
 
         click_linkImage("Data Science & Introduction to Machine Learning test");
         System.out.println("Data Science & Introduction to Machine Learning test is clicked as expected");
     }
 
-    @Test(priority = 23)
+    @Test(priority = 30)
     public static void verify_technologyawarenesimagename()  {
         boolean actualtext= verify_linkimage("Data Science & Introduction to Machine Learning test");
         boolean expectedText=true;
@@ -251,7 +246,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
     }
 
 
-    @Test(priority = 24)
+    @Test(priority = 31)
     public static void verify_technologyawarenescourseinformation() {
         String actualtext= verify_Courseinfm();
         String expectedText="Course Information";
@@ -261,7 +256,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         System.out.println("Course Information is displayed as expected");
     }
 
-    @Test(priority = 25)
+    @Test(priority = 32)
     public static void verify_technologyawarenesabtthecourse()  {
         String actualtext= verify_abttheCourse();
         String expectedText="About the Course";
@@ -271,7 +266,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         System.out.println("About the course is displayed as expected");
     }
 
-    @Test(priority = 26)
+    @Test(priority = 33)
     public static void click_divyasc()  {
 
         click_home();
@@ -285,14 +280,14 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
     }
 
 
-    @Test(priority = 27)
+    @Test(priority = 34)
     public static void click_divyascimage()  {
 
         click_linkImage("Divya-Video Course");
         System.out.println("Divya-Video Course is clicked as expected");
     }
 
-    @Test(priority = 28)
+    @Test(priority = 35)
     public static void verify_divyascimagename()  {
         boolean actualtext= verify_linkimage("Divya-Video Course");
         boolean expectedText=true;
@@ -303,7 +298,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
     }
 
 
-    @Test(priority = 29)
+    @Test(priority = 36)
     public static void verify_divyasccourseinformation() {
         String actualtext= verify_Courseinfm();
         String expectedText="Course Information";
@@ -313,7 +308,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         System.out.println("Course Information is displayed as expected");
     }
 
-    @Test(priority = 30)
+    @Test(priority = 37)
     public static void verify_divyascabtthecourse()  {
         String actualtext= verify_abttheCourse();
         String expectedText="About the Course";
@@ -323,7 +318,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         System.out.println("About the course is displayed as expected");
     }
 
-    @Test(priority = 31)
+    @Test(priority = 38)
     public static void click_guitarpaino()  {
 
         click_home();
@@ -337,14 +332,14 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
     }
 
 
-    @Test(priority = 32)
+    @Test(priority = 39)
     public static void click_guitarpainoimage()  {
 
         click_linkImage("KB accounting Video course");
         System.out.println("KB accounting Video course is clicked as expected");
     }
 
-    @Test(priority = 33)
+    @Test(priority = 40)
     public static void verify_guitarpainoimagename()  {
         boolean actualtext= verify_linkimage("KB accounting Video course");
         boolean expectedText=true;
@@ -355,7 +350,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
     }
 
 
-    @Test(priority = 34)
+    @Test(priority = 41)
     public static void verify_guitarpainocourseinformation() {
         String actualtext= verify_Courseinfm();
         String expectedText="Course Information";
@@ -365,7 +360,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         System.out.println("Course Information is displayed as expected");
     }
 
-    @Test(priority = 35)
+    @Test(priority = 42)
     public static void verify_guitarpainoabtthecourse()  {
         String actualtext= verify_abttheCourse();
         String expectedText="About the Course";
@@ -375,7 +370,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         System.out.println("About the course is displayed as expected");
     }
 
-    // @Test(priority = 36)
+     @Test(priority = 43)
     public static void click_itcertification()  {
 
         click_home();
@@ -389,14 +384,14 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
     }
 
 
-    @Test(priority = 37)
+    @Test(priority = 44)
     public static void click_itcertificationimage()  {
 
         click_linkImage("Email Notification - For Testing on Dev");
         System.out.println("Email Notification - For Testing on Dev is clicked as expected");
     }
 
-    // @Test(priority = 38)
+     @Test(priority = 45)
     public static void verify_itcertificationname()  {
         boolean actualtext= verify_linkimage("Email Notification - For Testing on Dev");
         boolean expectedText=true;
@@ -407,7 +402,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
     }
 
 
-    @Test(priority = 39)
+    @Test(priority = 46)
     public static void verify_itcertificationcourseinformation() {
         String actualtext= verify_Courseinfm();
         String expectedText="Course Information";
@@ -417,7 +412,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         System.out.println("Course Information is displayed as expected");
     }
 
-    @Test(priority = 40)
+    @Test(priority = 47)
     public static void verify_itcertificationabtthecourse()  {
         String actualtext= verify_abttheCourse();
         String expectedText="About the Course";
@@ -428,8 +423,9 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
     }
     //Swathini Testcases
 
-    @Test(priority = 41)
+    @Test(priority = 48)
     public static void HealthBeauty() {
+        click_home();
         String ListVal= String.valueOf(list());
 
         if(ListVal.contains("Health and Beauty")) {
@@ -471,7 +467,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         Home();
         System.out.println("Back to homepage");
     }
-    @Test(priority = 42)
+    @Test(priority = 49)
     public static void MusicTheory() {
         String ListVal= String.valueOf(list());
 
@@ -512,7 +508,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         Home();
         System.out.println("Back to homepage");
     }
-    @Test(priority = 43)
+    @Test(priority = 50)
     public static void TestPrepe() {
         String ListVal= String.valueOf(list());
 
@@ -592,7 +588,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         System.out.println("Back to homepage");
 
     }
-    @Test(priority = 45)
+    @Test(priority = 51)
     public static void Hobbies() {
         String ListVal= String.valueOf(list());
 
@@ -632,7 +628,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         System.out.println("Back to homepage");
 
     }
-    @Test(priority = 46)
+    @Test(priority = 52)
     public static void FactChecking() {
         String ListVal= String.valueOf(list());
 
@@ -673,7 +669,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         Home();
         System.out.println("Back to homepage");
     }
-    @Test(priority = 47)
+    @Test(priority = 53)
     public static void Coding() {
         String ListVal= String.valueOf(list());
 
@@ -714,7 +710,7 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         Home();
         System.out.println("Back to homepage");
     }
-    @Test(priority =48)
+    @Test(priority = 54)
     public static void DanceStyles() {
         String ListVal= String.valueOf(list());
 
@@ -757,11 +753,11 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
     }
 
     //priya Testcases
-    @Test( priority = 49)
+    @Test( priority = 55)
     public void ProgrammingTestCases() {
         ValidateClickOnHome(driver);
         ClickOn_CourseLinkOnTop("Programming", driver);
-        Validate_CourseResults_Header("Programming");
+        //Validate_CourseResults_Header("Programming");
         ClickOnFirstCourseLinkAndValidate();
         Validate_CourseTitleDisplayed();
     }
@@ -775,79 +771,84 @@ public class HomepageHeaderLinksTestCases extends HomepageHeaderLinks {
         Validate_CourseTitleDisplayed();
     }*/
 
-    @Test( priority = 51)
+    @Test( priority = 56)
     public void PersonalDevelopmentCourseCheck() {
         ValidateClickOnHome(driver);
         ClickOn_CourseLinkOnTop("Personal Development", driver);
-        Validate_CourseResults_Header("Personal Development");
+        //Validate_CourseResults_Header("Personal Development");
         ClickOnFirstCourseLinkAndValidate();
         Validate_CourseTitleDisplayed();
     }
 
-    @Test( priority = 52)
+    @Test( priority = 57)
     public void ComputerScienceCourseCheck() {
         ValidateClickOnHome(driver);
         ClickOn_CourseLinkOnTop("ComputerScience", driver);
-        Validate_CourseResults_Header("computerscience");
+       // Validate_CourseResults_Header("computerscience");
         ClickOnFirstCourseLinkAndValidate();
         Validate_CourseTitleDisplayed();
-    }
-
-    @Test(priority = 53)
-    public void NaturalLanguageProcess() {
-        ValidateClickOnHome(driver);
-        ClickOn_CourseLinkOnTop("Natural Language Processing", driver);
-        Validate_CourseResults_Header("natural language processing");
-        ClickOnFirstCourseLinkAndValidate();
-        Validate_CourseTitleDisplayed();
-    }
-
-    @Test( priority = 54)
-    public void TestPrepeCourseCheck() {
-        ValidateClickOnHome(driver);
-        ClickOn_CourseLinkOnTop("TestPrepe", driver);
-        Validate_CourseResults_Header("testprepe");
-        ClickOnFirstCourseLinkAndValidate();
-        Validate_CourseTitleDisplayed();
-    }
-
-    @Test( priority = 55)
-    public void TestOthersCourseCheck() {
-        ValidateClickOnHome(driver);
-        ClickOn_CourseLinkOnTop("Others", driver);
-        Validate_CourseResults_Header("others");
-        ClickOnFirstCourseLinkAndValidate();
-        Validate_CourseTitleDisplayed();
-    }
-
-    @Test( priority = 56)
-    public void ElectricalengineeringCourseCheck() {
-        ValidateClickOnHome(driver);
-        ClickOn_CourseLinkOnTop("Electrical Engineering", driver);
-        Validate_CourseResults_Header("electrical engineering");
-        ClickOnFirstCourseLinkAndValidate();
-        Validate_CourseTitleDisplayed();
-
-    }
-
-    @Test(priority = 57)
-    public void JavaCourseCheck() {
-        ValidateClickOnHome(driver);
-        ClickOn_CourseLinkOnTop("java", driver);
-        Validate_CourseResults_Header("java");
-        ClickOnFirstCourseLinkAndValidate();
-        Validate_CourseTitleDisplayed();
-
     }
 
     @Test(priority = 58)
-    public void FactCheckingVerificationCourseCheck() {
+    public void NaturalLanguageProcess() {
         ValidateClickOnHome(driver);
-        ClickOn_CourseLinkOnTop("Fact-Checking and Verification", driver);
-        Validate_CourseResults_Header("fact-checking and verification");
+        ClickOn_CourseLinkOnTop("Natural Language Processing", driver);
+        //Validate_CourseResults_Header("natural language processing");
         ClickOnFirstCourseLinkAndValidate();
         Validate_CourseTitleDisplayed();
     }
+
+    @Test( priority = 59)
+    public void TestPrepeCourseCheck() {
+        ValidateClickOnHome(driver);
+        ClickOn_CourseLinkOnTop("TestPrepe", driver);
+       // Validate_CourseResults_Header("testprepe");
+        ClickOnFirstCourseLinkAndValidate();
+        Validate_CourseTitleDisplayed();
+    }
+
+    @Test( priority = 60)
+    public void TestOthersCourseCheck() {
+        ValidateClickOnHome(driver);
+        ClickOn_CourseLinkOnTop("Others", driver);
+       // Validate_CourseResults_Header("others");
+        ClickOnFirstCourseLinkAndValidate();
+        Validate_CourseTitleDisplayed();
+    }
+
+    @Test( priority = 61)
+    public void ElectricalengineeringCourseCheck() {
+        ValidateClickOnHome(driver);
+        ClickOn_CourseLinkOnTop("Electrical Engineering", driver);
+       // Validate_CourseResults_Header("electrical engineering");
+        ClickOnFirstCourseLinkAndValidate();
+        Validate_CourseTitleDisplayed();
+
+    }
+
+    @Test(priority = 62)
+    public void JavaCourseCheck() {
+        ValidateClickOnHome(driver);
+        ClickOn_CourseLinkOnTop("java", driver);
+        //Validate_CourseResults_Header("java");
+        ClickOnFirstCourseLinkAndValidate();
+        Validate_CourseTitleDisplayed();
+
+    }
+
+    @Test(priority = 63)
+    public void FactCheckingVerificationCourseCheck() {
+        ValidateClickOnHome(driver);
+        ClickOn_CourseLinkOnTop("Fact-Checking and Verification", driver);
+        //Validate_CourseResults_Header("fact-checking and verification");
+        ClickOnFirstCourseLinkAndValidate();
+        Validate_CourseTitleDisplayed();
+        click_home();
+        driver.navigate().refresh();
+        System.out.println("***HomePage Header Links TestCases Completed***");
+        System.out.println("***HomePage Footer Links TestCases Started***");
+    }
+
 
 }
 

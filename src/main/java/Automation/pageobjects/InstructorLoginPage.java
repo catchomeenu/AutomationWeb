@@ -12,8 +12,11 @@ public class InstructorLoginPage extends Base {
     public static By loginButton = By.xpath("//a[@href='/login']/span[text()='Log In']");
     //public static By BackToInfynihomeLink = By.xpath("//div[@class='flex flex-col items-center justify-center px-[0.75rem]']/a[@href='/']");
     //public static By instructorLoginText= By.xpath("//div[@class='instructorhomepage_title__JrzNA' and text()='Become an Instructor']");
-    public static By InfyniLogo = By.xpath("//img[@alt='logo']");
+    //public static By InfyniLogo = By.xpath("//img[@alt='logo']");
+    public static By InfyniLogo = By.xpath("//a[@href='/']/img");
     public static By dashboardText=By.xpath("//span[@class='font-primary-font-bold tab-panel_title__oPS_k' and text()='Dashboard']");
+    public static By ForInstructorclick = By.xpath("//a[@href='/instructor-homepage' and text()='For Instructors']");
+    public static By homelink=By.xpath("//span[text()='Home']");
 
     //common methods---------Method -1
     public static void clickInfyniLogo() {
@@ -81,6 +84,22 @@ public class InstructorLoginPage extends Base {
         return result;
     }
 
+    public static void ClickForInstructor() {
+        try {
+            driver.findElement(ForInstructorclick).click();
+            System.out.println("Click on For Instructor ");
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+    public static void click_home() {
 
+        try {
+            driver.findElement(homelink).click();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 
 }

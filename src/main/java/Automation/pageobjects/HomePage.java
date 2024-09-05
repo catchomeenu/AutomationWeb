@@ -2,6 +2,8 @@ package Automation.pageobjects;
 
 import Automation.base.Base;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 public class HomePage extends Base {
@@ -44,9 +46,11 @@ public class HomePage extends Base {
     //Home page footer - FreeWebinars link objects
     public static By freeWebinarsLink = By.xpath("//div/a[@href='/free-webinars']");
     public static By freewebinartext = By.xpath("//div[@class='FreeWebinars_freewebinars__ZBX_Y']/div/p[contains(text(),'Free Webinars')]");
-    // login for instructors
-    public static By forInstructorsLink = By.xpath("//a[@href='/instructor-homepage' and text()='For Instructors']");
-    public static By instructorLoginText = By.xpath("//div[@class='instructorhomepage_title__JrzNA' and text()='Become an Instructor']");
+// login for instructors
+public static By forInstructorsLink = By.xpath("//a[@href='/instructor-homepage' and text()='For Instructors']");
+public static By instructorLoginText = By.xpath("//div[@class='instructorhomepage_title__JrzNA' and text()='Become an Instructor']");
+
+
 
     public static void clickHelpCenterLink() {
         try {
@@ -229,7 +233,10 @@ public class HomePage extends Base {
     // About Us link getting clicked
     public static void clickAboutUsLink() {
         try {
-            driver.findElement(aboutUsLink).click();
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            WebElement aboutUs = driver.findElement(aboutUsLink);
+            js.executeScript("arguments[0].click();", aboutUs);
+          //  driver.findElement(aboutUsLink).click();
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -274,7 +281,7 @@ public class HomePage extends Base {
     }
 
     //Validate News link verification
-    public static boolean                                                                                             validateNewsText() {
+    public static boolean validateNewsText() {
         boolean result = false;
         try {
 
@@ -442,19 +449,18 @@ public class HomePage extends Base {
             e.printStackTrace();
         }
     }
-
-    public static boolean instructorloginTextPresence() {
-        boolean result = false;
-        try {
-            driver.findElement(instructorLoginText).isDisplayed();
-            System.out.println("Navigated to Instructor LoginPage");
-        } catch (Exception e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+        public static boolean instructorloginTextPresence() {
+            boolean result = false;
+            try {
+                driver.findElement(instructorLoginText).isDisplayed();
+                System.out.println("Navigated to Instructor LoginPage");
+            } catch (Exception e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+            return result;
         }
-        return result;
+
+
     }
-
-
-}
 

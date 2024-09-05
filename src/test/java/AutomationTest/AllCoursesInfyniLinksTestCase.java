@@ -8,7 +8,7 @@ import org.testng.asserts.SoftAssert;
 public class AllCoursesInfyniLinksTestCase extends AllCoursesInfyniLinks {
 
     @BeforeSuite
-    public static void lauchApplication() {
+    public static void launchApplication() {
         launchBrowser("Chrome");
         launchApp("https://devnj.infyni.com/");
         implicitWait(50);
@@ -170,8 +170,8 @@ public class AllCoursesInfyniLinksTestCase extends AllCoursesInfyniLinks {
         sa.assertAll();
         click_home();
         driver.navigate().refresh();
-        System.out.println("===========================");
-
+        System.out.println("***HomePage LeftNavigation Course TestCases Completed***");
+        System.out.println("***HomePage HeaderLinks Testcases Started***");
     }
 
 

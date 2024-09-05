@@ -1,23 +1,27 @@
 package AutomationTest;
 
 import Automation.pageobjects.StudentDashBoardPage;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
-public class StudentDashboardPageTestCases extends StudentDashBoardPage {
+public class StudentDashboardPageTestCases extends StudentDashBoardPage
+{
 
-    @Test(priority = 16)
-    public static void searchCourseToEnroll() {
+    @Test(priority = 93)
+    public static void searchCourseToEnroll()  {
         clickHomeLink();
-        // selectCourseStatusByOpenEnrollment();
-        enterCourseName("BA");
-        viewDisplayedList("BA Design");
+       // selectCourseStatusByOpenEnrollment();
+        enterCourseName("web");
+        viewDisplayedList("Web Designing-1");
         selectCourse();
     }
 
-    @Test(priority = 17)
-    public static void enrollCourse() {
+    @Test(priority = 94)
+    public static void enrollCourse()
+    {
         clickEnrollNow();
-      /*  enterfirstName("Abhiram");
+        /*enterfirstName("Abhiram");
         enterLastName("Penu");
         enterAddressLine1("134 SaddleCreek");
         enterAddressLine2("Gateway Rd");
@@ -37,12 +41,13 @@ public class StudentDashboardPageTestCases extends StudentDashBoardPage {
         clickContinueButton();
     }
 
-    @Test(priority = 18)
-    public static void studentLogout() {
-        clickAccountName();
-        clickLogout();
-
-    }
-
+   // @Test(priority =95)
+    public static void studentLogout()
+            {
+                clickAccountName();
+                clickLogout();
+               // clickHomeLink();
+                System.out.println("***********Student Dashboard Test Cases Ended****************");
+            }
 
 }

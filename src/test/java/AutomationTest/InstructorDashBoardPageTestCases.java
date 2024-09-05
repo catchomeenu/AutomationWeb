@@ -1,32 +1,100 @@
 package AutomationTest;
 
-import Automation.pageobjects.InstructorDashBoardPage;
+import Automation.pageobjects.InstructorDashBoardLive;
 import org.testng.annotations.Test;
 
-public class InstructorDashBoardPageTestCases extends InstructorDashBoardPage
-{
+public class InstructorDashBoardPageTestCases extends InstructorDashBoardLive {
 
-    @Test(priority = 15)
-    public static void createNewCourse_Instructor()  {
+    @Test(priority = 83)
+    public static void createNewLiveCourse_Details_Instructor() {
         clickLiveCoursesLink();
         clickNewCourseLink();
         verifyNewCourseRadioButton();
-        enterNewCourseName("Devops");
-        //selectImage("C:\\Users\\ramya\\Desktop\\devops_pic.png");
-        enterNewCourseDescription("DevOps is a methodology in the software development and IT industry. Used as a set of practices and tools, DevOps integrates and automates the work of software development (Dev) and IT operations (Ops) as a means for improving and shortening the systems development life cycle. DevOps is complementary to agile software development; several DevOps aspects came from the agile way of working. Automation is an important part of DevOps. Software programmers and architects should use \"fitness functions\" to keep their software in check.");
-        selectCategory();
-        selectSubCategory();
-        selectDegree();
-        selectCourseType();
-        selectCourseStructure();
-        selectStartDate("July 2024","20");
-        selectEndDate("August 2024","20");
-        selectEnrollmentStartDate("July 2024","5");
-        selectEnrollmentEndDate("July 2024","15");
-        enterDuration("1");
-        selectCurrency();
-        //enterPrice("150");
+        enterNewCourseName("Clinical SAS");
+        selectImage("C:\\Users\\ramya\\Desktop\\sasImage.png");
+        enterNewCourseDescription("SAS stands for Statistical Analysis Software. It was created in the year 1960 by the SAS Institute.SAS was used for data management, business intelligence, Predictive Analysis, Descriptive and Prescriptive Analysis etc.With the introduction of JMP (Jump) for statistics SAS took advantage of the Graphical user Interface which was introduced by the Macintosh. Jump is basically used for the applications like Six Sigma, designs, quality control and engineering and scientific analysis.SAS is platform independent which means you can run SAS on any operating system either Linux or Window.");
+        selectCategory("Technology");
+        selectSubCategory("Technology Course");
+        selectDegree("Intermediate");
+        selectCourseType("Paid");
+        selectCourseStructure("One-time");
+        selectStartDate("September 2024", "20");
+        selectEndDate("October 2024", "20");
+        selectEnrollmentStartDate("September 2024", "10");
+        selectEnrollmentEndDate("September 2024", "18");
+        selectDemoCheckBox();
+        enterDuration("30");
+        selectCurrency("USD");
+        enterPrice("150");
         clickSave_Next();
+       // clickYesForDemo();
+    }
+        @Test(priority = 84)
+        public static void createNewLiveCourse_Prerequisites_Instructor() {
+            enterPrerequisites("Understand and use the fundamentals of the SAS programming language");
+            clickAddButton();
+            clickSaveButton();
+        }
+
+      @Test(priority = 85)
+       public static void createNewLiveCourse_WhatYouWillLearn_Instructor() {
+          enterWhatYouWillLearn("Access different types of data (SAS, Excel, or text) then explore and prepare the data ");
+          clickAddButton();
+          clickSaveButton();
+
+      }
+    @Test(priority = 86)
+    public static void createNewLiveCourse_Topics_Instructor() {
+        enterTopic("Analyze and report on data and export results to different Formats");
+        enterSubTopic("Formats into (HTML, PDF, Excel)");
+        addSubTopic();
+        enterSubtopicDuration_Hours("01");
+        enterSubtopicDuration_Minutes("15");
+        addTopicDuration();
+        clickSaveButton();
 
     }
-}
+    @Test(priority = 87)
+    public static void createNewLiveCourse_Sessions_SelectAllDay() {
+        enterSessionName("ClinicalSAS");
+        selectSessionStartDate("September 2024", "20");
+        selectAllDay();
+        //enterSessionFromTimeHours("06");
+        // enterSessionFromTimeMinutes("15");
+        // selectSessionFromTimeClock("PM");
+        // enterSessionToTimeHours("07");
+        //  enterSessionToTimeMinutes("15");
+        //selectSessionToTimeClock("PM");
+        selectTimeZone("America/Chicago");
+        selectRecurrence();
+        selectUntilCourseEndDate();
+        //selectSessionEndDate("October 2024", "19");
+        clickSessionAddButton();
+        clickApprovalButton();
+    }
+
+
+       // @Test(priority = 87)
+        public static void createNewLiveCourse_Sessions_Instructor_SelectSpecificHours() {
+            enterSessionName("ClinicalSAS");
+            selectSessionStartDate("September 2024", "20");
+            //selectAllDay();
+            enterSessionFromTimeHours("06");
+            enterSessionFromTimeMinutes("15");
+           // selectSessionFromTimeClock("PM");
+            enterSessionToTimeHours("07");
+            enterSessionToTimeMinutes("15");
+            //selectSessionToTimeClock("PM");
+            selectTimeZone("America/Chicago");
+            selectRecurrence();
+            // selectUntilCourseEndDate();
+            selectSessionEndDate("October 2024", "19");
+            clickSessionAddButton();
+            clickApprovalButton();
+            System.out.println("****login as Instructor Dashboard Live Course TestCases Ended**** ");
+            System.out.println("****login as Instructor Dashboard Video Course TestCases Started**** ");
+
+        }
+
+    }
+

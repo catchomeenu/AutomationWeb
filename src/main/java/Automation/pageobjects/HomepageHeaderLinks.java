@@ -61,7 +61,7 @@ public class HomepageHeaderLinks extends Base {
     }
     public static void click_LinkValues(String value) {
         try{
-            List<WebElement> val=driver.findElements(By.xpath("//div[@class='swiper-wrapper']/div[@class='swiper-slide']//p"));
+            List<WebElement> val = driver.findElements(By.xpath("//div[@class='swiper-wrapper']/div[contains(@class,'swiper-slide')]//p"));
             List<String> actualval=new ArrayList<>();
             for(WebElement e : val){
                 actualval.add(e.getText());
@@ -365,7 +365,7 @@ public class HomepageHeaderLinks extends Base {
             }
         } while (!previousLinkButton.getAttribute("class").toLowerCase().contains("swiper-button-disabled"));
         // Wait for 2 seconds
-        waitMethod(2000);
+        waitMethod(100);
         // Move to Right And Click on Expected Link
         By parentLink = By.xpath("//p[text()='" + courseName + "']/ancestor::a[contains(@href,'/course')]//ancestor::div[contains(@class,'swiper-slide')]");
         By CourseLink = By.xpath("//p[text()='" + courseName + "']/ancestor::a[contains(@href,'/course')]");
@@ -382,7 +382,7 @@ public class HomepageHeaderLinks extends Base {
             if (class_info.contains("swiper-slide-next")) {
                 // Click on the Link for Course
                 driver.findElement(CourseLink).click();
-                waitMethod(500);
+                waitMethod(100);
                 break;
             }
             // If Slide Next is not in property click on next button
@@ -392,12 +392,12 @@ public class HomepageHeaderLinks extends Base {
                 // Reached At end of list
                 // Click on the Link for Course
                 driver.findElement(CourseLink).click();
-                waitMethod(500);
+                waitMethod(100);
                 break;
             } else {
                 nextButton.click();
             }
-            waitMethod(500);
+            waitMethod(100);
             counter--;
         }
     }
@@ -440,7 +440,7 @@ public class HomepageHeaderLinks extends Base {
     private static void waitForElementToDisplayed(By by) {
         WebElement element;
         for (int i = 0; i < 10; i++) {
-            waitMethod(3000);
+            waitMethod(100);
             try {
                 element = driver.findElement(by);
                 if (element.isDisplayed()) {
