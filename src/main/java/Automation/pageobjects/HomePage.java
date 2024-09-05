@@ -2,6 +2,8 @@ package Automation.pageobjects;
 
 import Automation.base.Base;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 public class HomePage extends Base {
@@ -231,7 +233,10 @@ public static By instructorLoginText = By.xpath("//div[@class='instructorhomepag
     // About Us link getting clicked
     public static void clickAboutUsLink() {
         try {
-            driver.findElement(aboutUsLink).click();
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            WebElement aboutUs = driver.findElement(aboutUsLink);
+            js.executeScript("arguments[0].click();", aboutUs);
+          //  driver.findElement(aboutUsLink).click();
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

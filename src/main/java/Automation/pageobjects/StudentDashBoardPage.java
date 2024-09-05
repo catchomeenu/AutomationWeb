@@ -24,8 +24,8 @@ public class StudentDashBoardPage extends Base {
 
     public static By courseLink=By.xpath("//div[@class='CourseData_four__qc_On relative most-recent-card grid xl:grid-cols-4 sm:grid-cols-2  grid-cols-1 lg:gap-[8px] sm:gap-[60px] gap-[12px] lg:gap-y-[25px] sm:gap-y-[20px] gap-y-[18px]']/div");
 
-    public static By enrollNowButton = By.xpath("(//div[@class='h-[30px] flex justify-center items-center'])[2]");
-
+  //  public static By enrollNowButton = By.xpath("(//div[@class='h-[30px] flex justify-center items-center'])[2]");
+    public static By enrollNowButton = By.xpath("//div[@class='flex w-[100%] justify-around md:w-auto items-center gap-2']/div[3]");
 
     public static By firstNameInputBox = By.xpath("//input[@id='first_name']");
     public static By lastNameInputBox = By.xpath("//input[@id='last_name']");
@@ -173,6 +173,10 @@ driver.findElement(courseLink).click();
 
     public static void clickEnrollNow() {
         try {
+//            JavascriptExecutor js = (JavascriptExecutor) driver;
+//            WebElement enrollButton = driver.findElement(enrollNowButton);
+//            js.executeScript("arguments[0].click();", enrollButton);
+
             driver.findElement(enrollNowButton).click();
             System.out.println("Clicked on enroll now button in course page");
         } catch (Exception e) {

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class InstructorLogoutTestCases extends Logout {
-    @Test(priority = 15)
+    @Test(priority = 90)
     public static void logoutAsInstructor() {
         // Instructor Logout profile select
         verifyprofileimg();
