@@ -12,8 +12,8 @@ public class StudentDashboardPageTestCases extends StudentDashBoardPage
     public static void searchCourseToEnroll()  {
         clickHomeLink();
        // selectCourseStatusByOpenEnrollment();
-        enterCourseName("web");
-        viewDisplayedList("Web Designing-1");
+        enterCourseName("bulb");
+        viewDisplayedList("A Journey Through the History and Science of the Light Bulb");
         selectCourse();
     }
 
@@ -41,7 +41,7 @@ public class StudentDashboardPageTestCases extends StudentDashBoardPage
         clickContinueButton();
     }
 
-   // @Test(priority =95)
+    @Test(priority =95)
     public static void studentLogout()
             {
                 clickAccountName();

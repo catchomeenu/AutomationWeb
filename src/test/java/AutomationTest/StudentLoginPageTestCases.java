@@ -12,7 +12,7 @@ public class StudentLoginPageTestCases extends StudentLoginPage {
     public static void loginAsStudent() {
         backToInfyniHomePage();
         clickLoginButton_Student();
-        enterStudentEmailAddress("queen@gmail.com");
+        enterStudentEmailAddress("mno@gmail.com");
         enterStudentPassword("Mylife@123");
         clickStudentLogin();
     }

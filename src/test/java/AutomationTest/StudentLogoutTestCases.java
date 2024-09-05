@@ -4,7 +4,7 @@ import Automation.pageobjects.Logout;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 public class StudentLogoutTestCases extends Logout {
-    @Test(priority = 95)
+   // @Test(priority = 95)
     public static void logoutAsStudent() {
         // Instructor Logout profile select
         verifyprofileimg();
