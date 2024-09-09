@@ -11,6 +11,12 @@ import java.util.List;
 public class HomepageCoursesLinks extends Base {
     //common links
     public static By click_homelink=By.linkText("Home");
+    public static By Click_Trending=By.xpath("//a[@href='/trending']");
+    public static By validateLiveCourseTitle=By.xpath("//p[contains(text(),'KB Monthly Live Course - Aug 5')]");
+    public static By Click_VideoCourses=By.xpath("//span[contains(text(),'Video Courses')]");
+    public static By Validate_VideoCourseTitle=By.xpath("//h1[contains(text(),'Videos Courses')]");
+    public static By clickLiveCourses=By.xpath("//span[contains(text(),'Live Courses')]");
+    public static By Validate_TrendingCourseTitle=By.xpath("//p[contains(text(),'Trending')]");
 
     public static By filterCourseStatus = By.xpath("//p[text()='Course Status']");
 
@@ -91,7 +97,27 @@ public class HomepageCoursesLinks extends Base {
             throw new RuntimeException(e);
         }
     }
+    public static void clickTrending()
+    {
+        try {
+            driver.findElement(Click_Trending).click();
+            System.out.println("Trending course is clicked");
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public static boolean ValidateTrendingCourseTitle()
+    {
+        boolean Value= false;
+        try {
+            Value = driver.findElement(Validate_TrendingCourseTitle).isDisplayed();
+            System.out.println("Validated Page title");
 
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return Value;
+    }
     public static void click_MostPopular(){
 
         try {
@@ -569,6 +595,49 @@ public static void ProfessionalsCourse(){
             throw new RuntimeException(e);
         }
         return value;
+    }
+
+    public static void click_LiveCourses(){
+        try{
+            driver.findElement(clickLiveCourses).click();
+            System.out.println("Live Courses is clicked");
+        }
+        catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public static boolean validate_LiveCoursesCourseTitle(){
+        boolean result=false;
+        try {
+            result= driver.findElement(validateLiveCourseTitle).isDisplayed();
+            System.out.println("KB Monthly Live Course - Aug 5 is verified");
+        }catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return result;
+
+    }
+    public static void clickVideoCourse()
+    {
+        try {
+            driver.findElement(Click_VideoCourses).click();
+            System.out.println("VideoCourses is clicked");
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public static boolean ValidateVideoCourseTitle()
+    {
+        boolean Value= false ;
+        try {
+            Value = driver.findElement(Validate_VideoCourseTitle).isDisplayed();
+            System.out.println("Validated Page title");
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return Value;
     }
 
 }

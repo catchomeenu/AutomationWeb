@@ -7,14 +7,9 @@ import org.testng.asserts.SoftAssert;
 
 public class AllCoursesInfyniLinksTestCase extends AllCoursesInfyniLinks {
 
-    @BeforeSuite
-    public static void launchApplication() {
-        launchBrowser("Chrome");
-        launchApp("https://devnj.infyni.com/");
-        implicitWait(50);
-    }
 
-    @Test(priority = 1)
+
+    @Test(priority = 64)
     public static void TrendingCourseEnrollment() {
 
         clickTrending();
@@ -35,7 +30,7 @@ public class AllCoursesInfyniLinksTestCase extends AllCoursesInfyniLinks {
         driver.navigate().refresh();
         System.out.println("===========================");
     }
-    @Test(priority = 2)
+    @Test(priority = 65)
     public static void mostPopular() {
         click_MostPopular();
         select_CourseStatusDropdown();
@@ -56,7 +51,7 @@ public class AllCoursesInfyniLinksTestCase extends AllCoursesInfyniLinks {
         System.out.println("===========================");
 
     }
-    @Test(priority = 3)
+    @Test(priority = 66)
     public void MostRecentTestCases() {
 
         ClickOn_MostRecent();
@@ -89,7 +84,7 @@ public class AllCoursesInfyniLinksTestCase extends AllCoursesInfyniLinks {
         System.out.println("Navigating to home page link");
         System.out.println("===========================");
     }
-    @Test(priority = 4)
+    @Test(priority = 67)
     public static void Professionals() {
 
         clickProfessionals();
@@ -106,7 +101,7 @@ public class AllCoursesInfyniLinksTestCase extends AllCoursesInfyniLinks {
 
     }
 
-    @Test(priority = 5)
+    @Test(priority = 68)
     public static void KidsCourse() {
 
         clickKids();
@@ -130,7 +125,7 @@ public class AllCoursesInfyniLinksTestCase extends AllCoursesInfyniLinks {
 
     }
 
-    @Test(priority = 6)
+    @Test(priority = 69)
     public static void liveCourses() {
         click_LiveCourses();
         select_CourseStatusDropdown();
@@ -151,7 +146,7 @@ public class AllCoursesInfyniLinksTestCase extends AllCoursesInfyniLinks {
         System.out.println("===========================");
 
     }
-    @Test(priority = 7)
+    @Test(priority = 70)
     public static void VideoCourseClosedEnrollment()  {
 
         clickVideoCourse();

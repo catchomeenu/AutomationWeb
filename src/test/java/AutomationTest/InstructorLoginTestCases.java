@@ -7,7 +7,9 @@ import org.testng.asserts.SoftAssert;
 
 public class InstructorLoginTestCases extends InstructorLoginPage {
 
-    @Test(priority = 82)
+
+
+    @Test(priority = 84)
     public static void loginAsInstructor() throws Exception {
 
         clickLoginButton();

@@ -1,0 +1,744 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>95/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 09 11:12:08 EDT 2024</td>
+</tr>
+<tr><td>Total time:</td><td>328 seconds (328510 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.TestPrepeCourseCheck()'><b>TestPrepeCourseCheck</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td><div><pre>java.lang.AssertionError: Course Title is Displayed. expected [true] but found [false]
+	at Automation.pageobjects.HomepageHeaderLinks.Validate_CourseTitleDisplayed(HomepageHeaderLinks.java:426)
+	at AutomationTest.HomepageHeaderLinksTestCases.TestPrepeCourseCheck(HomepageHeaderLinksTestCases.java:807)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace853343978", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace853343978'><pre>java.lang.AssertionError: Course Title is Displayed. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at Automation.pageobjects.HomepageHeaderLinks.Validate_CourseTitleDisplayed(HomepageHeaderLinks.java:426)
+	at AutomationTest.HomepageHeaderLinksTestCases.TestPrepeCourseCheck(HomepageHeaderLinksTestCases.java:807)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>11</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.TestOthersCourseCheck()'><b>TestOthersCourseCheck</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td><div><pre>java.lang.AssertionError: Course Title is Displayed. expected [true] but found [false]
+	at Automation.pageobjects.HomepageHeaderLinks.Validate_CourseTitleDisplayed(HomepageHeaderLinks.java:426)
+	at AutomationTest.HomepageHeaderLinksTestCases.TestOthersCourseCheck(HomepageHeaderLinksTestCases.java:816)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1710607075", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1710607075'><pre>java.lang.AssertionError: Course Title is Displayed. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at Automation.pageobjects.HomepageHeaderLinks.Validate_CourseTitleDisplayed(HomepageHeaderLinks.java:426)
+	at AutomationTest.HomepageHeaderLinksTestCases.TestOthersCourseCheck(HomepageHeaderLinksTestCases.java:816)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>10</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.ComputerScienceCourseCheck()'><b>ComputerScienceCourseCheck</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td><div><pre>java.lang.AssertionError: Course Title is Displayed. expected [true] but found [false]
+	at Automation.pageobjects.HomepageHeaderLinks.Validate_CourseTitleDisplayed(HomepageHeaderLinks.java:426)
+	at AutomationTest.HomepageHeaderLinksTestCases.ComputerScienceCourseCheck(HomepageHeaderLinksTestCases.java:789)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1456006896", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1456006896'><pre>java.lang.AssertionError: Course Title is Displayed. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at Automation.pageobjects.HomepageHeaderLinks.Validate_CourseTitleDisplayed(HomepageHeaderLinks.java:426)
+	at AutomationTest.HomepageHeaderLinksTestCases.ComputerScienceCourseCheck(HomepageHeaderLinksTestCases.java:789)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>10</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.ProgrammingTestCases()'><b>ProgrammingTestCases</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td><div><pre>java.lang.AssertionError: Course Title is Displayed. expected [true] but found [false]
+	at Automation.pageobjects.HomepageHeaderLinks.Validate_CourseTitleDisplayed(HomepageHeaderLinks.java:426)
+	at AutomationTest.HomepageHeaderLinksTestCases.ProgrammingTestCases(HomepageHeaderLinksTestCases.java:762)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1842463725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1842463725'><pre>java.lang.AssertionError: Course Title is Displayed. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at Automation.pageobjects.HomepageHeaderLinks.Validate_CourseTitleDisplayed(HomepageHeaderLinks.java:426)
+	at AutomationTest.HomepageHeaderLinksTestCases.ProgrammingTestCases(HomepageHeaderLinksTestCases.java:762)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>10</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='AutomationTest.HomePageIconTestcases.VerifyContactUS()'><b>VerifyContactUS</b><br>Test class: AutomationTest.HomePageIconTestcases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomePageIconTestcases@4c583ecf</td></tr>
+<tr>
+<td title='AutomationTest.HomePageIconTestcases.VerifySigninButton()'><b>VerifySigninButton</b><br>Test class: AutomationTest.HomePageIconTestcases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomePageIconTestcases@4c583ecf</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_guitarpainoabtthecourse()'><b>verify_guitarpainoabtthecourse</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_itcertificationabtthecourse()'><b>verify_itcertificationabtthecourse</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_machineLearningabtthecourse()'><b>verify_machineLearningabtthecourse</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageCoursesLinksTestCases.VideoCourses()'><b>VideoCourses</b><br>Test class: AutomationTest.HomepageCoursesLinksTestCases</td>
+<td></td>
+<td>1</td>
+<td>AutomationTest.HomepageCoursesLinksTestCases@5656be13</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_indianclassicalmusiccourseinformation()'><b>verify_indianclassicalmusiccourseinformation</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>2</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageCoursesLinksTestCases.MostRecentCourse()'><b>MostRecentCourse</b><br>Test class: AutomationTest.HomepageCoursesLinksTestCases</td>
+<td></td>
+<td>1</td>
+<td>AutomationTest.HomepageCoursesLinksTestCases@5656be13</td></tr>
+<tr>
+<td title='AutomationTest.InstructorLogoutTestCases.logoutAsInstructor()'><b>logoutAsInstructor</b><br>Test class: AutomationTest.InstructorLogoutTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.InstructorLogoutTestCases@71d44a3</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.click_modification()'><b>click_modification</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>4</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.FooterTestCases.validateNewsLink()'><b>validateNewsLink</b><br>Test class: AutomationTest.FooterTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.FooterTestCases@4218d6a3</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.click_modificationimage()'><b>click_modificationimage</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.click_guitarpainoimage()'><b>click_guitarpainoimage</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_guitarpainoimagename()'><b>verify_guitarpainoimagename</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.FooterTestCases.helpCenterLink()'><b>helpCenterLink</b><br>Test class: AutomationTest.FooterTestCases</td>
+<td></td>
+<td>2</td>
+<td>AutomationTest.FooterTestCases@4218d6a3</td></tr>
+<tr>
+<td title='AutomationTest.HomepageCoursesLinksTestCases.TrendingCourse()'><b>TrendingCourse</b><br>Test class: AutomationTest.HomepageCoursesLinksTestCases</td>
+<td></td>
+<td>2</td>
+<td>AutomationTest.HomepageCoursesLinksTestCases@5656be13</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.click_technologyawarenesimage()'><b>click_technologyawarenesimage</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.Hobbies()'><b>Hobbies</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>6</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomePageIconTestcases.Verifycart()'><b>Verifycart</b><br>Test class: AutomationTest.HomePageIconTestcases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomePageIconTestcases@4c583ecf</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_itcertificationname()'><b>verify_itcertificationname</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.FooterTestCases.signUpLink()'><b>signUpLink</b><br>Test class: AutomationTest.FooterTestCases</td>
+<td></td>
+<td>1</td>
+<td>AutomationTest.FooterTestCases@4218d6a3</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_indianclassicalmusicabtthecourse()'><b>verify_indianclassicalmusicabtthecourse</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.InstructorVideoTestcases.videoCourse_Instructor()'><b>videoCourse_Instructor</b><br>Test class: AutomationTest.InstructorVideoTestcases</td>
+<td></td>
+<td>13</td>
+<td>AutomationTest.InstructorVideoTestcases@77888435</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_itcertificationcourseinformation()'><b>verify_itcertificationcourseinformation</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>2</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.FooterTestCases.aboutUsLink()'><b>aboutUsLink</b><br>Test class: AutomationTest.FooterTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.FooterTestCases@4218d6a3</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.TestPrepe()'><b>TestPrepe</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>8</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomePageIconTestcases.VerifyForInstructor()'><b>VerifyForInstructor</b><br>Test class: AutomationTest.HomePageIconTestcases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomePageIconTestcases@4c583ecf</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.Coding()'><b>Coding</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>7</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomePageIconTestcases.VerifyLoginButton()'><b>VerifyLoginButton</b><br>Test class: AutomationTest.HomePageIconTestcases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomePageIconTestcases@4c583ecf</td></tr>
+<tr>
+<td title='AutomationTest.StudentLoginPageTestCases.loginAsStudent()'><b>loginAsStudent</b><br>Test class: AutomationTest.StudentLoginPageTestCases</td>
+<td></td>
+<td>4</td>
+<td>AutomationTest.StudentLoginPageTestCases@7b98f307</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_modificationcourseinformation()'><b>verify_modificationcourseinformation</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>2</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageCoursesLinksTestCases.liveCourses()'><b>liveCourses</b><br>Test class: AutomationTest.HomepageCoursesLinksTestCases</td>
+<td></td>
+<td>3</td>
+<td>AutomationTest.HomepageCoursesLinksTestCases@5656be13</td></tr>
+<tr>
+<td title='AutomationTest.InstructorDashBoardPageTestCases.createNewLiveCourse_WhatYouWillLearn_Instructor()'><b>createNewLiveCourse_WhatYouWillLearn_Instructor</b><br>Test class: AutomationTest.InstructorDashBoardPageTestCases</td>
+<td></td>
+<td>3</td>
+<td>AutomationTest.InstructorDashBoardPageTestCases@73a1e9a9</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.click_machineLearningimage()'><b>click_machineLearningimage</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.click_businessAnalyticsimage()'><b>click_businessAnalyticsimage</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.click_guitarpaino()'><b>click_guitarpaino</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>4</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.FooterTestCases.PrivacyPolicyLink()'><b>PrivacyPolicyLink</b><br>Test class: AutomationTest.FooterTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.FooterTestCases@4218d6a3</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.DanceStyles()'><b>DanceStyles</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>7</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.StudentLoginPageTestCases.verifyDashboardTextPresence()'><b>verifyDashboardTextPresence</b><br>Test class: AutomationTest.StudentLoginPageTestCases</td>
+<td></td>
+<td>3</td>
+<td>AutomationTest.StudentLoginPageTestCases@7b98f307</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_businessAnalyticsabtthecourse()'><b>verify_businessAnalyticsabtthecourse</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.FooterTestCases.blogsLink()'><b>blogsLink</b><br>Test class: AutomationTest.FooterTestCases</td>
+<td></td>
+<td>3</td>
+<td>AutomationTest.FooterTestCases@4218d6a3</td></tr>
+<tr>
+<td title='AutomationTest.InstructorDashBoardPageTestCases.createNewLiveCourse_Topics_Instructor()'><b>createNewLiveCourse_Topics_Instructor</b><br>Test class: AutomationTest.InstructorDashBoardPageTestCases</td>
+<td></td>
+<td>2</td>
+<td>AutomationTest.InstructorDashBoardPageTestCases@73a1e9a9</td></tr>
+<tr>
+<td title='AutomationTest.HomePageIconTestcases.VerfifyBurgerICon()'><b>VerfifyBurgerICon</b><br>Test class: AutomationTest.HomePageIconTestcases</td>
+<td></td>
+<td>1</td>
+<td>AutomationTest.HomePageIconTestcases@4c583ecf</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.click_businessanalytics()'><b>click_businessanalytics</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>3</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.FooterTestCases.BecomeInstructorLink()'><b>BecomeInstructorLink</b><br>Test class: AutomationTest.FooterTestCases</td>
+<td></td>
+<td>1</td>
+<td>AutomationTest.FooterTestCases@4218d6a3</td></tr>
+<tr>
+<td title='AutomationTest.StudentLogoutTestCases.logoutAsStudent()'><b>logoutAsStudent</b><br>Test class: AutomationTest.StudentLogoutTestCases</td>
+<td></td>
+<td>1</td>
+<td>AutomationTest.StudentLogoutTestCases@34123d65</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_businessAnalyticscourseinformation()'><b>verify_businessAnalyticscourseinformation</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>2</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_divyascabtthecourse()'><b>verify_divyascabtthecourse</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.JavaCourseCheck()'><b>JavaCourseCheck</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>8</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_divyascimagename()'><b>verify_divyascimagename</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.FactCheckingVerificationCourseCheck()'><b>FactCheckingVerificationCourseCheck</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>10</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.InstructorVideoTestcases.videoCourseLessonInstructor()'><b>videoCourseLessonInstructor</b><br>Test class: AutomationTest.InstructorVideoTestcases</td>
+<td></td>
+<td>5</td>
+<td>AutomationTest.InstructorVideoTestcases@77888435</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_modificationimagename()'><b>verify_modificationimagename</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.FooterTestCases.validateCareersLink()'><b>validateCareersLink</b><br>Test class: AutomationTest.FooterTestCases</td>
+<td></td>
+<td>1</td>
+<td>AutomationTest.FooterTestCases@4218d6a3</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_guitarpainocourseinformation()'><b>verify_guitarpainocourseinformation</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>2</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.click_itcertification()'><b>click_itcertification</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>6</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.FooterTestCases.contactUslink()'><b>contactUslink</b><br>Test class: AutomationTest.FooterTestCases</td>
+<td></td>
+<td>1</td>
+<td>AutomationTest.FooterTestCases@4218d6a3</td></tr>
+<tr>
+<td title='AutomationTest.InstructorDashBoardPageTestCases.createNewLiveCourse_Sessions_SelectAllDay()'><b>createNewLiveCourse_Sessions_SelectAllDay</b><br>Test class: AutomationTest.InstructorDashBoardPageTestCases</td>
+<td></td>
+<td>3</td>
+<td>AutomationTest.InstructorDashBoardPageTestCases@73a1e9a9</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_technologyawarenesabtthecourse()'><b>verify_technologyawarenesabtthecourse</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_modificationabtthecourse()'><b>verify_modificationabtthecourse</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomePageIconTestcases.verifyInfyniLogo()'><b>verifyInfyniLogo</b><br>Test class: AutomationTest.HomePageIconTestcases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomePageIconTestcases@4c583ecf</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.click_technologyawareness()'><b>click_technologyawareness</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>4</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.MusicTheory()'><b>MusicTheory</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>7</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.InstructorVideoTestcases.videoCourseOutputDisplay()'><b>videoCourseOutputDisplay</b><br>Test class: AutomationTest.InstructorVideoTestcases</td>
+<td></td>
+<td>2</td>
+<td>AutomationTest.InstructorVideoTestcases@77888435</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.click_divyascimage()'><b>click_divyascimage</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.PersonalDevelopmentCourseCheck()'><b>PersonalDevelopmentCourseCheck</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>8</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageCoursesLinksTestCases.kidsCourse()'><b>kidsCourse</b><br>Test class: AutomationTest.HomepageCoursesLinksTestCases</td>
+<td></td>
+<td>1</td>
+<td>AutomationTest.HomepageCoursesLinksTestCases@5656be13</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_machineLearningimagename()'><b>verify_machineLearningimagename</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageCoursesLinksTestCases.professionalCourse()'><b>professionalCourse</b><br>Test class: AutomationTest.HomepageCoursesLinksTestCases</td>
+<td></td>
+<td>1</td>
+<td>AutomationTest.HomepageCoursesLinksTestCases@5656be13</td></tr>
+<tr>
+<td title='AutomationTest.InstructorVideoTestcases.videocoursePrerequisitesInstructor()'><b>videocoursePrerequisitesInstructor</b><br>Test class: AutomationTest.InstructorVideoTestcases</td>
+<td></td>
+<td>12</td>
+<td>AutomationTest.InstructorVideoTestcases@77888435</td></tr>
+<tr>
+<td title='AutomationTest.StudentDashboardPageTestCases.enrollCourse()'><b>enrollCourse</b><br>Test class: AutomationTest.StudentDashboardPageTestCases</td>
+<td></td>
+<td>9</td>
+<td>AutomationTest.StudentDashboardPageTestCases@4802796d</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.click_itcertificationimage()'><b>click_itcertificationimage</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.click_machineLearning()'><b>click_machineLearning</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>4</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_indianclassicalmusicimagename()'><b>verify_indianclassicalmusicimagename</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.FooterTestCases.InfyniForBusinessLink()'><b>InfyniForBusinessLink</b><br>Test class: AutomationTest.FooterTestCases</td>
+<td></td>
+<td>2</td>
+<td>AutomationTest.FooterTestCases@4218d6a3</td></tr>
+<tr>
+<td title='AutomationTest.FooterTestCases.TermsConditionsLink()'><b>TermsConditionsLink</b><br>Test class: AutomationTest.FooterTestCases</td>
+<td></td>
+<td>1</td>
+<td>AutomationTest.FooterTestCases@4218d6a3</td></tr>
+<tr>
+<td title='AutomationTest.InstructorDashBoardPageTestCases.createNewLiveCourse_Details_Instructor()'><b>createNewLiveCourse_Details_Instructor</b><br>Test class: AutomationTest.InstructorDashBoardPageTestCases</td>
+<td></td>
+<td>19</td>
+<td>AutomationTest.InstructorDashBoardPageTestCases@73a1e9a9</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.FactChecking()'><b>FactChecking</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>6</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_machineLearningcourseinformation()'><b>verify_machineLearningcourseinformation</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>2</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.StudentDashboardPageTestCases.searchCourseToEnroll()'><b>searchCourseToEnroll</b><br>Test class: AutomationTest.StudentDashboardPageTestCases</td>
+<td></td>
+<td>4</td>
+<td>AutomationTest.StudentDashboardPageTestCases@4802796d</td></tr>
+<tr>
+<td title='AutomationTest.FooterTestCases.freeWebinarsLink()'><b>freeWebinarsLink</b><br>Test class: AutomationTest.FooterTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.FooterTestCases@4218d6a3</td></tr>
+<tr>
+<td title='AutomationTest.HomePageTestCases.redirectToInstructorLoginPage()'><b>redirectToInstructorLoginPage</b><br>Test class: AutomationTest.HomePageTestCases</td>
+<td></td>
+<td>1</td>
+<td>AutomationTest.HomePageTestCases@76505305</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_businessAnalyticsimagename()'><b>verify_businessAnalyticsimagename</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.ElectricalengineeringCourseCheck()'><b>ElectricalengineeringCourseCheck</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>10</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.InstructorLoginTestCases.loginAsInstructor()'><b>loginAsInstructor</b><br>Test class: AutomationTest.InstructorLoginTestCases</td>
+<td></td>
+<td>4</td>
+<td>AutomationTest.InstructorLoginTestCases@14cd1699</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.HealthBeauty()'><b>HealthBeauty</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>7</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_technologyawarenesimagename()'><b>verify_technologyawarenesimagename</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.NaturalLanguageProcess()'><b>NaturalLanguageProcess</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>10</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageCoursesLinksTestCases.mostPopularCourse()'><b>mostPopularCourse</b><br>Test class: AutomationTest.HomepageCoursesLinksTestCases</td>
+<td></td>
+<td>1</td>
+<td>AutomationTest.HomepageCoursesLinksTestCases@5656be13</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_technologyawarenescourseinformation()'><b>verify_technologyawarenescourseinformation</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>2</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.verify_divyasccourseinformation()'><b>verify_divyasccourseinformation</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>2</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.click_indianclassicalmusic()'><b>click_indianclassicalmusic</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>4</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.click_divyasc()'><b>click_divyasc</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>4</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.HomepageHeaderLinksTestCases.click_indianclassicalmusicimage()'><b>click_indianclassicalmusicimage</b><br>Test class: AutomationTest.HomepageHeaderLinksTestCases</td>
+<td></td>
+<td>0</td>
+<td>AutomationTest.HomepageHeaderLinksTestCases@235834f2</td></tr>
+<tr>
+<td title='AutomationTest.InstructorDashBoardPageTestCases.createNewLiveCourse_Prerequisites_Instructor()'><b>createNewLiveCourse_Prerequisites_Instructor</b><br>Test class: AutomationTest.InstructorDashBoardPageTestCases</td>
+<td></td>
+<td>5</td>
+<td>AutomationTest.InstructorDashBoardPageTestCases@73a1e9a9</td></tr>
+</table><p>
+</body>
+</html>

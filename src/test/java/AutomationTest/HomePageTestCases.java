@@ -7,14 +7,9 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class HomePageTestCases extends HomePage {
-   // @BeforeSuite
-    public static void launchApplication() {
-        launchBrowser("Chrome");
-        launchApp("https://devnj.infyni.com/");
-        implicitWait(50);
-    }
 
-   @Test(priority = 81)
+
+   @Test(priority = 83)
     public static void redirectToInstructorLoginPage() {
         clickForInstructorsLink();
 

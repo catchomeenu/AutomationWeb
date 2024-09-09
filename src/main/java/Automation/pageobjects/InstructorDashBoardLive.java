@@ -82,10 +82,21 @@ public class InstructorDashBoardLive extends Base {
     //Logout links
     public static By accountNameDropDown = By.xpath("//p[@class='!font-primary-font-bold']");
     public static By logoutButton = By.xpath("//span[text()='Log Out']");
-
+    public static By IDashBoardClick= By.xpath("//span[@class='md:text-[14px] text-[14px] md:leading-[23px] leading-[20px] font-semibold text-[#FF6600]']");
 
     public static String mon_yr;
     public static String date;
+
+    public static void clickInstructorDashBoard(){
+        try {
+            driver.findElement(IDashBoardClick).click();
+            System.out.println("Click on For Instructor ");
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+    }
 
     public static void clickLiveCoursesLink() {
         try {

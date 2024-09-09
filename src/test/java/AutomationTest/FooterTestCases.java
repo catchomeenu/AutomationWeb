@@ -9,9 +9,8 @@ import org.testng.asserts.SoftAssert;
 public class FooterTestCases extends HomePage {
 
 
-
     //TC01---Clicking on About Us link
-    @Test(priority = 64)
+    @Test(priority = 71)
     public static void aboutUsLink() {
         clickAboutUsLink();
         System.out.println("Navigated to 'About Us' Page");
@@ -24,7 +23,7 @@ public class FooterTestCases extends HomePage {
         System.out.println("About Us Text Presence Validation Success");
     }
 //TC 02---Clicking on News link
-        @Test(priority = 65)
+        @Test(priority = 72)
         public static void validateNewsLink() {
             clickNewsLink();
             System.out.println("Navigated to 'NEWS' link");
@@ -38,7 +37,7 @@ public class FooterTestCases extends HomePage {
             backToHomePage();
         }
 //TC-03  --Clicking on career 's Link
-            @Test(priority = 66)
+            @Test(priority = 73)
             public static void validateCareersLink() {
 
                 // Clicking on the "Careers" link in the Footer
@@ -58,7 +57,7 @@ public class FooterTestCases extends HomePage {
             }
 // TC04--  Clicking on Contact Us link
 
-                @Test(priority = 67)
+                @Test(priority = 74)
                 public static void contactUslink() {
                     contactusClick();
                     System.out.println("Navigated to 'CONTACT US' link");
@@ -76,7 +75,7 @@ public class FooterTestCases extends HomePage {
 
                 }
 //TC05 --Directing to  'Blogs' link on Home Page footer
-                    @Test(priority = 68)
+                    @Test(priority = 75)
                     public static void blogsLink() {
 
                         // Clicking on the "Blogs" link in the Footer
@@ -95,7 +94,7 @@ public class FooterTestCases extends HomePage {
                     }
 //TC06  --Clicking on FreeWebinars link
 
-                        @Test(priority = 69)
+                        @Test(priority = 76)
                         public static void freeWebinarsLink() {
                             clickFreeWebinarsLink();
                             System.out.println("Clicked on 'FreeWebinars' link");
@@ -110,7 +109,7 @@ public class FooterTestCases extends HomePage {
                             System.out.println("Navigated back to Home page from Webinars page");
                             System.out.println(" TC-06 Webinar test case ");
                         }
-    @Test(priority=70)
+    @Test(priority=77)
     public static void helpCenterLink() {
         clickHelpCenterLink();
         boolean actualresult = verifyHelpCenterText();
@@ -121,7 +120,7 @@ public class FooterTestCases extends HomePage {
         backToInfyniHomePage();
     }
 
-    @Test(priority=71)
+    @Test(priority=78)
     public static void PrivacyPolicyLink()
     {
         clickPrivacyPolicyLink();
@@ -133,7 +132,7 @@ public class FooterTestCases extends HomePage {
         backToInfyniHomePage();
     }
 
-    @Test(priority=72)
+    @Test(priority=79)
     public static void TermsConditionsLink() {
         clickTermsConditionsLink();
         boolean actualresult = verifyTermsConditionsText();
@@ -144,7 +143,7 @@ public class FooterTestCases extends HomePage {
         backToInfyniHomePage();
     }
 
-    @Test(priority=73)
+    @Test(priority=80)
     public static void signUpLink() {
         clickSignUpLink();
         boolean actualresult = verifySignUpText();
@@ -155,7 +154,7 @@ public class FooterTestCases extends HomePage {
         backToInfyniHomePage();
     }
 
-    @Test(priority=74)
+    @Test(priority=81)
     public static void BecomeInstructorLink() {
         clickBecomeInstructorLink();
         boolean actualresult = verifyBecomeInstructorText();
@@ -166,7 +165,7 @@ public class FooterTestCases extends HomePage {
         backToInfyniHomePage();
     }
 
-   @Test(priority=75)
+   @Test(priority=82)
     public static void InfyniForBusinessLink() {
         clickInfyniForBusinessLink();
         boolean actualresult =  verifyinfyniForBusinessText();

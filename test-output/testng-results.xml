@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="99" passed="95" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-09T11:12:08 EDT" name="Suite" finished-at="2024-09-09T11:17:37 EDT" duration-ms="328510">
+    <groups>
+    </groups>
+    <test started-at="2024-09-09T11:12:08 EDT" name="Test" finished-at="2024-09-09T11:17:37 EDT" duration-ms="328510">
+      <class name="AutomationTest.StudentLogoutTestCases">
+        <test-method signature="logoutAsStudent()[pri:99, instance:AutomationTest.StudentLogoutTestCases@34123d65]" started-at="2024-09-09T11:17:35 EDT" name="logoutAsStudent" finished-at="2024-09-09T11:17:37 EDT" duration-ms="1431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutAsStudent -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:AutomationTest.StudentLogoutTestCases@34123d65]" started-at="2024-09-09T11:17:37 EDT" name="closeApplication" finished-at="2024-09-09T11:17:38 EDT" duration-ms="678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- AutomationTest.StudentLogoutTestCases -->
+      <class name="AutomationTest.StudentLoginPageTestCases">
+        <test-method signature="loginAsStudent()[pri:96, instance:AutomationTest.StudentLoginPageTestCases@7b98f307]" started-at="2024-09-09T11:17:13 EDT" name="loginAsStudent" finished-at="2024-09-09T11:17:18 EDT" duration-ms="4658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsStudent -->
+        <test-method signature="verifyDashboardTextPresence()[pri:97, instance:AutomationTest.StudentLoginPageTestCases@7b98f307]" started-at="2024-09-09T11:17:18 EDT" name="verifyDashboardTextPresence" finished-at="2024-09-09T11:17:21 EDT" duration-ms="3257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardTextPresence -->
+      </class> <!-- AutomationTest.StudentLoginPageTestCases -->
+      <class name="AutomationTest.HomePageIconTestcases">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AutomationTest.HomePageIconTestcases@4c583ecf]" started-at="2024-09-09T11:12:03 EDT" name="launchApplication" finished-at="2024-09-09T11:12:08 EDT" duration-ms="5744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="VerfifyBurgerICon()[pri:1, instance:AutomationTest.HomePageIconTestcases@4c583ecf]" started-at="2024-09-09T11:12:08 EDT" name="VerfifyBurgerICon" finished-at="2024-09-09T11:12:10 EDT" duration-ms="1264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerfifyBurgerICon -->
+        <test-method signature="verifyInfyniLogo()[pri:2, instance:AutomationTest.HomePageIconTestcases@4c583ecf]" started-at="2024-09-09T11:12:10 EDT" name="verifyInfyniLogo" finished-at="2024-09-09T11:12:10 EDT" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInfyniLogo -->
+        <test-method signature="VerifyContactUS()[pri:3, instance:AutomationTest.HomePageIconTestcases@4c583ecf]" started-at="2024-09-09T11:12:10 EDT" name="VerifyContactUS" finished-at="2024-09-09T11:12:10 EDT" duration-ms="663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyContactUS -->
+        <test-method signature="VerifyForInstructor()[pri:4, instance:AutomationTest.HomePageIconTestcases@4c583ecf]" started-at="2024-09-09T11:12:10 EDT" name="VerifyForInstructor" finished-at="2024-09-09T11:12:11 EDT" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyForInstructor -->
+        <test-method signature="Verifycart()[pri:5, instance:AutomationTest.HomePageIconTestcases@4c583ecf]" started-at="2024-09-09T11:12:11 EDT" name="Verifycart" finished-at="2024-09-09T11:12:11 EDT" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verifycart -->
+        <test-method signature="VerifyLoginButton()[pri:6, instance:AutomationTest.HomePageIconTestcases@4c583ecf]" started-at="2024-09-09T11:12:11 EDT" name="VerifyLoginButton" finished-at="2024-09-09T11:12:11 EDT" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginButton -->
+        <test-method signature="VerifySigninButton()[pri:7, instance:AutomationTest.HomePageIconTestcases@4c583ecf]" started-at="2024-09-09T11:12:11 EDT" name="VerifySigninButton" finished-at="2024-09-09T11:12:11 EDT" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySigninButton -->
+      </class> <!-- AutomationTest.HomePageIconTestcases -->
+      <class name="AutomationTest.InstructorDashBoardPageTestCases">
+        <test-method signature="createNewLiveCourse_Details_Instructor()[pri:85, instance:AutomationTest.InstructorDashBoardPageTestCases@73a1e9a9]" started-at="2024-09-09T11:16:38 EDT" name="createNewLiveCourse_Details_Instructor" finished-at="2024-09-09T11:16:58 EDT" duration-ms="19490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewLiveCourse_Details_Instructor -->
+        <test-method signature="createNewLiveCourse_Prerequisites_Instructor()[pri:86, instance:AutomationTest.InstructorDashBoardPageTestCases@73a1e9a9]" started-at="2024-09-09T11:16:58 EDT" name="createNewLiveCourse_Prerequisites_Instructor" finished-at="2024-09-09T11:17:03 EDT" duration-ms="5032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewLiveCourse_Prerequisites_Instructor -->
+        <test-method signature="createNewLiveCourse_WhatYouWillLearn_Instructor()[pri:87, instance:AutomationTest.InstructorDashBoardPageTestCases@73a1e9a9]" started-at="2024-09-09T11:17:03 EDT" name="createNewLiveCourse_WhatYouWillLearn_Instructor" finished-at="2024-09-09T11:17:07 EDT" duration-ms="3627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewLiveCourse_WhatYouWillLearn_Instructor -->
+        <test-method signature="createNewLiveCourse_Topics_Instructor()[pri:88, instance:AutomationTest.InstructorDashBoardPageTestCases@73a1e9a9]" started-at="2024-09-09T11:17:07 EDT" name="createNewLiveCourse_Topics_Instructor" finished-at="2024-09-09T11:17:09 EDT" duration-ms="2413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewLiveCourse_Topics_Instructor -->
+        <test-method signature="createNewLiveCourse_Sessions_SelectAllDay()[pri:89, instance:AutomationTest.InstructorDashBoardPageTestCases@73a1e9a9]" started-at="2024-09-09T11:17:09 EDT" name="createNewLiveCourse_Sessions_SelectAllDay" finished-at="2024-09-09T11:17:13 EDT" duration-ms="3982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewLiveCourse_Sessions_SelectAllDay -->
+      </class> <!-- AutomationTest.InstructorDashBoardPageTestCases -->
+      <class name="AutomationTest.HomepageHeaderLinksTestCases">
+        <test-method signature="click_businessanalytics()[pri:8, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:11 EDT" name="click_businessanalytics" finished-at="2024-09-09T11:12:14 EDT" duration-ms="3237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_businessanalytics -->
+        <test-method signature="click_businessAnalyticsimage()[pri:9, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:14 EDT" name="click_businessAnalyticsimage" finished-at="2024-09-09T11:12:14 EDT" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_businessAnalyticsimage -->
+        <test-method signature="verify_businessAnalyticsimagename()[pri:10, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:14 EDT" name="verify_businessAnalyticsimagename" finished-at="2024-09-09T11:12:14 EDT" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_businessAnalyticsimagename -->
+        <test-method signature="verify_businessAnalyticscourseinformation()[pri:11, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:14 EDT" name="verify_businessAnalyticscourseinformation" finished-at="2024-09-09T11:12:16 EDT" duration-ms="2282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_businessAnalyticscourseinformation -->
+        <test-method signature="verify_businessAnalyticsabtthecourse()[pri:12, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:16 EDT" name="verify_businessAnalyticsabtthecourse" finished-at="2024-09-09T11:12:17 EDT" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_businessAnalyticsabtthecourse -->
+        <test-method signature="click_modification()[pri:13, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:17 EDT" name="click_modification" finished-at="2024-09-09T11:12:21 EDT" duration-ms="4899" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_modification -->
+        <test-method signature="click_modificationimage()[pri:14, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:21 EDT" name="click_modificationimage" finished-at="2024-09-09T11:12:21 EDT" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_modificationimage -->
+        <test-method signature="verify_modificationimagename()[pri:15, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:21 EDT" name="verify_modificationimagename" finished-at="2024-09-09T11:12:22 EDT" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_modificationimagename -->
+        <test-method signature="verify_modificationcourseinformation()[pri:16, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:22 EDT" name="verify_modificationcourseinformation" finished-at="2024-09-09T11:12:24 EDT" duration-ms="2478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_modificationcourseinformation -->
+        <test-method signature="verify_modificationabtthecourse()[pri:17, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:24 EDT" name="verify_modificationabtthecourse" finished-at="2024-09-09T11:12:24 EDT" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_modificationabtthecourse -->
+        <test-method signature="click_indianclassicalmusic()[pri:18, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:24 EDT" name="click_indianclassicalmusic" finished-at="2024-09-09T11:12:29 EDT" duration-ms="4766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_indianclassicalmusic -->
+        <test-method signature="click_indianclassicalmusicimage()[pri:19, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:29 EDT" name="click_indianclassicalmusicimage" finished-at="2024-09-09T11:12:29 EDT" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_indianclassicalmusicimage -->
+        <test-method signature="verify_indianclassicalmusicimagename()[pri:20, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:29 EDT" name="verify_indianclassicalmusicimagename" finished-at="2024-09-09T11:12:29 EDT" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_indianclassicalmusicimagename -->
+        <test-method signature="verify_indianclassicalmusiccourseinformation()[pri:21, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:29 EDT" name="verify_indianclassicalmusiccourseinformation" finished-at="2024-09-09T11:12:31 EDT" duration-ms="2260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_indianclassicalmusiccourseinformation -->
+        <test-method signature="verify_indianclassicalmusicabtthecourse()[pri:22, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:31 EDT" name="verify_indianclassicalmusicabtthecourse" finished-at="2024-09-09T11:12:31 EDT" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_indianclassicalmusicabtthecourse -->
+        <test-method signature="click_machineLearning()[pri:23, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:31 EDT" name="click_machineLearning" finished-at="2024-09-09T11:12:36 EDT" duration-ms="4707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_machineLearning -->
+        <test-method signature="click_machineLearningimage()[pri:24, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:36 EDT" name="click_machineLearningimage" finished-at="2024-09-09T11:12:36 EDT" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_machineLearningimage -->
+        <test-method signature="verify_machineLearningimagename()[pri:25, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:36 EDT" name="verify_machineLearningimagename" finished-at="2024-09-09T11:12:36 EDT" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_machineLearningimagename -->
+        <test-method signature="verify_machineLearningcourseinformation()[pri:26, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:36 EDT" name="verify_machineLearningcourseinformation" finished-at="2024-09-09T11:12:38 EDT" duration-ms="2268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_machineLearningcourseinformation -->
+        <test-method signature="verify_machineLearningabtthecourse()[pri:27, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:38 EDT" name="verify_machineLearningabtthecourse" finished-at="2024-09-09T11:12:38 EDT" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_machineLearningabtthecourse -->
+        <test-method signature="click_technologyawareness()[pri:28, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:38 EDT" name="click_technologyawareness" finished-at="2024-09-09T11:12:43 EDT" duration-ms="4444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_technologyawareness -->
+        <test-method signature="click_technologyawarenesimage()[pri:29, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:43 EDT" name="click_technologyawarenesimage" finished-at="2024-09-09T11:12:43 EDT" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_technologyawarenesimage -->
+        <test-method signature="verify_technologyawarenesimagename()[pri:30, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:43 EDT" name="verify_technologyawarenesimagename" finished-at="2024-09-09T11:12:43 EDT" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_technologyawarenesimagename -->
+        <test-method signature="verify_technologyawarenescourseinformation()[pri:31, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:43 EDT" name="verify_technologyawarenescourseinformation" finished-at="2024-09-09T11:12:45 EDT" duration-ms="2217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_technologyawarenescourseinformation -->
+        <test-method signature="verify_technologyawarenesabtthecourse()[pri:32, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:45 EDT" name="verify_technologyawarenesabtthecourse" finished-at="2024-09-09T11:12:45 EDT" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_technologyawarenesabtthecourse -->
+        <test-method signature="click_divyasc()[pri:33, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:45 EDT" name="click_divyasc" finished-at="2024-09-09T11:12:50 EDT" duration-ms="4943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_divyasc -->
+        <test-method signature="click_divyascimage()[pri:34, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:50 EDT" name="click_divyascimage" finished-at="2024-09-09T11:12:50 EDT" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_divyascimage -->
+        <test-method signature="verify_divyascimagename()[pri:35, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:50 EDT" name="verify_divyascimagename" finished-at="2024-09-09T11:12:50 EDT" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_divyascimagename -->
+        <test-method signature="verify_divyasccourseinformation()[pri:36, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:50 EDT" name="verify_divyasccourseinformation" finished-at="2024-09-09T11:12:52 EDT" duration-ms="2306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_divyasccourseinformation -->
+        <test-method signature="verify_divyascabtthecourse()[pri:37, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:52 EDT" name="verify_divyascabtthecourse" finished-at="2024-09-09T11:12:52 EDT" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_divyascabtthecourse -->
+        <test-method signature="click_guitarpaino()[pri:38, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:52 EDT" name="click_guitarpaino" finished-at="2024-09-09T11:12:57 EDT" duration-ms="4752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_guitarpaino -->
+        <test-method signature="click_guitarpainoimage()[pri:39, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:57 EDT" name="click_guitarpainoimage" finished-at="2024-09-09T11:12:57 EDT" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_guitarpainoimage -->
+        <test-method signature="verify_guitarpainoimagename()[pri:40, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:57 EDT" name="verify_guitarpainoimagename" finished-at="2024-09-09T11:12:57 EDT" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_guitarpainoimagename -->
+        <test-method signature="verify_guitarpainocourseinformation()[pri:41, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:12:57 EDT" name="verify_guitarpainocourseinformation" finished-at="2024-09-09T11:13:00 EDT" duration-ms="2291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_guitarpainocourseinformation -->
+        <test-method signature="verify_guitarpainoabtthecourse()[pri:42, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:13:00 EDT" name="verify_guitarpainoabtthecourse" finished-at="2024-09-09T11:13:00 EDT" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_guitarpainoabtthecourse -->
+        <test-method signature="click_itcertification()[pri:43, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:13:00 EDT" name="click_itcertification" finished-at="2024-09-09T11:13:06 EDT" duration-ms="6067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_itcertification -->
+        <test-method signature="click_itcertificationimage()[pri:44, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:13:06 EDT" name="click_itcertificationimage" finished-at="2024-09-09T11:13:06 EDT" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_itcertificationimage -->
+        <test-method signature="verify_itcertificationname()[pri:45, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:13:06 EDT" name="verify_itcertificationname" finished-at="2024-09-09T11:13:06 EDT" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_itcertificationname -->
+        <test-method signature="verify_itcertificationcourseinformation()[pri:46, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:13:06 EDT" name="verify_itcertificationcourseinformation" finished-at="2024-09-09T11:13:08 EDT" duration-ms="2085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_itcertificationcourseinformation -->
+        <test-method signature="verify_itcertificationabtthecourse()[pri:47, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:13:08 EDT" name="verify_itcertificationabtthecourse" finished-at="2024-09-09T11:13:08 EDT" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_itcertificationabtthecourse -->
+        <test-method signature="HealthBeauty()[pri:48, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:13:08 EDT" name="HealthBeauty" finished-at="2024-09-09T11:13:15 EDT" duration-ms="7073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HealthBeauty -->
+        <test-method signature="MusicTheory()[pri:49, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:13:15 EDT" name="MusicTheory" finished-at="2024-09-09T11:13:22 EDT" duration-ms="7011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MusicTheory -->
+        <test-method signature="TestPrepe()[pri:50, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:13:22 EDT" name="TestPrepe" finished-at="2024-09-09T11:13:30 EDT" duration-ms="8458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestPrepe -->
+        <test-method signature="Hobbies()[pri:51, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:13:30 EDT" name="Hobbies" finished-at="2024-09-09T11:13:36 EDT" duration-ms="6072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Hobbies -->
+        <test-method signature="FactChecking()[pri:52, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:13:36 EDT" name="FactChecking" finished-at="2024-09-09T11:13:43 EDT" duration-ms="6997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FactChecking -->
+        <test-method signature="Coding()[pri:53, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:13:43 EDT" name="Coding" finished-at="2024-09-09T11:13:51 EDT" duration-ms="7160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Coding -->
+        <test-method signature="DanceStyles()[pri:54, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:13:51 EDT" name="DanceStyles" finished-at="2024-09-09T11:13:58 EDT" duration-ms="7279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DanceStyles -->
+        <test-method signature="ProgrammingTestCases()[pri:55, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:13:58 EDT" name="ProgrammingTestCases" finished-at="2024-09-09T11:14:08 EDT" duration-ms="10075" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Course Title is Displayed. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Course Title is Displayed. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at Automation.pageobjects.HomepageHeaderLinks.Validate_CourseTitleDisplayed(HomepageHeaderLinks.java:426)
+at AutomationTest.HomepageHeaderLinksTestCases.ProgrammingTestCases(HomepageHeaderLinksTestCases.java:762)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProgrammingTestCases -->
+        <test-method signature="PersonalDevelopmentCourseCheck()[pri:56, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:14:08 EDT" name="PersonalDevelopmentCourseCheck" finished-at="2024-09-09T11:14:16 EDT" duration-ms="8263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PersonalDevelopmentCourseCheck -->
+        <test-method signature="ComputerScienceCourseCheck()[pri:57, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:14:16 EDT" name="ComputerScienceCourseCheck" finished-at="2024-09-09T11:14:27 EDT" duration-ms="10596" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Course Title is Displayed. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Course Title is Displayed. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at Automation.pageobjects.HomepageHeaderLinks.Validate_CourseTitleDisplayed(HomepageHeaderLinks.java:426)
+at AutomationTest.HomepageHeaderLinksTestCases.ComputerScienceCourseCheck(HomepageHeaderLinksTestCases.java:789)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ComputerScienceCourseCheck -->
+        <test-method signature="NaturalLanguageProcess()[pri:58, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:14:27 EDT" name="NaturalLanguageProcess" finished-at="2024-09-09T11:14:38 EDT" duration-ms="10891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NaturalLanguageProcess -->
+        <test-method signature="TestPrepeCourseCheck()[pri:59, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:14:38 EDT" name="TestPrepeCourseCheck" finished-at="2024-09-09T11:14:49 EDT" duration-ms="11092" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Course Title is Displayed. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Course Title is Displayed. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at Automation.pageobjects.HomepageHeaderLinks.Validate_CourseTitleDisplayed(HomepageHeaderLinks.java:426)
+at AutomationTest.HomepageHeaderLinksTestCases.TestPrepeCourseCheck(HomepageHeaderLinksTestCases.java:807)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestPrepeCourseCheck -->
+        <test-method signature="TestOthersCourseCheck()[pri:60, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:14:49 EDT" name="TestOthersCourseCheck" finished-at="2024-09-09T11:14:59 EDT" duration-ms="10125" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Course Title is Displayed. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Course Title is Displayed. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at Automation.pageobjects.HomepageHeaderLinks.Validate_CourseTitleDisplayed(HomepageHeaderLinks.java:426)
+at AutomationTest.HomepageHeaderLinksTestCases.TestOthersCourseCheck(HomepageHeaderLinksTestCases.java:816)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestOthersCourseCheck -->
+        <test-method signature="ElectricalengineeringCourseCheck()[pri:61, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:14:59 EDT" name="ElectricalengineeringCourseCheck" finished-at="2024-09-09T11:15:10 EDT" duration-ms="10955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ElectricalengineeringCourseCheck -->
+        <test-method signature="JavaCourseCheck()[pri:62, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:15:10 EDT" name="JavaCourseCheck" finished-at="2024-09-09T11:15:18 EDT" duration-ms="8129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaCourseCheck -->
+        <test-method signature="FactCheckingVerificationCourseCheck()[pri:63, instance:AutomationTest.HomepageHeaderLinksTestCases@235834f2]" started-at="2024-09-09T11:15:18 EDT" name="FactCheckingVerificationCourseCheck" finished-at="2024-09-09T11:15:29 EDT" duration-ms="10517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FactCheckingVerificationCourseCheck -->
+      </class> <!-- AutomationTest.HomepageHeaderLinksTestCases -->
+      <class name="AutomationTest.HomepageCoursesLinksTestCases">
+        <test-method signature="TrendingCourse()[pri:64, instance:AutomationTest.HomepageCoursesLinksTestCases@5656be13]" started-at="2024-09-09T11:15:29 EDT" name="TrendingCourse" finished-at="2024-09-09T11:15:31 EDT" duration-ms="2167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TrendingCourse -->
+        <test-method signature="mostPopularCourse()[pri:65, instance:AutomationTest.HomepageCoursesLinksTestCases@5656be13]" started-at="2024-09-09T11:15:31 EDT" name="mostPopularCourse" finished-at="2024-09-09T11:15:32 EDT" duration-ms="1395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mostPopularCourse -->
+        <test-method signature="MostRecentCourse()[pri:66, instance:AutomationTest.HomepageCoursesLinksTestCases@5656be13]" started-at="2024-09-09T11:15:32 EDT" name="MostRecentCourse" finished-at="2024-09-09T11:15:33 EDT" duration-ms="1322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MostRecentCourse -->
+        <test-method signature="professionalCourse()[pri:67, instance:AutomationTest.HomepageCoursesLinksTestCases@5656be13]" started-at="2024-09-09T11:15:33 EDT" name="professionalCourse" finished-at="2024-09-09T11:15:35 EDT" duration-ms="1765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- professionalCourse -->
+        <test-method signature="kidsCourse()[pri:68, instance:AutomationTest.HomepageCoursesLinksTestCases@5656be13]" started-at="2024-09-09T11:15:35 EDT" name="kidsCourse" finished-at="2024-09-09T11:15:37 EDT" duration-ms="1750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kidsCourse -->
+        <test-method signature="liveCourses()[pri:69, instance:AutomationTest.HomepageCoursesLinksTestCases@5656be13]" started-at="2024-09-09T11:15:37 EDT" name="liveCourses" finished-at="2024-09-09T11:15:40 EDT" duration-ms="3082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- liveCourses -->
+        <test-method signature="VideoCourses()[pri:70, instance:AutomationTest.HomepageCoursesLinksTestCases@5656be13]" started-at="2024-09-09T11:15:40 EDT" name="VideoCourses" finished-at="2024-09-09T11:15:41 EDT" duration-ms="1055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VideoCourses -->
+      </class> <!-- AutomationTest.HomepageCoursesLinksTestCases -->
+      <class name="AutomationTest.FooterTestCases">
+        <test-method signature="aboutUsLink()[pri:71, instance:AutomationTest.FooterTestCases@4218d6a3]" started-at="2024-09-09T11:15:41 EDT" name="aboutUsLink" finished-at="2024-09-09T11:15:42 EDT" duration-ms="970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aboutUsLink -->
+        <test-method signature="validateNewsLink()[pri:72, instance:AutomationTest.FooterTestCases@4218d6a3]" started-at="2024-09-09T11:15:42 EDT" name="validateNewsLink" finished-at="2024-09-09T11:15:42 EDT" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNewsLink -->
+        <test-method signature="validateCareersLink()[pri:73, instance:AutomationTest.FooterTestCases@4218d6a3]" started-at="2024-09-09T11:15:42 EDT" name="validateCareersLink" finished-at="2024-09-09T11:15:43 EDT" duration-ms="1108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCareersLink -->
+        <test-method signature="contactUslink()[pri:74, instance:AutomationTest.FooterTestCases@4218d6a3]" started-at="2024-09-09T11:15:44 EDT" name="contactUslink" finished-at="2024-09-09T11:15:45 EDT" duration-ms="1825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUslink -->
+        <test-method signature="blogsLink()[pri:75, instance:AutomationTest.FooterTestCases@4218d6a3]" started-at="2024-09-09T11:15:45 EDT" name="blogsLink" finished-at="2024-09-09T11:15:49 EDT" duration-ms="3646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blogsLink -->
+        <test-method signature="freeWebinarsLink()[pri:76, instance:AutomationTest.FooterTestCases@4218d6a3]" started-at="2024-09-09T11:15:49 EDT" name="freeWebinarsLink" finished-at="2024-09-09T11:15:50 EDT" duration-ms="630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeWebinarsLink -->
+        <test-method signature="helpCenterLink()[pri:77, instance:AutomationTest.FooterTestCases@4218d6a3]" started-at="2024-09-09T11:15:50 EDT" name="helpCenterLink" finished-at="2024-09-09T11:15:52 EDT" duration-ms="2422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- helpCenterLink -->
+        <test-method signature="PrivacyPolicyLink()[pri:78, instance:AutomationTest.FooterTestCases@4218d6a3]" started-at="2024-09-09T11:15:52 EDT" name="PrivacyPolicyLink" finished-at="2024-09-09T11:15:53 EDT" duration-ms="696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrivacyPolicyLink -->
+        <test-method signature="TermsConditionsLink()[pri:79, instance:AutomationTest.FooterTestCases@4218d6a3]" started-at="2024-09-09T11:15:53 EDT" name="TermsConditionsLink" finished-at="2024-09-09T11:15:54 EDT" duration-ms="1237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TermsConditionsLink -->
+        <test-method signature="signUpLink()[pri:80, instance:AutomationTest.FooterTestCases@4218d6a3]" started-at="2024-09-09T11:15:54 EDT" name="signUpLink" finished-at="2024-09-09T11:15:56 EDT" duration-ms="1656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpLink -->
+        <test-method signature="BecomeInstructorLink()[pri:81, instance:AutomationTest.FooterTestCases@4218d6a3]" started-at="2024-09-09T11:15:56 EDT" name="BecomeInstructorLink" finished-at="2024-09-09T11:15:57 EDT" duration-ms="1533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BecomeInstructorLink -->
+        <test-method signature="InfyniForBusinessLink()[pri:82, instance:AutomationTest.FooterTestCases@4218d6a3]" started-at="2024-09-09T11:15:57 EDT" name="InfyniForBusinessLink" finished-at="2024-09-09T11:15:59 EDT" duration-ms="2282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InfyniForBusinessLink -->
+      </class> <!-- AutomationTest.FooterTestCases -->
+      <class name="AutomationTest.InstructorVideoTestcases">
+        <test-method signature="videoCourse_Instructor()[pri:90, instance:AutomationTest.InstructorVideoTestcases@77888435]" started-at="2024-09-09T11:16:05 EDT" name="videoCourse_Instructor" finished-at="2024-09-09T11:16:18 EDT" duration-ms="13759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- videoCourse_Instructor -->
+        <test-method signature="videocoursePrerequisitesInstructor()[pri:92, instance:AutomationTest.InstructorVideoTestcases@77888435]" started-at="2024-09-09T11:16:18 EDT" name="videocoursePrerequisitesInstructor" finished-at="2024-09-09T11:16:31 EDT" duration-ms="12869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- videocoursePrerequisitesInstructor -->
+        <test-method signature="videoCourseLessonInstructor()[pri:93, instance:AutomationTest.InstructorVideoTestcases@77888435]" started-at="2024-09-09T11:16:31 EDT" name="videoCourseLessonInstructor" finished-at="2024-09-09T11:16:36 EDT" duration-ms="5116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- videoCourseLessonInstructor -->
+        <test-method signature="videoCourseOutputDisplay()[pri:94, instance:AutomationTest.InstructorVideoTestcases@77888435]" started-at="2024-09-09T11:16:36 EDT" name="videoCourseOutputDisplay" finished-at="2024-09-09T11:16:38 EDT" duration-ms="2066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- videoCourseOutputDisplay -->
+      </class> <!-- AutomationTest.InstructorVideoTestcases -->
+      <class name="AutomationTest.HomePageTestCases">
+        <test-method signature="redirectToInstructorLoginPage()[pri:83, instance:AutomationTest.HomePageTestCases@76505305]" started-at="2024-09-09T11:15:59 EDT" name="redirectToInstructorLoginPage" finished-at="2024-09-09T11:16:01 EDT" duration-ms="1092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirectToInstructorLoginPage -->
+      </class> <!-- AutomationTest.HomePageTestCases -->
+      <class name="AutomationTest.StudentDashboardPageTestCases">
+        <test-method signature="searchCourseToEnroll()[pri:94, instance:AutomationTest.StudentDashboardPageTestCases@4802796d]" started-at="2024-09-09T11:17:21 EDT" name="searchCourseToEnroll" finished-at="2024-09-09T11:17:26 EDT" duration-ms="4380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCourseToEnroll -->
+        <test-method signature="enrollCourse()[pri:98, instance:AutomationTest.StudentDashboardPageTestCases@4802796d]" started-at="2024-09-09T11:17:26 EDT" name="enrollCourse" finished-at="2024-09-09T11:17:35 EDT" duration-ms="9814" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enrollCourse -->
+      </class> <!-- AutomationTest.StudentDashboardPageTestCases -->
+      <class name="AutomationTest.InstructorLogoutTestCases">
+        <test-method signature="logoutAsInstructor()[pri:95, instance:AutomationTest.InstructorLogoutTestCases@71d44a3]" started-at="2024-09-09T11:17:13 EDT" name="logoutAsInstructor" finished-at="2024-09-09T11:17:13 EDT" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutAsInstructor -->
+      </class> <!-- AutomationTest.InstructorLogoutTestCases -->
+      <class name="AutomationTest.InstructorLoginTestCases">
+        <test-method signature="loginAsInstructor()[pri:84, instance:AutomationTest.InstructorLoginTestCases@14cd1699]" started-at="2024-09-09T11:16:01 EDT" name="loginAsInstructor" finished-at="2024-09-09T11:16:05 EDT" duration-ms="4147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsInstructor -->
+      </class> <!-- AutomationTest.InstructorLoginTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
