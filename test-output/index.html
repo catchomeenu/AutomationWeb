@@ -1,0 +1,2391 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\ashle\IdeaProjects\remote\AutomationWeb\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">99 methods, 4 failed,   95 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="ComputerScienceCourseCheck">ComputerScienceCourseCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="ProgrammingTestCases">ProgrammingTestCases</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="TestOthersCourseCheck">TestOthersCourseCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="TestPrepeCourseCheck">TestPrepeCourseCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.FooterTestCases" class="method navigator-link" hash-for-method="BecomeInstructorLink">BecomeInstructorLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="Coding">Coding</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="DanceStyles">DanceStyles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="ElectricalengineeringCourseCheck">ElectricalengineeringCourseCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="FactChecking">FactChecking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="FactCheckingVerificationCourseCheck">FactCheckingVerificationCourseCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="HealthBeauty">HealthBeauty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="Hobbies">Hobbies</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.FooterTestCases" class="method navigator-link" hash-for-method="InfyniForBusinessLink">InfyniForBusinessLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="JavaCourseCheck">JavaCourseCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageCoursesLinksTestCases" class="method navigator-link" hash-for-method="MostRecentCourse">MostRecentCourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="MusicTheory">MusicTheory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="NaturalLanguageProcess">NaturalLanguageProcess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="PersonalDevelopmentCourseCheck">PersonalDevelopmentCourseCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.FooterTestCases" class="method navigator-link" hash-for-method="PrivacyPolicyLink">PrivacyPolicyLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.FooterTestCases" class="method navigator-link" hash-for-method="TermsConditionsLink">TermsConditionsLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="TestPrepe">TestPrepe</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageCoursesLinksTestCases" class="method navigator-link" hash-for-method="TrendingCourse">TrendingCourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomePageIconTestcases" class="method navigator-link" hash-for-method="VerfifyBurgerICon">VerfifyBurgerICon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomePageIconTestcases" class="method navigator-link" hash-for-method="VerifyContactUS">VerifyContactUS</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomePageIconTestcases" class="method navigator-link" hash-for-method="VerifyForInstructor">VerifyForInstructor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomePageIconTestcases" class="method navigator-link" hash-for-method="VerifyLoginButton">VerifyLoginButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomePageIconTestcases" class="method navigator-link" hash-for-method="VerifySigninButton">VerifySigninButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomePageIconTestcases" class="method navigator-link" hash-for-method="Verifycart">Verifycart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageCoursesLinksTestCases" class="method navigator-link" hash-for-method="VideoCourses">VideoCourses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.FooterTestCases" class="method navigator-link" hash-for-method="aboutUsLink">aboutUsLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.FooterTestCases" class="method navigator-link" hash-for-method="blogsLink">blogsLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="click_businessAnalyticsimage">click_businessAnalyticsimage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="click_businessanalytics">click_businessanalytics</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="click_divyasc">click_divyasc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="click_divyascimage">click_divyascimage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="click_guitarpaino">click_guitarpaino</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="click_guitarpainoimage">click_guitarpainoimage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="click_indianclassicalmusic">click_indianclassicalmusic</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="click_indianclassicalmusicimage">click_indianclassicalmusicimage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="click_itcertification">click_itcertification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="click_itcertificationimage">click_itcertificationimage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="click_machineLearning">click_machineLearning</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="click_machineLearningimage">click_machineLearningimage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="click_modification">click_modification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="click_modificationimage">click_modificationimage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="click_technologyawarenesimage">click_technologyawarenesimage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="click_technologyawareness">click_technologyawareness</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.FooterTestCases" class="method navigator-link" hash-for-method="contactUslink">contactUslink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.InstructorDashBoardPageTestCases" class="method navigator-link" hash-for-method="createNewLiveCourse_Details_Instructor">createNewLiveCourse_Details_Instructor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.InstructorDashBoardPageTestCases" class="method navigator-link" hash-for-method="createNewLiveCourse_Prerequisites_Instructor">createNewLiveCourse_Prerequisites_Instructor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.InstructorDashBoardPageTestCases" class="method navigator-link" hash-for-method="createNewLiveCourse_Sessions_SelectAllDay">createNewLiveCourse_Sessions_SelectAllDay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.InstructorDashBoardPageTestCases" class="method navigator-link" hash-for-method="createNewLiveCourse_Topics_Instructor">createNewLiveCourse_Topics_Instructor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.InstructorDashBoardPageTestCases" class="method navigator-link" hash-for-method="createNewLiveCourse_WhatYouWillLearn_Instructor">createNewLiveCourse_WhatYouWillLearn_Instructor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.StudentDashboardPageTestCases" class="method navigator-link" hash-for-method="enrollCourse">enrollCourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.FooterTestCases" class="method navigator-link" hash-for-method="freeWebinarsLink">freeWebinarsLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.FooterTestCases" class="method navigator-link" hash-for-method="helpCenterLink">helpCenterLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageCoursesLinksTestCases" class="method navigator-link" hash-for-method="kidsCourse">kidsCourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageCoursesLinksTestCases" class="method navigator-link" hash-for-method="liveCourses">liveCourses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.InstructorLoginTestCases" class="method navigator-link" hash-for-method="loginAsInstructor">loginAsInstructor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.StudentLoginPageTestCases" class="method navigator-link" hash-for-method="loginAsStudent">loginAsStudent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.InstructorLogoutTestCases" class="method navigator-link" hash-for-method="logoutAsInstructor">logoutAsInstructor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.StudentLogoutTestCases" class="method navigator-link" hash-for-method="logoutAsStudent">logoutAsStudent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageCoursesLinksTestCases" class="method navigator-link" hash-for-method="mostPopularCourse">mostPopularCourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageCoursesLinksTestCases" class="method navigator-link" hash-for-method="professionalCourse">professionalCourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomePageTestCases" class="method navigator-link" hash-for-method="redirectToInstructorLoginPage">redirectToInstructorLoginPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.StudentDashboardPageTestCases" class="method navigator-link" hash-for-method="searchCourseToEnroll">searchCourseToEnroll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.FooterTestCases" class="method navigator-link" hash-for-method="signUpLink">signUpLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.FooterTestCases" class="method navigator-link" hash-for-method="validateCareersLink">validateCareersLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.FooterTestCases" class="method navigator-link" hash-for-method="validateNewsLink">validateNewsLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.StudentLoginPageTestCases" class="method navigator-link" hash-for-method="verifyDashboardTextPresence">verifyDashboardTextPresence</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomePageIconTestcases" class="method navigator-link" hash-for-method="verifyInfyniLogo">verifyInfyniLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_businessAnalyticsabtthecourse">verify_businessAnalyticsabtthecourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_businessAnalyticscourseinformation">verify_businessAnalyticscourseinformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_businessAnalyticsimagename">verify_businessAnalyticsimagename</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_divyascabtthecourse">verify_divyascabtthecourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_divyasccourseinformation">verify_divyasccourseinformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_divyascimagename">verify_divyascimagename</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_guitarpainoabtthecourse">verify_guitarpainoabtthecourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_guitarpainocourseinformation">verify_guitarpainocourseinformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_guitarpainoimagename">verify_guitarpainoimagename</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_indianclassicalmusicabtthecourse">verify_indianclassicalmusicabtthecourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_indianclassicalmusiccourseinformation">verify_indianclassicalmusiccourseinformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_indianclassicalmusicimagename">verify_indianclassicalmusicimagename</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_itcertificationabtthecourse">verify_itcertificationabtthecourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_itcertificationcourseinformation">verify_itcertificationcourseinformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_itcertificationname">verify_itcertificationname</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_machineLearningabtthecourse">verify_machineLearningabtthecourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_machineLearningcourseinformation">verify_machineLearningcourseinformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_machineLearningimagename">verify_machineLearningimagename</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_modificationabtthecourse">verify_modificationabtthecourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_modificationcourseinformation">verify_modificationcourseinformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_modificationimagename">verify_modificationimagename</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_technologyawarenesabtthecourse">verify_technologyawarenesabtthecourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_technologyawarenescourseinformation">verify_technologyawarenescourseinformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.HomepageHeaderLinksTestCases" class="method navigator-link" hash-for-method="verify_technologyawarenesimagename">verify_technologyawarenesimagename</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.InstructorVideoTestcases" class="method navigator-link" hash-for-method="videoCourseLessonInstructor">videoCourseLessonInstructor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.InstructorVideoTestcases" class="method navigator-link" hash-for-method="videoCourseOutputDisplay">videoCourseOutputDisplay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.InstructorVideoTestcases" class="method navigator-link" hash-for-method="videoCourse_Instructor">videoCourse_Instructor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationTest.InstructorVideoTestcases" class="method navigator-link" hash-for-method="videocoursePrerequisitesInstructor">videocoursePrerequisitesInstructor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">AutomationTest.HomepageHeaderLinksTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ComputerScienceCourseCheck">
+                  </a> <!-- ComputerScienceCourseCheck -->
+                  <span class="method-name">ComputerScienceCourseCheck</span>
+                  <div class="stack-trace">java.lang.AssertionError: Course Title is Displayed. expected [true] but found [false]
+	at Automation.pageobjects.HomepageHeaderLinks.Validate_CourseTitleDisplayed(HomepageHeaderLinks.java:426)
+	at AutomationTest.HomepageHeaderLinksTestCases.ComputerScienceCourseCheck(HomepageHeaderLinksTestCases.java:789)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProgrammingTestCases">
+                  </a> <!-- ProgrammingTestCases -->
+                  <span class="method-name">ProgrammingTestCases</span>
+                  <div class="stack-trace">java.lang.AssertionError: Course Title is Displayed. expected [true] but found [false]
+	at Automation.pageobjects.HomepageHeaderLinks.Validate_CourseTitleDisplayed(HomepageHeaderLinks.java:426)
+	at AutomationTest.HomepageHeaderLinksTestCases.ProgrammingTestCases(HomepageHeaderLinksTestCases.java:762)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestOthersCourseCheck">
+                  </a> <!-- TestOthersCourseCheck -->
+                  <span class="method-name">TestOthersCourseCheck</span>
+                  <div class="stack-trace">java.lang.AssertionError: Course Title is Displayed. expected [true] but found [false]
+	at Automation.pageobjects.HomepageHeaderLinks.Validate_CourseTitleDisplayed(HomepageHeaderLinks.java:426)
+	at AutomationTest.HomepageHeaderLinksTestCases.TestOthersCourseCheck(HomepageHeaderLinksTestCases.java:816)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestPrepeCourseCheck">
+                  </a> <!-- TestPrepeCourseCheck -->
+                  <span class="method-name">TestPrepeCourseCheck</span>
+                  <div class="stack-trace">java.lang.AssertionError: Course Title is Displayed. expected [true] but found [false]
+	at Automation.pageobjects.HomepageHeaderLinks.Validate_CourseTitleDisplayed(HomepageHeaderLinks.java:426)
+	at AutomationTest.HomepageHeaderLinksTestCases.TestPrepeCourseCheck(HomepageHeaderLinksTestCases.java:807)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AutomationTest.InstructorVideoTestcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="videoCourseLessonInstructor">
+                  </a> <!-- videoCourseLessonInstructor -->
+                  <span class="method-name">videoCourseLessonInstructor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="videoCourseOutputDisplay">
+                  </a> <!-- videoCourseOutputDisplay -->
+                  <span class="method-name">videoCourseOutputDisplay</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="videoCourse_Instructor">
+                  </a> <!-- videoCourse_Instructor -->
+                  <span class="method-name">videoCourse_Instructor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="videocoursePrerequisitesInstructor">
+                  </a> <!-- videocoursePrerequisitesInstructor -->
+                  <span class="method-name">videocoursePrerequisitesInstructor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AutomationTest.InstructorDashBoardPageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewLiveCourse_Details_Instructor">
+                  </a> <!-- createNewLiveCourse_Details_Instructor -->
+                  <span class="method-name">createNewLiveCourse_Details_Instructor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewLiveCourse_Prerequisites_Instructor">
+                  </a> <!-- createNewLiveCourse_Prerequisites_Instructor -->
+                  <span class="method-name">createNewLiveCourse_Prerequisites_Instructor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewLiveCourse_Sessions_SelectAllDay">
+                  </a> <!-- createNewLiveCourse_Sessions_SelectAllDay -->
+                  <span class="method-name">createNewLiveCourse_Sessions_SelectAllDay</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewLiveCourse_Topics_Instructor">
+                  </a> <!-- createNewLiveCourse_Topics_Instructor -->
+                  <span class="method-name">createNewLiveCourse_Topics_Instructor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewLiveCourse_WhatYouWillLearn_Instructor">
+                  </a> <!-- createNewLiveCourse_WhatYouWillLearn_Instructor -->
+                  <span class="method-name">createNewLiveCourse_WhatYouWillLearn_Instructor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AutomationTest.StudentLoginPageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAsStudent">
+                  </a> <!-- loginAsStudent -->
+                  <span class="method-name">loginAsStudent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDashboardTextPresence">
+                  </a> <!-- verifyDashboardTextPresence -->
+                  <span class="method-name">verifyDashboardTextPresence</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AutomationTest.HomePageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="redirectToInstructorLoginPage">
+                  </a> <!-- redirectToInstructorLoginPage -->
+                  <span class="method-name">redirectToInstructorLoginPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AutomationTest.StudentDashboardPageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enrollCourse">
+                  </a> <!-- enrollCourse -->
+                  <span class="method-name">enrollCourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchCourseToEnroll">
+                  </a> <!-- searchCourseToEnroll -->
+                  <span class="method-name">searchCourseToEnroll</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AutomationTest.HomepageHeaderLinksTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Coding">
+                  </a> <!-- Coding -->
+                  <span class="method-name">Coding</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DanceStyles">
+                  </a> <!-- DanceStyles -->
+                  <span class="method-name">DanceStyles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ElectricalengineeringCourseCheck">
+                  </a> <!-- ElectricalengineeringCourseCheck -->
+                  <span class="method-name">ElectricalengineeringCourseCheck</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FactChecking">
+                  </a> <!-- FactChecking -->
+                  <span class="method-name">FactChecking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FactCheckingVerificationCourseCheck">
+                  </a> <!-- FactCheckingVerificationCourseCheck -->
+                  <span class="method-name">FactCheckingVerificationCourseCheck</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HealthBeauty">
+                  </a> <!-- HealthBeauty -->
+                  <span class="method-name">HealthBeauty</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Hobbies">
+                  </a> <!-- Hobbies -->
+                  <span class="method-name">Hobbies</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="JavaCourseCheck">
+                  </a> <!-- JavaCourseCheck -->
+                  <span class="method-name">JavaCourseCheck</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MusicTheory">
+                  </a> <!-- MusicTheory -->
+                  <span class="method-name">MusicTheory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NaturalLanguageProcess">
+                  </a> <!-- NaturalLanguageProcess -->
+                  <span class="method-name">NaturalLanguageProcess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PersonalDevelopmentCourseCheck">
+                  </a> <!-- PersonalDevelopmentCourseCheck -->
+                  <span class="method-name">PersonalDevelopmentCourseCheck</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestPrepe">
+                  </a> <!-- TestPrepe -->
+                  <span class="method-name">TestPrepe</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_businessAnalyticsimage">
+                  </a> <!-- click_businessAnalyticsimage -->
+                  <span class="method-name">click_businessAnalyticsimage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_businessanalytics">
+                  </a> <!-- click_businessanalytics -->
+                  <span class="method-name">click_businessanalytics</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_divyasc">
+                  </a> <!-- click_divyasc -->
+                  <span class="method-name">click_divyasc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_divyascimage">
+                  </a> <!-- click_divyascimage -->
+                  <span class="method-name">click_divyascimage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_guitarpaino">
+                  </a> <!-- click_guitarpaino -->
+                  <span class="method-name">click_guitarpaino</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_guitarpainoimage">
+                  </a> <!-- click_guitarpainoimage -->
+                  <span class="method-name">click_guitarpainoimage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_indianclassicalmusic">
+                  </a> <!-- click_indianclassicalmusic -->
+                  <span class="method-name">click_indianclassicalmusic</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_indianclassicalmusicimage">
+                  </a> <!-- click_indianclassicalmusicimage -->
+                  <span class="method-name">click_indianclassicalmusicimage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_itcertification">
+                  </a> <!-- click_itcertification -->
+                  <span class="method-name">click_itcertification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_itcertificationimage">
+                  </a> <!-- click_itcertificationimage -->
+                  <span class="method-name">click_itcertificationimage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_machineLearning">
+                  </a> <!-- click_machineLearning -->
+                  <span class="method-name">click_machineLearning</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_machineLearningimage">
+                  </a> <!-- click_machineLearningimage -->
+                  <span class="method-name">click_machineLearningimage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_modification">
+                  </a> <!-- click_modification -->
+                  <span class="method-name">click_modification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_modificationimage">
+                  </a> <!-- click_modificationimage -->
+                  <span class="method-name">click_modificationimage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_technologyawarenesimage">
+                  </a> <!-- click_technologyawarenesimage -->
+                  <span class="method-name">click_technologyawarenesimage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="click_technologyawareness">
+                  </a> <!-- click_technologyawareness -->
+                  <span class="method-name">click_technologyawareness</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_businessAnalyticsabtthecourse">
+                  </a> <!-- verify_businessAnalyticsabtthecourse -->
+                  <span class="method-name">verify_businessAnalyticsabtthecourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_businessAnalyticscourseinformation">
+                  </a> <!-- verify_businessAnalyticscourseinformation -->
+                  <span class="method-name">verify_businessAnalyticscourseinformation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_businessAnalyticsimagename">
+                  </a> <!-- verify_businessAnalyticsimagename -->
+                  <span class="method-name">verify_businessAnalyticsimagename</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_divyascabtthecourse">
+                  </a> <!-- verify_divyascabtthecourse -->
+                  <span class="method-name">verify_divyascabtthecourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_divyasccourseinformation">
+                  </a> <!-- verify_divyasccourseinformation -->
+                  <span class="method-name">verify_divyasccourseinformation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_divyascimagename">
+                  </a> <!-- verify_divyascimagename -->
+                  <span class="method-name">verify_divyascimagename</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_guitarpainoabtthecourse">
+                  </a> <!-- verify_guitarpainoabtthecourse -->
+                  <span class="method-name">verify_guitarpainoabtthecourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_guitarpainocourseinformation">
+                  </a> <!-- verify_guitarpainocourseinformation -->
+                  <span class="method-name">verify_guitarpainocourseinformation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_guitarpainoimagename">
+                  </a> <!-- verify_guitarpainoimagename -->
+                  <span class="method-name">verify_guitarpainoimagename</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_indianclassicalmusicabtthecourse">
+                  </a> <!-- verify_indianclassicalmusicabtthecourse -->
+                  <span class="method-name">verify_indianclassicalmusicabtthecourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_indianclassicalmusiccourseinformation">
+                  </a> <!-- verify_indianclassicalmusiccourseinformation -->
+                  <span class="method-name">verify_indianclassicalmusiccourseinformation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_indianclassicalmusicimagename">
+                  </a> <!-- verify_indianclassicalmusicimagename -->
+                  <span class="method-name">verify_indianclassicalmusicimagename</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_itcertificationabtthecourse">
+                  </a> <!-- verify_itcertificationabtthecourse -->
+                  <span class="method-name">verify_itcertificationabtthecourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_itcertificationcourseinformation">
+                  </a> <!-- verify_itcertificationcourseinformation -->
+                  <span class="method-name">verify_itcertificationcourseinformation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_itcertificationname">
+                  </a> <!-- verify_itcertificationname -->
+                  <span class="method-name">verify_itcertificationname</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_machineLearningabtthecourse">
+                  </a> <!-- verify_machineLearningabtthecourse -->
+                  <span class="method-name">verify_machineLearningabtthecourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_machineLearningcourseinformation">
+                  </a> <!-- verify_machineLearningcourseinformation -->
+                  <span class="method-name">verify_machineLearningcourseinformation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_machineLearningimagename">
+                  </a> <!-- verify_machineLearningimagename -->
+                  <span class="method-name">verify_machineLearningimagename</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_modificationabtthecourse">
+                  </a> <!-- verify_modificationabtthecourse -->
+                  <span class="method-name">verify_modificationabtthecourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_modificationcourseinformation">
+                  </a> <!-- verify_modificationcourseinformation -->
+                  <span class="method-name">verify_modificationcourseinformation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_modificationimagename">
+                  </a> <!-- verify_modificationimagename -->
+                  <span class="method-name">verify_modificationimagename</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_technologyawarenesabtthecourse">
+                  </a> <!-- verify_technologyawarenesabtthecourse -->
+                  <span class="method-name">verify_technologyawarenesabtthecourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_technologyawarenescourseinformation">
+                  </a> <!-- verify_technologyawarenescourseinformation -->
+                  <span class="method-name">verify_technologyawarenescourseinformation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_technologyawarenesimagename">
+                  </a> <!-- verify_technologyawarenesimagename -->
+                  <span class="method-name">verify_technologyawarenesimagename</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AutomationTest.StudentLogoutTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutAsStudent">
+                  </a> <!-- logoutAsStudent -->
+                  <span class="method-name">logoutAsStudent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AutomationTest.InstructorLogoutTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutAsInstructor">
+                  </a> <!-- logoutAsInstructor -->
+                  <span class="method-name">logoutAsInstructor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AutomationTest.InstructorLoginTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAsInstructor">
+                  </a> <!-- loginAsInstructor -->
+                  <span class="method-name">loginAsInstructor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AutomationTest.HomePageIconTestcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerfifyBurgerICon">
+                  </a> <!-- VerfifyBurgerICon -->
+                  <span class="method-name">VerfifyBurgerICon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyContactUS">
+                  </a> <!-- VerifyContactUS -->
+                  <span class="method-name">VerifyContactUS</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyForInstructor">
+                  </a> <!-- VerifyForInstructor -->
+                  <span class="method-name">VerifyForInstructor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLoginButton">
+                  </a> <!-- VerifyLoginButton -->
+                  <span class="method-name">VerifyLoginButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifySigninButton">
+                  </a> <!-- VerifySigninButton -->
+                  <span class="method-name">VerifySigninButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verifycart">
+                  </a> <!-- Verifycart -->
+                  <span class="method-name">Verifycart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInfyniLogo">
+                  </a> <!-- verifyInfyniLogo -->
+                  <span class="method-name">verifyInfyniLogo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AutomationTest.FooterTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BecomeInstructorLink">
+                  </a> <!-- BecomeInstructorLink -->
+                  <span class="method-name">BecomeInstructorLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InfyniForBusinessLink">
+                  </a> <!-- InfyniForBusinessLink -->
+                  <span class="method-name">InfyniForBusinessLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PrivacyPolicyLink">
+                  </a> <!-- PrivacyPolicyLink -->
+                  <span class="method-name">PrivacyPolicyLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TermsConditionsLink">
+                  </a> <!-- TermsConditionsLink -->
+                  <span class="method-name">TermsConditionsLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutUsLink">
+                  </a> <!-- aboutUsLink -->
+                  <span class="method-name">aboutUsLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="blogsLink">
+                  </a> <!-- blogsLink -->
+                  <span class="method-name">blogsLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactUslink">
+                  </a> <!-- contactUslink -->
+                  <span class="method-name">contactUslink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="freeWebinarsLink">
+                  </a> <!-- freeWebinarsLink -->
+                  <span class="method-name">freeWebinarsLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="helpCenterLink">
+                  </a> <!-- helpCenterLink -->
+                  <span class="method-name">helpCenterLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpLink">
+                  </a> <!-- signUpLink -->
+                  <span class="method-name">signUpLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCareersLink">
+                  </a> <!-- validateCareersLink -->
+                  <span class="method-name">validateCareersLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNewsLink">
+                  </a> <!-- validateNewsLink -->
+                  <span class="method-name">validateNewsLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AutomationTest.HomepageCoursesLinksTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MostRecentCourse">
+                  </a> <!-- MostRecentCourse -->
+                  <span class="method-name">MostRecentCourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TrendingCourse">
+                  </a> <!-- TrendingCourse -->
+                  <span class="method-name">TrendingCourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VideoCourses">
+                  </a> <!-- VideoCourses -->
+                  <span class="method-name">VideoCourses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="kidsCourse">
+                  </a> <!-- kidsCourse -->
+                  <span class="method-name">kidsCourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="liveCourses">
+                  </a> <!-- liveCourses -->
+                  <span class="method-name">liveCourses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mostPopularCourse">
+                  </a> <!-- mostPopularCourse -->
+                  <span class="method-name">mostPopularCourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="professionalCourse">
+                  </a> <!-- professionalCourse -->
+                  <span class="method-name">professionalCourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\ashle\IdeaProjects\remote\AutomationWeb\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;AutomationTest.HomePageIconTestcases&quot;/&gt;
+      &lt;class name=&quot;AutomationTest.HomepageHeaderLinksTestCases&quot;/&gt;
+      &lt;class name=&quot;AutomationTest.HomepageCoursesLinksTestCases&quot;/&gt;
+      &lt;class name=&quot;AutomationTest.FooterTestCases&quot;/&gt;
+      &lt;class name=&quot;AutomationTest.HomePageTestCases&quot;/&gt;
+      &lt;class name=&quot;AutomationTest.InstructorLoginTestCases&quot;/&gt;
+      &lt;class name=&quot;AutomationTest.InstructorVideoTestcases&quot;/&gt;
+      &lt;class name=&quot;AutomationTest.InstructorDashBoardPageTestCases&quot;/&gt;
+      &lt;class name=&quot;AutomationTest.InstructorLogoutTestCases&quot;/&gt;
+      &lt;class name=&quot;AutomationTest.StudentLoginPageTestCases&quot;/&gt;
+      &lt;class name=&quot;AutomationTest.StudentDashboardPageTestCases&quot;/&gt;
+      &lt;class name=&quot;AutomationTest.StudentLogoutTestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (12 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(99);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'createNewLiveCourse_Details_Instructor')
+data.setCell(0, 2, 'AutomationTest.InstructorDashBoardPageTestCases')
+data.setCell(0, 3, 19490);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'videoCourse_Instructor')
+data.setCell(1, 2, 'AutomationTest.InstructorVideoTestcases')
+data.setCell(1, 3, 13759);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'videocoursePrerequisitesInstructor')
+data.setCell(2, 2, 'AutomationTest.InstructorVideoTestcases')
+data.setCell(2, 3, 12869);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TestPrepeCourseCheck')
+data.setCell(3, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(3, 3, 11092);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'ElectricalengineeringCourseCheck')
+data.setCell(4, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(4, 3, 10955);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'NaturalLanguageProcess')
+data.setCell(5, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(5, 3, 10891);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'ComputerScienceCourseCheck')
+data.setCell(6, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(6, 3, 10596);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'FactCheckingVerificationCourseCheck')
+data.setCell(7, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(7, 3, 10517);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TestOthersCourseCheck')
+data.setCell(8, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(8, 3, 10125);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'ProgrammingTestCases')
+data.setCell(9, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(9, 3, 10075);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'enrollCourse')
+data.setCell(10, 2, 'AutomationTest.StudentDashboardPageTestCases')
+data.setCell(10, 3, 9814);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TestPrepe')
+data.setCell(11, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(11, 3, 8458);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'PersonalDevelopmentCourseCheck')
+data.setCell(12, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(12, 3, 8263);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'JavaCourseCheck')
+data.setCell(13, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(13, 3, 8129);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'DanceStyles')
+data.setCell(14, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(14, 3, 7279);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'Coding')
+data.setCell(15, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(15, 3, 7160);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'HealthBeauty')
+data.setCell(16, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(16, 3, 7073);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'MusicTheory')
+data.setCell(17, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(17, 3, 7011);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'FactChecking')
+data.setCell(18, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(18, 3, 6997);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'Hobbies')
+data.setCell(19, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(19, 3, 6072);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'click_itcertification')
+data.setCell(20, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(20, 3, 6067);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'videoCourseLessonInstructor')
+data.setCell(21, 2, 'AutomationTest.InstructorVideoTestcases')
+data.setCell(21, 3, 5116);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'createNewLiveCourse_Prerequisites_Instructor')
+data.setCell(22, 2, 'AutomationTest.InstructorDashBoardPageTestCases')
+data.setCell(22, 3, 5032);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'click_divyasc')
+data.setCell(23, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(23, 3, 4943);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'click_modification')
+data.setCell(24, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(24, 3, 4899);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'click_indianclassicalmusic')
+data.setCell(25, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(25, 3, 4766);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'click_guitarpaino')
+data.setCell(26, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(26, 3, 4752);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'click_machineLearning')
+data.setCell(27, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(27, 3, 4707);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'loginAsStudent')
+data.setCell(28, 2, 'AutomationTest.StudentLoginPageTestCases')
+data.setCell(28, 3, 4658);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'click_technologyawareness')
+data.setCell(29, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(29, 3, 4444);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'searchCourseToEnroll')
+data.setCell(30, 2, 'AutomationTest.StudentDashboardPageTestCases')
+data.setCell(30, 3, 4380);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'loginAsInstructor')
+data.setCell(31, 2, 'AutomationTest.InstructorLoginTestCases')
+data.setCell(31, 3, 4147);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'createNewLiveCourse_Sessions_SelectAllDay')
+data.setCell(32, 2, 'AutomationTest.InstructorDashBoardPageTestCases')
+data.setCell(32, 3, 3982);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'blogsLink')
+data.setCell(33, 2, 'AutomationTest.FooterTestCases')
+data.setCell(33, 3, 3646);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'createNewLiveCourse_WhatYouWillLearn_Instructor')
+data.setCell(34, 2, 'AutomationTest.InstructorDashBoardPageTestCases')
+data.setCell(34, 3, 3627);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'verifyDashboardTextPresence')
+data.setCell(35, 2, 'AutomationTest.StudentLoginPageTestCases')
+data.setCell(35, 3, 3257);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'click_businessanalytics')
+data.setCell(36, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(36, 3, 3237);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'liveCourses')
+data.setCell(37, 2, 'AutomationTest.HomepageCoursesLinksTestCases')
+data.setCell(37, 3, 3082);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'verify_modificationcourseinformation')
+data.setCell(38, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(38, 3, 2478);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'helpCenterLink')
+data.setCell(39, 2, 'AutomationTest.FooterTestCases')
+data.setCell(39, 3, 2422);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'createNewLiveCourse_Topics_Instructor')
+data.setCell(40, 2, 'AutomationTest.InstructorDashBoardPageTestCases')
+data.setCell(40, 3, 2413);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'verify_divyasccourseinformation')
+data.setCell(41, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(41, 3, 2306);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'verify_guitarpainocourseinformation')
+data.setCell(42, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(42, 3, 2291);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'verify_businessAnalyticscourseinformation')
+data.setCell(43, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(43, 3, 2282);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'InfyniForBusinessLink')
+data.setCell(44, 2, 'AutomationTest.FooterTestCases')
+data.setCell(44, 3, 2282);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'verify_machineLearningcourseinformation')
+data.setCell(45, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(45, 3, 2268);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'verify_indianclassicalmusiccourseinformation')
+data.setCell(46, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(46, 3, 2260);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'verify_technologyawarenescourseinformation')
+data.setCell(47, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(47, 3, 2217);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'TrendingCourse')
+data.setCell(48, 2, 'AutomationTest.HomepageCoursesLinksTestCases')
+data.setCell(48, 3, 2167);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'verify_itcertificationcourseinformation')
+data.setCell(49, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(49, 3, 2085);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'videoCourseOutputDisplay')
+data.setCell(50, 2, 'AutomationTest.InstructorVideoTestcases')
+data.setCell(50, 3, 2066);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'contactUslink')
+data.setCell(51, 2, 'AutomationTest.FooterTestCases')
+data.setCell(51, 3, 1825);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'professionalCourse')
+data.setCell(52, 2, 'AutomationTest.HomepageCoursesLinksTestCases')
+data.setCell(52, 3, 1765);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'kidsCourse')
+data.setCell(53, 2, 'AutomationTest.HomepageCoursesLinksTestCases')
+data.setCell(53, 3, 1750);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'signUpLink')
+data.setCell(54, 2, 'AutomationTest.FooterTestCases')
+data.setCell(54, 3, 1656);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'BecomeInstructorLink')
+data.setCell(55, 2, 'AutomationTest.FooterTestCases')
+data.setCell(55, 3, 1533);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'logoutAsStudent')
+data.setCell(56, 2, 'AutomationTest.StudentLogoutTestCases')
+data.setCell(56, 3, 1431);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'mostPopularCourse')
+data.setCell(57, 2, 'AutomationTest.HomepageCoursesLinksTestCases')
+data.setCell(57, 3, 1395);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'MostRecentCourse')
+data.setCell(58, 2, 'AutomationTest.HomepageCoursesLinksTestCases')
+data.setCell(58, 3, 1322);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'VerfifyBurgerICon')
+data.setCell(59, 2, 'AutomationTest.HomePageIconTestcases')
+data.setCell(59, 3, 1264);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'TermsConditionsLink')
+data.setCell(60, 2, 'AutomationTest.FooterTestCases')
+data.setCell(60, 3, 1237);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'validateCareersLink')
+data.setCell(61, 2, 'AutomationTest.FooterTestCases')
+data.setCell(61, 3, 1108);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'redirectToInstructorLoginPage')
+data.setCell(62, 2, 'AutomationTest.HomePageTestCases')
+data.setCell(62, 3, 1092);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'VideoCourses')
+data.setCell(63, 2, 'AutomationTest.HomepageCoursesLinksTestCases')
+data.setCell(63, 3, 1055);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'aboutUsLink')
+data.setCell(64, 2, 'AutomationTest.FooterTestCases')
+data.setCell(64, 3, 970);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'PrivacyPolicyLink')
+data.setCell(65, 2, 'AutomationTest.FooterTestCases')
+data.setCell(65, 3, 696);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'VerifyContactUS')
+data.setCell(66, 2, 'AutomationTest.HomePageIconTestcases')
+data.setCell(66, 3, 663);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'freeWebinarsLink')
+data.setCell(67, 2, 'AutomationTest.FooterTestCases')
+data.setCell(67, 3, 630);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'logoutAsInstructor')
+data.setCell(68, 2, 'AutomationTest.InstructorLogoutTestCases')
+data.setCell(68, 3, 337);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'validateNewsLink')
+data.setCell(69, 2, 'AutomationTest.FooterTestCases')
+data.setCell(69, 3, 310);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'VerifyForInstructor')
+data.setCell(70, 2, 'AutomationTest.HomePageIconTestcases')
+data.setCell(70, 3, 208);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'Verifycart')
+data.setCell(71, 2, 'AutomationTest.HomePageIconTestcases')
+data.setCell(71, 3, 86);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'click_businessAnalyticsimage')
+data.setCell(72, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(72, 3, 76);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'click_divyascimage')
+data.setCell(73, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(73, 3, 57);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'click_itcertificationimage')
+data.setCell(74, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(74, 3, 56);
+data.setCell(75, 0, 75)
+data.setCell(75, 1, 'click_modificationimage')
+data.setCell(75, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(75, 3, 53);
+data.setCell(76, 0, 76)
+data.setCell(76, 1, 'verifyInfyniLogo')
+data.setCell(76, 2, 'AutomationTest.HomePageIconTestcases')
+data.setCell(76, 3, 53);
+data.setCell(77, 0, 77)
+data.setCell(77, 1, 'click_technologyawarenesimage')
+data.setCell(77, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(77, 3, 52);
+data.setCell(78, 0, 78)
+data.setCell(78, 1, 'click_guitarpainoimage')
+data.setCell(78, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(78, 3, 51);
+data.setCell(79, 0, 79)
+data.setCell(79, 1, 'click_machineLearningimage')
+data.setCell(79, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(79, 3, 49);
+data.setCell(80, 0, 80)
+data.setCell(80, 1, 'click_indianclassicalmusicimage')
+data.setCell(80, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(80, 3, 44);
+data.setCell(81, 0, 81)
+data.setCell(81, 1, 'VerifySigninButton')
+data.setCell(81, 2, 'AutomationTest.HomePageIconTestcases')
+data.setCell(81, 3, 43);
+data.setCell(82, 0, 82)
+data.setCell(82, 1, 'verify_itcertificationname')
+data.setCell(82, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(82, 3, 43);
+data.setCell(83, 0, 83)
+data.setCell(83, 1, 'verify_indianclassicalmusicimagename')
+data.setCell(83, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(83, 3, 41);
+data.setCell(84, 0, 84)
+data.setCell(84, 1, 'verify_businessAnalyticsabtthecourse')
+data.setCell(84, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(84, 3, 38);
+data.setCell(85, 0, 85)
+data.setCell(85, 1, 'verify_modificationimagename')
+data.setCell(85, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(85, 3, 38);
+data.setCell(86, 0, 86)
+data.setCell(86, 1, 'verify_businessAnalyticsimagename')
+data.setCell(86, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(86, 3, 37);
+data.setCell(87, 0, 87)
+data.setCell(87, 1, 'verify_machineLearningabtthecourse')
+data.setCell(87, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(87, 3, 36);
+data.setCell(88, 0, 88)
+data.setCell(88, 1, 'verify_technologyawarenesabtthecourse')
+data.setCell(88, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(88, 3, 36);
+data.setCell(89, 0, 89)
+data.setCell(89, 1, 'verify_technologyawarenesimagename')
+data.setCell(89, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(89, 3, 36);
+data.setCell(90, 0, 90)
+data.setCell(90, 1, 'verify_modificationabtthecourse')
+data.setCell(90, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(90, 3, 34);
+data.setCell(91, 0, 91)
+data.setCell(91, 1, 'verify_indianclassicalmusicabtthecourse')
+data.setCell(91, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(91, 3, 32);
+data.setCell(92, 0, 92)
+data.setCell(92, 1, 'verify_guitarpainoimagename')
+data.setCell(92, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(92, 3, 31);
+data.setCell(93, 0, 93)
+data.setCell(93, 1, 'VerifyLoginButton')
+data.setCell(93, 2, 'AutomationTest.HomePageIconTestcases')
+data.setCell(93, 3, 31);
+data.setCell(94, 0, 94)
+data.setCell(94, 1, 'verify_divyascimagename')
+data.setCell(94, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(94, 3, 30);
+data.setCell(95, 0, 95)
+data.setCell(95, 1, 'verify_machineLearningimagename')
+data.setCell(95, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(95, 3, 27);
+data.setCell(96, 0, 96)
+data.setCell(96, 1, 'verify_itcertificationabtthecourse')
+data.setCell(96, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(96, 3, 22);
+data.setCell(97, 0, 97)
+data.setCell(97, 1, 'verify_divyascabtthecourse')
+data.setCell(97, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(97, 3, 18);
+data.setCell(98, 0, 98)
+data.setCell(98, 1, 'verify_guitarpainoabtthecourse')
+data.setCell(98, 2, 'AutomationTest.HomepageHeaderLinksTestCases')
+data.setCell(98, 3, 16);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">AutomationTest.HomePageIconTestcases</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">VerfifyBurgerICon</span>
+                <span class="method-start">5798 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyInfyniLogo</span>
+                <span class="method-start">7069 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyContactUS</span>
+                <span class="method-start">7123 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyForInstructor</span>
+                <span class="method-start">7788 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verifycart</span>
+                <span class="method-start">7998 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyLoginButton</span>
+                <span class="method-start">8085 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifySigninButton</span>
+                <span class="method-start">8116 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AutomationTest.HomepageHeaderLinksTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">click_businessanalytics</span>
+                <span class="method-start">8161 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">click_businessAnalyticsimage</span>
+                <span class="method-start">11400 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_businessAnalyticsimagename</span>
+                <span class="method-start">11478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_businessAnalyticscourseinformation</span>
+                <span class="method-start">11516 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_businessAnalyticsabtthecourse</span>
+                <span class="method-start">13799 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">click_modification</span>
+                <span class="method-start">13838 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">click_modificationimage</span>
+                <span class="method-start">18739 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_modificationimagename</span>
+                <span class="method-start">18795 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_modificationcourseinformation</span>
+                <span class="method-start">18834 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_modificationabtthecourse</span>
+                <span class="method-start">21313 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">click_indianclassicalmusic</span>
+                <span class="method-start">21348 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">click_indianclassicalmusicimage</span>
+                <span class="method-start">26115 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_indianclassicalmusicimagename</span>
+                <span class="method-start">26160 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_indianclassicalmusiccourseinformation</span>
+                <span class="method-start">26202 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_indianclassicalmusicabtthecourse</span>
+                <span class="method-start">28465 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">click_machineLearning</span>
+                <span class="method-start">28498 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">click_machineLearningimage</span>
+                <span class="method-start">33205 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_machineLearningimagename</span>
+                <span class="method-start">33255 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_machineLearningcourseinformation</span>
+                <span class="method-start">33284 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_machineLearningabtthecourse</span>
+                <span class="method-start">35553 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">click_technologyawareness</span>
+                <span class="method-start">35590 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">click_technologyawarenesimage</span>
+                <span class="method-start">40035 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_technologyawarenesimagename</span>
+                <span class="method-start">40089 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_technologyawarenescourseinformation</span>
+                <span class="method-start">40126 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_technologyawarenesabtthecourse</span>
+                <span class="method-start">42345 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">click_divyasc</span>
+                <span class="method-start">42382 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">click_divyascimage</span>
+                <span class="method-start">47326 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_divyascimagename</span>
+                <span class="method-start">47385 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_divyasccourseinformation</span>
+                <span class="method-start">47416 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_divyascabtthecourse</span>
+                <span class="method-start">49723 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">click_guitarpaino</span>
+                <span class="method-start">49741 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">click_guitarpainoimage</span>
+                <span class="method-start">54494 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_guitarpainoimagename</span>
+                <span class="method-start">54546 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_guitarpainocourseinformation</span>
+                <span class="method-start">54579 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_guitarpainoabtthecourse</span>
+                <span class="method-start">56870 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">click_itcertification</span>
+                <span class="method-start">56887 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">click_itcertificationimage</span>
+                <span class="method-start">62955 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_itcertificationname</span>
+                <span class="method-start">63012 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_itcertificationcourseinformation</span>
+                <span class="method-start">63056 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_itcertificationabtthecourse</span>
+                <span class="method-start">65143 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HealthBeauty</span>
+                <span class="method-start">65165 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">MusicTheory</span>
+                <span class="method-start">72239 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestPrepe</span>
+                <span class="method-start">79251 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Hobbies</span>
+                <span class="method-start">87709 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FactChecking</span>
+                <span class="method-start">93782 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Coding</span>
+                <span class="method-start">100779 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DanceStyles</span>
+                <span class="method-start">107940 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ProgrammingTestCases</span>
+                <span class="method-start">115220 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PersonalDevelopmentCourseCheck</span>
+                <span class="method-start">125303 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ComputerScienceCourseCheck</span>
+                <span class="method-start">133566 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">NaturalLanguageProcess</span>
+                <span class="method-start">144164 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestPrepeCourseCheck</span>
+                <span class="method-start">155056 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestOthersCourseCheck</span>
+                <span class="method-start">166150 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ElectricalengineeringCourseCheck</span>
+                <span class="method-start">176277 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">JavaCourseCheck</span>
+                <span class="method-start">187233 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FactCheckingVerificationCourseCheck</span>
+                <span class="method-start">195363 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AutomationTest.HomepageCoursesLinksTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TrendingCourse</span>
+                <span class="method-start">205881 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">mostPopularCourse</span>
+                <span class="method-start">208050 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">MostRecentCourse</span>
+                <span class="method-start">209450 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">professionalCourse</span>
+                <span class="method-start">210773 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">kidsCourse</span>
+                <span class="method-start">212540 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">liveCourses</span>
+                <span class="method-start">214293 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VideoCourses</span>
+                <span class="method-start">217376 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AutomationTest.FooterTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">aboutUsLink</span>
+                <span class="method-start">218432 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateNewsLink</span>
+                <span class="method-start">219403 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateCareersLink</span>
+                <span class="method-start">219714 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">contactUslink</span>
+                <span class="method-start">220826 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">blogsLink</span>
+                <span class="method-start">222652 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">freeWebinarsLink</span>
+                <span class="method-start">226299 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">helpCenterLink</span>
+                <span class="method-start">226931 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PrivacyPolicyLink</span>
+                <span class="method-start">229355 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TermsConditionsLink</span>
+                <span class="method-start">230052 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signUpLink</span>
+                <span class="method-start">231290 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">BecomeInstructorLink</span>
+                <span class="method-start">232948 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">InfyniForBusinessLink</span>
+                <span class="method-start">234483 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AutomationTest.HomePageTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">redirectToInstructorLoginPage</span>
+                <span class="method-start">236767 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AutomationTest.InstructorLoginTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginAsInstructor</span>
+                <span class="method-start">237861 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AutomationTest.InstructorVideoTestcases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">videoCourse_Instructor</span>
+                <span class="method-start">242008 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">videocoursePrerequisitesInstructor</span>
+                <span class="method-start">255768 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">videoCourseLessonInstructor</span>
+                <span class="method-start">268639 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">videoCourseOutputDisplay</span>
+                <span class="method-start">273755 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AutomationTest.InstructorDashBoardPageTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createNewLiveCourse_Details_Instructor</span>
+                <span class="method-start">275822 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createNewLiveCourse_Prerequisites_Instructor</span>
+                <span class="method-start">295313 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createNewLiveCourse_WhatYouWillLearn_Instructor</span>
+                <span class="method-start">300346 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createNewLiveCourse_Topics_Instructor</span>
+                <span class="method-start">303975 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createNewLiveCourse_Sessions_SelectAllDay</span>
+                <span class="method-start">306389 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AutomationTest.InstructorLogoutTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">logoutAsInstructor</span>
+                <span class="method-start">310373 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AutomationTest.StudentLoginPageTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginAsStudent</span>
+                <span class="method-start">310711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDashboardTextPresence</span>
+                <span class="method-start">315370 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AutomationTest.StudentDashboardPageTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchCourseToEnroll</span>
+                <span class="method-start">318627 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enrollCourse</span>
+                <span class="method-start">323008 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AutomationTest.StudentLogoutTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">logoutAsStudent</span>
+                <span class="method-start">332825 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">334311 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

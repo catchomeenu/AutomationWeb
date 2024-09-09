@@ -8,7 +8,7 @@ import org.testng.asserts.SoftAssert;
 public class StudentLoginPageTestCases extends StudentLoginPage {
 
 
-    @Test(priority = 91)
+    @Test(priority = 96)
     public static void loginAsStudent() {
         backToInfyniHomePage();
         clickLoginButton_Student();
@@ -17,7 +17,7 @@ public class StudentLoginPageTestCases extends StudentLoginPage {
         clickStudentLogin();
     }
 
-    @Test(priority=92)
+    @Test(priority=97)
         public static void verifyDashboardTextPresence() {
             boolean actualresult = dashboardTextPresence();
             boolean expectedresult = true;

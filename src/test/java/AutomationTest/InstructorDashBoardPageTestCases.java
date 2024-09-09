@@ -5,13 +5,13 @@ import org.testng.annotations.Test;
 
 public class InstructorDashBoardPageTestCases extends InstructorDashBoardLive {
 
-    @Test(priority = 83)
+    @Test(priority = 85)
     public static void createNewLiveCourse_Details_Instructor() {
         clickLiveCoursesLink();
         clickNewCourseLink();
         verifyNewCourseRadioButton();
         enterNewCourseName("Clinical SAS");
-        selectImage("C:\\Users\\ramya\\Desktop\\sasImage.png");
+        selectImage("C:\\Users\\ashle\\Downloads\\Download.png");
         enterNewCourseDescription("SAS stands for Statistical Analysis Software. It was created in the year 1960 by the SAS Institute.SAS was used for data management, business intelligence, Predictive Analysis, Descriptive and Prescriptive Analysis etc.With the introduction of JMP (Jump) for statistics SAS took advantage of the Graphical user Interface which was introduced by the Macintosh. Jump is basically used for the applications like Six Sigma, designs, quality control and engineering and scientific analysis.SAS is platform independent which means you can run SAS on any operating system either Linux or Window.");
         selectCategory("Technology");
         selectSubCategory("Technology Course");
@@ -29,21 +29,21 @@ public class InstructorDashBoardPageTestCases extends InstructorDashBoardLive {
         clickSave_Next();
        // clickYesForDemo();
     }
-        @Test(priority = 84)
+        @Test(priority = 86)
         public static void createNewLiveCourse_Prerequisites_Instructor() {
             enterPrerequisites("Understand and use the fundamentals of the SAS programming language");
             clickAddButton();
             clickSaveButton();
         }
 
-      @Test(priority = 85)
+      @Test(priority = 87)
        public static void createNewLiveCourse_WhatYouWillLearn_Instructor() {
           enterWhatYouWillLearn("Access different types of data (SAS, Excel, or text) then explore and prepare the data ");
           clickAddButton();
           clickSaveButton();
 
       }
-    @Test(priority = 86)
+    @Test(priority = 88)
     public static void createNewLiveCourse_Topics_Instructor() {
         enterTopic("Analyze and report on data and export results to different Formats");
         enterSubTopic("Formats into (HTML, PDF, Excel)");
@@ -54,7 +54,7 @@ public class InstructorDashBoardPageTestCases extends InstructorDashBoardLive {
         clickSaveButton();
 
     }
-    @Test(priority = 87)
+    @Test(priority = 89)
     public static void createNewLiveCourse_Sessions_SelectAllDay() {
         enterSessionName("ClinicalSAS");
         selectSessionStartDate("September 2024", "20");
@@ -71,6 +71,9 @@ public class InstructorDashBoardPageTestCases extends InstructorDashBoardLive {
         //selectSessionEndDate("October 2024", "19");
         clickSessionAddButton();
         clickApprovalButton();
+        System.out.println("****login as Instructor Dashboard Live Course TestCases Ended**** ");
+
+        System.out.println("****login as Instructor Dashboard Video Course TestCases Started**** ");
     }
 
 
@@ -92,6 +95,7 @@ public class InstructorDashBoardPageTestCases extends InstructorDashBoardLive {
             clickSessionAddButton();
             clickApprovalButton();
             System.out.println("****login as Instructor Dashboard Live Course TestCases Ended**** ");
+
             System.out.println("****login as Instructor Dashboard Video Course TestCases Started**** ");
 
         }

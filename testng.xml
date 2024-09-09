@@ -3,11 +3,13 @@
 <suite name="Suite">
     <test thread-count="5" name="Test">
         <classes>
-            <class name="AutomationTest.AllCoursesInfyniLinksTestCase"/>
-            <class name="AutomationTest.HomepageHeaderLinksTestCases"/>
+            <class name="AutomationTest.HomePageIconTestcases"/>
+           <class name="AutomationTest.HomepageHeaderLinksTestCases"/>
+            <class name="AutomationTest.HomepageCoursesLinksTestCases"/>
             <class name="AutomationTest.FooterTestCases"/>
             <class name="AutomationTest.HomePageTestCases"/>
             <class name="AutomationTest.InstructorLoginTestCases"/>
+            <class name="AutomationTest.InstructorVideoTestcases"/>
             <class name="AutomationTest.InstructorDashBoardPageTestCases"/>
             <class name="AutomationTest.InstructorLogoutTestCases"/>
             <class name="AutomationTest.StudentLoginPageTestCases"/>

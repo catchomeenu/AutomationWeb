@@ -8,7 +8,11 @@ import org.testng.Assert;
 
 public class HomePage extends Base {
     //Common Login Button Home page Objects
+    public static By BurgerMenu = By.xpath("//*[name()][@data-testid='MenuIcon']");
+    public static By Infynilogo =By.xpath("//img[@class='sm:block hidden']");
+    public static By ContactUSPresence= By.xpath("//span[text()='Contact Us']");
     public static By loginButton = By.xpath("//span[text()='Log In']");
+    public static By signinbutton =By.xpath("//a/span[text()='Sign Up']");
     public static By loginText = By.xpath("//span[contains(text(),'Please enter your details to Log In')]");
     // Infyni logo (back to home from every page)
     public static By infyniLogo = By.xpath("//div[@class='undefined w-[calc(100%-60px)]   bg-white flex items-center justify-center']/a/img[@alt='logo']");
@@ -49,8 +53,8 @@ public class HomePage extends Base {
 // login for instructors
 public static By forInstructorsLink = By.xpath("//a[@href='/instructor-homepage' and text()='For Instructors']");
 public static By instructorLoginText = By.xpath("//div[@class='instructorhomepage_title__JrzNA' and text()='Become an Instructor']");
-
-
+public static By cartImage=By.xpath("//div[@class='header_header_main_list_cart__aE3fI']");
+    public static By ForInstructorPresence = By.xpath("//a[@href='/instructor-homepage' and text()='For Instructors']");
 
     public static void clickHelpCenterLink() {
         try {
@@ -460,7 +464,60 @@ public static By instructorLoginText = By.xpath("//div[@class='instructorhomepag
             }
             return result;
         }
+//infyni logo .
+public static void verifyLogo() {
+    boolean logopresence = driver.findElement(Infynilogo).isDisplayed();
+    Assert.assertTrue(logopresence);
+    System.out.println("Infyni logo verified");
+}
+    public static boolean ContactInfoPresence() {
+        boolean result = false;
 
-
+        try {
+            result = driver.findElement(ContactUSPresence).isDisplayed();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
     }
+    public static void Loginbuttonpresence() {
+        boolean loginpresence = driver.findElement(loginButton).isDisplayed();
+        Assert.assertTrue(loginpresence);
+        System.out.println("Login button is present on Home page");
+    }
+    public static void SignInbuttonpresence() {
+        boolean loginpresence = driver.findElement(signinbutton).isDisplayed();
+        Assert.assertTrue(loginpresence);
+        System.out.println("SignIn button is present on Home page");
+    }
+    public static void ForInstructorpresence() {
+        try {
+            driver.findElement(ForInstructorPresence).isDisplayed();
+            System.out.println(" For Instructor is displayed on Home page ");
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+    public static void cartImagepresence() {
+        try {
+            driver.findElement(cartImage).isDisplayed();
+            System.out.println(" Cart is displayed on Home page ");
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+    public static void BurgerMenuPresence() {
+        try {
+            driver.findElement(BurgerMenu).isDisplayed();
+            System.out.println(" Cart is displayed on Home page ");
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
+
+}
 

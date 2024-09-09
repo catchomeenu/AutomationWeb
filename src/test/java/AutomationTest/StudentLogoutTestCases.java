@@ -1,12 +1,14 @@
 package AutomationTest;
 
 import Automation.pageobjects.Logout;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 public class StudentLogoutTestCases extends Logout {
-   // @Test(priority = 95)
+    @Test(priority = 99)
     public static void logoutAsStudent() {
-        // Instructor Logout profile select
+
+        // Student Logout profile select
         verifyprofileimg();
         profileimageclick(); // Drop down select
         verifyLogoutDD();
@@ -15,5 +17,9 @@ public class StudentLogoutTestCases extends Logout {
         System.out.println(" Logout from Student ID");
         logoutTextPresence();
         System.out.println("***********Student Logout  Test Cases Ended****************");
+    }
+    @AfterSuite
+    public static void closeApplication () {
+        closeApp();
     }
 }

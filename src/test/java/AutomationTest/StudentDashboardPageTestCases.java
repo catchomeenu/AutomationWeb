@@ -8,16 +8,16 @@ import org.testng.asserts.SoftAssert;
 public class StudentDashboardPageTestCases extends StudentDashBoardPage
 {
 
-    @Test(priority = 93)
+    @Test(priority = 94)
     public static void searchCourseToEnroll()  {
         clickHomeLink();
        // selectCourseStatusByOpenEnrollment();
-        enterCourseName("bulb");
-        viewDisplayedList("A Journey Through the History and Science of the Light Bulb");
+        enterCourseName("dance");
+        viewDisplayedList("dance for experts");
         selectCourse();
     }
 
-    @Test(priority = 94)
+    @Test(priority = 98)
     public static void enrollCourse()
     {
         clickEnrollNow();
@@ -39,9 +39,10 @@ public class StudentDashboardPageTestCases extends StudentDashBoardPage
         enterCvc("345");
         enterZipcode("76423");
         clickContinueButton();
+        clickHomeLink();
     }
 
-    @Test(priority =95)
+   // @Test(priority =95)
     public static void studentLogout()
             {
                 clickAccountName();

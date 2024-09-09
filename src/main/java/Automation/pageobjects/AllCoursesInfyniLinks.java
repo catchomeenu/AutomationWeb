@@ -12,7 +12,7 @@ public class AllCoursesInfyniLinks extends Base {
 
     //Swathini's pageObjects
     public static By homelink=By.xpath("//span[text()='Home']");
-    public static By Click_Trending=By.xpath("//span[contains(text(),'Trending')]");
+    public static By Click_Trending=By.xpath("//a[@href='/trending']");
     public static By click_CourseStatus=By.xpath("//p[text()='Course Status']");
     public static By select_OpenEnrolment=By.xpath("//label[contains(text(),'Enrollment Open')]");
     public static By Validate_TrendingCourseTitle=By.xpath("//p[contains(text(),'Trending')]");
